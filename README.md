@@ -1,1 +1,2 @@
-# Helo Binary Studio!## inary Studio Academy is awesome
+# Hello Binary Studio!
+## Binary Studio Academy is awesome!
