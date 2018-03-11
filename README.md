@@ -1,8 +1,9 @@
 # TODO:
 
+#### Reimagine positioning of the blocks
+
 #### Add missing blocks:
    - contacts (phone number, mail, facebook/skype?)
-   - statement
    - languages
    - skills
    - references
@@ -10,6 +11,7 @@
 
 #### Update texts
    - change lorem ipsums
+   - work on about (statment)
    - enhance with links
    - go with Ed through it
 
