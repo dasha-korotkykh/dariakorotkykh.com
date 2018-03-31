@@ -11,7 +11,7 @@
 	<meta name="googlebot" content="index,follow">
 	<meta name="google" content="nositelinkssearchbox">
 	<meta name="google" content="notranslate">
-	<base href="http://dariakorotkih.com/resume.html">
+	<!--<base href="http://dariakorotkih.com/resume.html">-->
 	<link rel="me" href="https://www.facebook.com/darina.korotkih" type="text/html">
 	<link rel="me" href="mailto:daria.korotkih@icloud.com">
 	<link rel="me" href="skype:daria@binary-studio.com">
@@ -24,7 +24,183 @@
 	<meta property="og:locale" content="en_US">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext">
-	<style>
+    <style>
+        /* Helvetica Neue */
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.ttf") format("truetype");
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.ttf") format("truetype");
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.ttf") format("truetype");
+            font-weight: 900;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.ttf") format("truetype");
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.ttf") format("truetype");
+            font-weight: 200;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.ttf") format("truetype");
+            font-weight: 900;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.ttf") format("truetype");
+            font-weight: 100;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.ttf") format("truetype");
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.ttf") format("truetype");
+            font-weight: 300;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.ttf") format("truetype");
+            font-weight: 200;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.ttf") format("truetype");
+            font-weight: bold;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.ttf") format("truetype");
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.ttf") format("truetype");
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.ttf") format("truetype");
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.eot");
+            src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.woff") format("woff"),
+                url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.ttf") format("truetype");
+            font-weight: 100;
+            font-style: normal;
+        }
+    </style>
+    <style>
+        body,
+        h1, h2, h3, h4, h5 {
+            font-family: "Helvetica Neue";
+        }
+        a {
+            color: blue;
+        }
+        details summary::-webkit-details-marker {
+            margin-left: 0.25em;
+            margin-right: 0;
+        }
+    </style>
+    <style> 
         .ui.container {
             margin-top: 100px;
             margin-bottom: 100px;
@@ -33,7 +209,7 @@
             text-transform:uppercase;
         }
 
-        h2 {color: rgb(7, 23, 74)}
+        .about {color: rgb(7, 23, 74)}
         </style>
 </head>
 
@@ -52,8 +228,8 @@
                     <div class="ui divider"></div>
                     <div class="ui basic segment">
                         <h3>ABOUT</h3>
-                        <h2>Hello!<br> 
-                        I’m a cheerful mawangev with 5 years of experience. Being not very sweet, I am good at problem solving and "putting out fires". I strive to make the developers with whom I work comfortable and happy at their jobsite, and the projects maintained with attention to details and critical thinking.</h2>
+                        <h3 class="about">Hello!<br> 
+                        I’m a cheerful mawangev with 5 years of experience. Being not very sweet, I am good at problem solving and "putting out fires". I make sure that developers with whom I work are comfortable and happy at their jobsite, and handle the projects entrusted to me with attention to details and critical thinking.</h3>
                     </div>
                 </div>
             </div>            
