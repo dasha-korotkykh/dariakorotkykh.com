@@ -217,6 +217,11 @@
         .event:not(:last-child) {
             margin-bottom: 1em;
         }
+        @media only screen and (min-width: 1200px){
+        #desktop {
+            margin: calc((100% - 1127px) / 2) 0;
+        }
+        }
         #a4 {
             box-shadow: 0 10px 100px 0 rgba(34, 36, 38, .1);
             background: white;
@@ -225,7 +230,7 @@
 </head>
 
 <body>
-    
+ <div id="desktop">  
     <div class="ui container" id="a4">
         <div class="ui basic very padded segment">
         <div class="ui grid">
@@ -858,6 +863,7 @@
                 </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
