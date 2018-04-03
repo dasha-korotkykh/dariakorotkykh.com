@@ -201,6 +201,10 @@
         }
     </style>
     <style> 
+        body {
+            background: linear-gradient(to bottom, #f8f8f8 0px, #f8f8f8 250px, #fff 250px, #fff 100%);
+            background-repeat: no-repeat;
+        }
         .ui.container {
             margin-top: 100px;
             margin-bottom: 100px;
@@ -211,14 +215,20 @@
 
         .about {color: rgb(7, 23, 74)}
         .event:not(:last-child) {
-        margin-bottom: 1em;
+            margin-bottom: 1em;
+        }
+        #a4 {
+            box-shadow: 0 10px 100px 0 rgba (34, 36, 38, .1);
+            border: 2px solid #fafafa;
+            background: white;
         }
         </style>
 </head>
 
 <body>
     
-    <div class="ui container">
+    <div class="ui container" id="a4">
+        <div class="ui basic very padded segment">
         <div class="ui grid container">
             <div class="bottom aligned row">
              <div class="eight wide column">
@@ -849,6 +859,6 @@
                 </div>
         </div>
     </div>
-
+</div>
 </body>
 </html>
