@@ -1,117 +1,1164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>DK &mdash; Résumé • 0.0.1</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="subject" content="This is just a résumé.">
-	<meta name="description" content="My very own personal website.">
-	<meta name="robots" content="index,follow">
-	<meta name="googlebot" content="index,follow">
-	<meta name="google" content="nositelinkssearchbox">
-	<meta name="google" content="notranslate">
-	<base href="http://dariakorotkih.com/resume.html">
-	<link rel="me" href="https://www.facebook.com/darina.korotkih" type="text/html">
-	<link rel="me" href="mailto:daria.korotkih@icloud.com">
-	<link rel="me" href="skype:daria@binary-studio.com">
-	<link rel="me" href="tel:+380935514714">
-	<meta property="og:url" content="http://dariakorotkih.com/" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Résumé" />
-	<meta property="og:description" content="&mdash; Hello! I’m cheerful event-mawangev with 3 years of experience. I strive to make developers I work with feel comfortable and happy at their jobsite." />
-	<meta property="og:image" content="http://dariakorotkih.com/images/avatar.gif" />
-	<meta property="og:locale" content="en_US">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext">
-	<style>
-        .ui.container {
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-        .ui.header.capitalized {
-            text-transform:uppercase;
-        }
-	</style>
+  <title>DK &mdash; Résumé &bullet; 0.0.1</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="This is just a résumé." name="subject">
+  <meta content="My very own personal website." name="description">
+  <meta content="index,follow" name="robots">
+  <meta content="index,follow" name="googlebot">
+  <meta content="nositelinkssearchbox" name="google">
+  <meta content="notranslate" name="google"><!-- <base href="http://dariakorotkih.com/resume.html"> -->
+  <link href="https://www.facebook.com/darina.korotkih" rel="me" type="text/html">
+  <link href="mailto:daria.korotkih@icloud.com" rel="me">
+  <link href="skype:daria@binary-studio.com" rel="me">
+  <link href="tel:+380935514714" rel="me">
+  <meta content="http://dariakorotkih.com/" property="og:url">
+  <meta content="website" property="og:type">
+  <meta content="Résumé" property="og:title">
+  <meta content="&mdash; Hello! I’m cheerful event-mawangev with 3 years of experience. I strive to make developers I work with feel comfortable and happy at their jobsite." property="og:description">
+  <meta content="http://dariakorotkih.com/images/avatar.gif" property="og:image">
+  <meta content="en_US" property="og:locale">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+  <style>
+    /* Helvetica Neue */
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Medium.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Heavy.ttf") format("truetype");
+      font-weight: 900;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-HeavyItalic.ttf") format("truetype");
+      font-weight: 900;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Black.ttf") format("truetype");
+      font-weight: 900;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLightItalic.ttf") format("truetype");
+      font-weight: 200;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BlackItalic.ttf") format("truetype");
+      font-weight: 900;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-ThinItalic.ttf") format("truetype");
+      font-weight: 100;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-MediumItalic.ttf") format("truetype");
+      font-weight: 500;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-LightItalic.ttf") format("truetype");
+      font-weight: 300;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-UltraLight.ttf") format("truetype");
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-BoldItalic.ttf") format("truetype");
+      font-weight: bold;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Italic.ttf") format("truetype");
+      font-weight: 500;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Roman.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Bold.ttf") format("truetype");
+      font-weight: bold;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Light.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.eot");
+      src: local("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.woff") format("woff"),
+        url("./assets/fonts/helvetica-neue/HelveticaNeueCyr-Thin.ttf") format("truetype");
+      font-weight: 100;
+      font-style: normal;
+    }
+  </style>
+  <style>
+    body,
+    h1, h2, h3, h4, h5, .ui.container{
+      font-family: "Helvetica Neue";
+    }
+    a {
+      color: blue;
+    }
+    details summary {
+      cursor: pointer;
+    }
+    details summary::-webkit-details-marker {
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+    }
+    body {
+      background: linear-gradient(to bottom, #f8f8f8 0px, #f8f8f8 250px, #fff 250px, #fff 100%);
+      background-repeat: no-repeat;
+    }
+    .ui.container {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .ui.header.capitalized {
+      text-transform:uppercase;
+    }
+    .ui.list .list > .bulleted.item:before,
+    .ui.list > .bulleted.item:before,
+    .ui.list > .detailed.item:before {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      pointer-events: none;
+      position: absolute;
+      top: auto;
+      left: auto;
+      font-weight: 400;
+      margin-left: -1.25rem;
+      content: '•';
+      opacity: 1;
+      color: inherit;
+      vertical-align: top;
+    }
+    .ui.list > .detailed.item:before {
+      content: '▶';
+      font-size: 0.65em;
+    }
+    .ui.list > .detailed.item[open]:before {
+      content: '▼';
+      font-size: 0.7em;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    #about {
+      font-weight: 400;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      color: rgb(7, 23, 74);
+    }
+    #hello { font-weight: 600; }
+    .year,
+    .event:not(:last-child) {
+      margin-bottom: 1em;
+    }
+    .event {
+      break-inside: avoid;
+    }
+    .event > details > .ui.list {
+      margin-left: 1.575em;
+    }
+    .right.floated.content {
+      padding-right: 10px;
+    }
+    .year {
+      padding-top: 2rem;
+      position: relative;
+    }
+    .year:before {
+      content: attr(data-year);
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 500;
+      color: #dddddd;
+    }
+    @media only screen and (min-width: 1200px){
+      #desktop {
+        margin: calc((100% - 1127px) / 2) 0;
+      }
+    }
+    #a4 {
+      box-shadow: 0 10px 100px 0 rgba(34, 36, 38, .1);
+      background: white;
+    }
+  </style>
 </head>
 <body>
-    <div class="ui text container">
-        <div class="ui grid">
-            <div class="bottom aligned row">
-                <div class="eight wide column">
-                    <h1 class="ui header">Casey Oldham</h1>
-                </div>
-                <div class="eight wide right aligned column">
-                    <h4 class="ui header">Social Media Manager</h4>
-                </div>
+  <div id="desktop">
+    <div class="ui container" id="a4">
+      <div class="ui basic very padded segment">
+        <div class="ui basic segment">
+          <div class="ui stackable grid">
+            <div class="ui three wide column">
+
             </div>
-        </div>
-        <div class="ui divider"></div>
-        <div class="basic segment"> 
-            To get in touch, write to president@whitehouse.gov
-        </div>
-        <div class="ui divider"></div>
-        <div class="basic segment">
-            <h5 class="ui capitalized header">About</h5>
-            <p>Roof party whatever thundercats subway tile. Mumblecore etsy keytar authentic salvia mixtape raclette bicycle rights butcher slow-carb tumblr schlitz. Edison bulb cred synth, mustache unicorn kale chips authentic DIY fingerstache. Chicharrones seitan palo santo plaid blog copper mug health goth pabst. Brooklyn coloring book swag, wolf selvage hot chicken mustache. Authentic locavore wayfarers scenester taiyaki actually vinyl letterpress franzen tattooed umami austin.</p>
-        </div>
-        <div class="ui divider"></div>   
-        <div class="basic segment"> 
-            <h5 class="ui capitalized header">Education</h5>
-            <div class="ui grid">
-                    <div class="eight wide column">
-									<div><em>1<sup>st</sup> September 2003 – 30<sup>th</sup> June 2008</em></div>
-									<div><strong>Bachelor's degree</strong> in <strong>computer science</strong> at <a href="http://tntu.edu.ua//?p=en/home" rel="external"><strong>Ternopil National Technical University</strong></a></div>
-                    </div>
-                    <div class="eight wide column">
-									<div><em>1<sup>st</sup> October 1995 – 23<sup>rd</sup> May 1999</em></div>
-									<div><strong>Certificate of graduation</strong> at <strong>Ternopil Art School for Children</strong></div>
-                    </div>
-            </div>
-        </div>
-        <div class="ui divider"></div>
-        <div class="basic segment"> 
-            <h5 class="ui capitalized header">Experience</h5>
-            <div class="ui equal width grid"> 
-                <div class="row">
-                    <div class="column">
-                        <div><em>February 2006 – August 2007</em></div>
-                        <p><strong>Graphic designer</strong> at <strong>Terminal</strong></p>
-                        <ul>
-                            <li>designed booklets, flyers, business cards, posters using Adobe CS (Photoshop, Illustrator, InDesign)</li>
-                            <li>managed inkjet plotters and printers</li>
-                            <li>built websites using Macromedia Dreamweaver, Macromedia Flash (ActionScript)</li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <div><em>April 2004 – December 2004</em></div>
-                        <p><strong>System administrator</strong> at <strong>Pyramid</strong></p>
-                        <ul>
-                            <li>managed a network of dozen Windows workstations and one Linux gateway (DHCP, DNS, proxy, ACLs)</li>
-                            <li>kept PCs health (install OS over PXE, backup/restore, antivirus, software updates, hardware upgrades etc.)</li>
-                        </ul>
-                    </div>
+            <div class="ui thirteen wide column">
+              <h1 class="ui capitalized header" style="margin-bottom: 0;">Daria Korotkih</h1>
+              <h5 class="ui header" style="margin: 0;">community developer &bullet; code ninja &bullet; mawangev &bullet; academy guru</h5>
+              <!-- Contacts -->
+              <div class="ui horizontal list">
+                <div class="item">
+                  <i class="mail icon"></i>
+                  <a href="mailto:daria@binary-studio.com">daria@binary-studio.com</a>
                 </div>
-                <div class="row">
-                    <div class="column">
-                        <div><em>14<sup>th</sup> February 2008 – 31<sup>st</sup> January 2011</em></div>
-                        <p><strong>Software engineer</strong> at <strong><a href="http://www.sebn.com/en/" rel="external">Sumitomo Electric Bordnetze</a> Ukraine</strong></p>
-                        <ul>
-                            <li>designed UI and UX for native applications and web pages</li>
-                            <li>built simple apps to assist in manufacturing process using Delphi, VB, Java, HTML, CSS, JavaScript, PHP, SQL</li>
-                            <li>managed Microsoft SQL, MySQL, and Firebird databases</li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <div><em>1<sup>st</sup> October 2016 – 31<sup>st</sup> December 2016</em></div>
-                        <p><strong>Full Stack Developer</strong> at <strong><a href="http://www.dutchstar.com/" rel="external">Dutchstar</a></strong></p>
-                        <ul>
-                            <li>built, tested, and deployed applications written with React + Redux and Phalcon + MySQL</li>
-                        </ul>
-                    </div>
+                <div class="item">
+                  <i class="black facebook f icon"></i>
+                  <a class="facebook" href="https://www.facebook.com/darina.korotkih">Darina Korotkih</a>
                 </div>
+                <div class="item">
+                  <i class="black telegram plane icon"> </i>
+                  <a class="telegram" href="https://telegram.me/dariakorotkih" rel="author">@dariakorotkih</a>
+                </div>
+                <div class="item">
+                  <i class="phone icon"></i>
+                  <a href="skype:+380935514714">+38 (093) 5514714</a>
+                </div>
+              </div>
+              <h1 id="about">
+                <div id="hello">&mdash; Hello!</div>
+                <div>I’m a cheerful mawangev with 5 years of experience. Being not very sweet, I am good at problem solving and "putting out fires". I make sure that developers with whom I work are comfortable and happy at their jobsite, and handle the projects entrusted to me with attention to details and critical thinking.</div>
+              </h1>
             </div>
+          </div>
         </div>
+        <div style="
+          background-image: url(https://assets-cdn.github.com/images/modules/pulls/progressive-disclosure-line@2x.png);
+          background-repeat: repeat-x;
+          height: 34px;
+          background-size: 34px;
+          margin-left: -3em;
+          margin-right: -3em;
+        "></div>
+        <div class="ui basic segment tags" style="display: none;">
+          <h3>2018 CHALLENGES</h3>
+          <a class="ui label">blind typing in English</a> 
+          <a class="ui label" href="https://www.facebook.com/events/233409717172818/">complete a game within 7 days at Castle Game Jam</a> 
+          <a class="ui label" href="https://github.com/daria-korotkih"> <i class="github icon" style="align:center"></i></a>
+          <a class="ui label">attention to details</a> 
+          <a class="ui label">Construct 3</a> 
+          <a class="ui label" href="https://www.freecodecamp.org/daria-korotkih">freeCodeCamp</a>
+        </div>
+        <div class="ui basic segment" style="columns: 2;">
+          <!-- 2018 -->
+          <div class="year" data-year="2018">
+            <div class="event jam">
+              <div>
+                <em>26<sup>th</sup> – 28<sup>th</sup> of January 2018</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Game Designer, Artist</strong> at <strong><a href="http://krakjam.pl/">KrakJam - Global Game Jam</a></strong></span>
+                </summary>
+                <ul>
+                  <li>provided our team game "Transmission Lost" with art, sounds and localization for 4 languages</li>
+                  <li>ask me about GGJ diversifiers</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <!-- 2017 -->
+          <div class="year" data-year="2017">
+            <div class="event jam">
+              <div>
+                <em>9<sup>th</sup> – 10<sup>th</sup> of December 2017</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Game Designer, Artist</strong> at <strong><a href="http://senseigamejam.pl/">Wroclaw Sensei Game Jam</a></strong></span>
+                </summary>
+                <ul>
+                  <li>learned Catholic and folklore songs in Polish</li>
+                  <li>invented a new Polish word, Przeddzemie, which describes a state of affairs before a game jam begins, and wrote a <a href="https://daniko.itch.io/przeddzemie">game about it</a>
+                  </li>
+                </ul>
+              </details>
+            </div>
+            <div class="event jam">
+              <div>
+                <em>November 2017</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Artist, PM, Storyteller, Unity Developer, and Sound Designer</strong> at <strong>LowRezJam</strong> <em><sup>(online)</sup></em></span>
+                </summary>
+                <ul>
+                  <li>created a one-level game with four possible endings in 64<span>×</span>64 pixels <a href="https://merlin-ua.itch.io/tower-64">Tower 62<sup>2</sup></a>
+                  </li>
+                </ul>
+              </details>
+            </div>
+            <div class="event jam">
+              <div>
+                <em>28<sup>th</sup> – 30<sup>th</sup> of July 2017</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Team Lead, Artist</strong> at <strong><a href="http://slavicgamejam.org/">Warsaw Slavic Game Jam</a></strong></span>
+                </summary>
+                <ul>
+                  <li>gathered a team, created a unique compilation of 2D and 3D art (<em>don't do that, though, seriously</em>) in a one-level game called <a href="https://daniko.itch.io/teamsenate">Jas Sni o Nieznanym</a> (<em>Jacek dreams about
+                  the unknown</em>)
+                  </li>
+                </ul>
+              </details>
+            </div>
+            <div class="event jam">
+              <div>
+                <em>27<sup>th</sup> – 29<sup>th</sup> of January 2017</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Storyteller, Artist</strong> at <strong><a href="hhttps://www.facebook.com/events/1116260575151201">KrakJam Global Game Jam</a></strong></span>
+                </summary>
+                <ul>
+                  <li>worked on a game called <a href="https://globalgamejam.org/2017/games/surf-sky">Surf the Sky</a>
+                  </li>
+                  <li>lessons learned: I need to develop my taste in color perception; Chromebooks are not really cool tools for making art</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <!-- 2016 -->
+          <div class="year" data-year="2016">
+            <div class="event">
+              <div>
+                <em>November 2016 – current</em>
+              </div>
+              <details open>
+                <summary>
+                  <span><strong>HR Marketing, Head of Academy</strong> at <strong><a href="binary-studio.com">Binary Studio</a></strong></span>
+                </summary>
+                <div class="ui list">
+                  <div class="bulleted item">create internal weekly newsletters, technical writing for corporate channels</div>
+                  <div class="bulleted item">promote Binary Studio Academy in media and offline, selecting 10% of candidates, preparing the curriculum and performing as product owner during the course</div>
+                  <details class="detailed item">
+                    <summary>
+                      organize events of all ranges, from small office get-togethers to huge parties, from senior-level tech meetups to the annual company Eurotrip
+                    </summary>
+                    <div class="ui selection list">               
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 24</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>22<sup>nd</sup> of February 2018</em>
+                            </div>
+                            <div class="header">
+                              Ski Weekend
+                            </div>
+                            <div class="description">
+                              Rakhiv — Bukovel
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 72</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>20<sup>th</sup> of January 2018</em>
+                            </div>
+                            <div class="header">
+                              Company 12<sup>th</sup> Anniversary
+                            </div>
+                            <div class="description">
+                              Lviv — Park. Art of Rest
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 21</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>21<sup>st</sup> of December 2017</em>
+                            </div>
+                            <div class="header">
+                              Eurotrip
+                            </div>
+                            <div class="description">
+                              Nuremberg, Budapest, Berlin, Krakow
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 50</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>17<sup>th</sup> of November 2017</em>
+                            </div>
+                            <div class="header">
+                              Poker Night
+                            </div>
+                            <div class="description">
+                              Lviv — Binary Studio office
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 36</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>24<sup>th</sup> of September 2017</em>
+                            </div>
+                            <div class="header">
+                              Programmers' Party
+                            </div>
+                            <div class="description">
+                              Lviv — Lviv Film Center
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 47</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>23<sup>rd</sup> of September 2017</em>
+                            </div>
+                            <div class="header">
+                              Academy Graduation
+                            </div>
+                            <div class="description">
+                              Lviv — Binary Studio office
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 62</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>16<sup>th</sup> of September 2017</em>
+                            </div>
+                            <div class="header">
+                              Submit.NET
+                            </div>
+                            <div class="description">
+                              Lviv — Binary Studio office
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 23</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>19<sup>th</sup> of August 2017</em>
+                            </div>
+                            <div class="header">
+                              Rafting company trip
+                            </div>
+                            <div class="description">
+                              Volyn — Dnister
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 36</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>5<sup>th</sup> of August 2017</em>
+                            </div>
+                            <div class="header">
+                              Transcarpathian company trip
+                            </div>
+                            <div class="description">
+                              Knyahynia — Westwood
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 78</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>1<sup>st</sup> of July 2017</em>
+                            </div>
+                            <div class="header">
+                              Academy 1<sup>st</sup> lecture
+                            </div>
+                            <div class="description">
+                              Lviv — Binary Studio office
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                            <div class="right floated content">
+                                <i class="users icon"> 95</i>
+                            </div>
+                            <i class="large images outline middle aligned icon"></i>
+                            <div class="content">
+                              <div>
+                                <em>10<sup>th</sup> of June 2017</em>
+                              </div>
+                              <div class="header">
+                                SubmitJS
+                              </div>
+                              <div class="description">
+                                Lviv — Binary Studio office
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="right floated content">
+                                <i class="users icon"> 27</i>
+                            </div>
+                            <i class="large images outline middle aligned icon"></i>
+                            <div class="content">
+                              <div>
+                                <em>2<sup>nd</sup> of June 2017</em>
+                              </div>
+                              <div class="header">
+                                Sea trip
+                              </div>
+                              <div class="description">
+                                Odessa — Zatoka
+                              </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 43</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>22<sup>nd</sup> of April 2017</em>
+                            </div>
+                            <div class="header">
+                              BBQ Party
+                            </div>
+                            <div class="description">
+                              Lviv — Bukhta Vikingiv
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 73</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>13<sup>th</sup> of April 2017</em>
+                            </div>
+                            <div class="header">
+                              Modern use of Laravel. University meetup
+                            </div>
+                            <div class="description">
+                              Kharkiv — NU KhPI
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 42</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>3<sup>d</sup> of April 2017</em>
+                            </div>
+                            <div class="header">
+                              Web-Services: the Other Side. University meetup
+                            </div>
+                            <div class="description">
+                              Kyiv — NaUKMA
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 21</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>16<sup>th</sup> of March 2017</em>
+                            </div>
+                            <div class="header">
+                              AWS Services. University meetup
+                            </div>
+                            <div class="description">
+                              Vinnytsa — DonNU
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 26</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>26<sup>th</sup> of February 2017</em>
+                            </div>
+                            <div class="header">
+                              Ski Weekend
+                            </div>
+                            <div class="description">
+                              Slavske — Trostian
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 23</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>20<sup>th</sup> of January 2017</em>
+                            </div>
+                            <div class="header">
+                              Company 11th Anniversary
+                            </div>
+                            <div class="description">
+                              Lviv — Binary Studio office
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="right floated content">
+                              <i class="users icon"> 23</i>
+                          </div>
+                          <i class="large images outline middle aligned icon"></i>
+                          <div class="content">
+                            <div>
+                              <em>22<sup>nd</sup> of December 2016</em>
+                            </div>
+                            <div class="header">
+                              Eurotrip
+                            </div>
+                            <div class="description">
+                              Cologne, Bruges, Brussels
+                            </div>
+                        </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>October 2016 – December 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Graduate</strong> of <strong><a href="https://education.github.com/experts">GitHub Campus Experts programme</a></strong></span>
+                </summary>
+                <ul>
+                  <li>completed GitHub course following <a href="https://hackcon.mlh.io/events/europe/">HackCon IV</a>
+                  </li>
+                  <li>organized <a href="https://localhackday.mlh.io/">Kyiv Local Hack Day</a> on 3<sup>rd</sup> of December
+                  </li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>28<sup>th</sup> – 30<sup>th</sup> of October 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Product Manager, Marketing</strong> at <strong><a href="https://www.facebook.com/events/191289977949171/">Garage 48 Dnipro IoT Hackathon</a></strong></span>
+                </summary>
+                <ul>
+                  <li>created and presented "Wattaheat": a one-of-a-kind smart device, which calculates boiling time and sends it to a mobile app in real-time</li>
+                  <li>took 1,5<sup>th</sup> place in the competition <em>(that means winning #1, but our certificate was accidentally switched with the one for the second winner)</em></li>
+                  <li>our team TeamCook was actually asked to present the technology at Lviv Maker's Faire <em>(which we did)</em> and develop it for possible mass production <em>(which we didn't)</em></li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>6<sup>th</sup> – 8<sup>th</sup> of May 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Product Manager, Marketing</strong> at <strong><a href="https://www.facebook.com/events/1570965446562758/">Garage 48 Odessa Gamification Hackathon</a></strong></span>
+                </summary>
+                <ul>
+                  <li>built a web-app called "Hacktus" for gathering and gamifying different online education resources on one interface(edX, Codewars, Coursera etc.)</li>
+                  <li>learnt an important lesson: even a fine project with a cool backend cannot be marketed without a solid frontend cover</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>May 2016 – October 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>People Partner</strong> at <strong><a href="https://www.daxx.com/">DAXX</a></strong></span>
+                </summary>
+                <ul>
+                  <li>fought a war with the cleaning lady</li>
+                  <li>organized company parties, retreats and office leisure</li>
+                  <li>found out what I think about corporate culture as such</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>April 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Orgteam Volunteer</strong> at <strong><a href="https://www.facebook.com/pg/uapycon/photos/?tab=album&amp;album_id=979059962175962">PyCon 2016</a></strong></span>
+                </summary>
+                <ul>
+                  <li>ordinary help - setting up the place, registering participants, supervising facility and helping speakers follow time restrictions, but with a flavour of geek talks and humour</li>
+                  <li>ask me how PyCon (or any other tech con) is different from IT Arena</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>5<sup>th</sup> – 6<sup>th</sup> of March 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Product Manager, Marketing</strong> at <strong><a href="https://dou.ua/calendar/9783/">STEM Hackathon</a></strong></span>
+                </summary>
+                <ul>
+                  <li>worked on DITRO: an Open CV <em><sup>(computer vision)</sup></em> app for drones, which would allow the user to build a stable route and tasklist</li>
+                  <li>our team created both a software platform and implemented it on hardware - a radio-controlled car</li>
+                  <li>took 2<sup>nd</sup> place for the product</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>March 2016 – June 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Project Manager</strong> at <strong>KIT</strong></span>
+                </summary>
+                <ul>
+                  <li>was responsible for a company brand-awareness project participating in iForum 2016</li>
+                  <li>worked on the curriculum for the company's internal courses</li>
+                  <li>drank an enormous amount of tea with the company iOS dev unit</li>
+                  <li>quit quickly, because apart from random projects, I wasn't feeling quite applicable to company activity</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>27<sup>th</sup> – 28<sup>th</sup> of February 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Product Manager, Marketing</strong> at <strong><a href="https://dou.ua/calendar/9777/">INT20H Hackathon</a></strong></span>
+                </summary>
+                <ul>
+                  <li>our algorithm (called "No Spam Epic Shit") for detecting spam was developed for the Machine Learning category, therefore it didn't require pretty design or any kind of mockups</li>
+                  <li>so I just prepared the presentation and mostly was overlooking what my team was doing, trying to learn</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <!-- 2015 -->
+          <div class="year" data-year="2015">
+            <div class="event">
+              <div>
+                <em>12<sup>th</sup> – 13<sup>th</sup> of December 2015</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Product Manager, Marketing</strong> at <strong><a href="http://artzavodplatforma.com/ru/event/proffstore-hackathon">Proffstore Hackathon</a></strong></span>
+                </summary>
+                <ul>
+                  <li>gathered the biggest team at the biggest EU hackathon <em>(when organizing hacking/jamming event, chasing the numbers is a bad idea)</em></li>
+                  <li>built a web-platform called "Lite" for connecting freelancers and customers</li>
+                  <li>our presentation was so <strong>hot</strong>, that the pipe for heating air, placed under our table, actually caught fire</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>28<sup>th</sup> – 29<sup>th</sup> of November 2015</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Artist, Marketing</strong> at <strong><a href="http://gamejamkpi.github.io/">Game Jam KPI</a></strong></span>
+                </summary>
+                <ul>
+                  <li>created art and wrote jokes for an 8-bit game about developers hunting zombies and looking for expensive cheese</li>
+                  <li>took the People's Choice Award <em>(which really surprised me)</em> and won the Ubisoft nomination for Best Presentation</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>23<sup>rd</sup> – 24<sup>th</sup> October 2015</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Attendee</strong> at <strong><a href="https://devfest.gdg.org.ua/">GDG Lviv</a></strong></span>
+                </summary>
+                <ul>
+                  <li>learned how to use IDE in a browser</li>
+                  <li>realized that my vocation is to care for my developers <em>(feed them, give them medicine and deliver them to the hotel after the midnight afterparty)</em></li>
+                  <li>became acquaitances with GDG orgteam, and helped them organize 4 events in Kyiv later in exchange for a grasp on what Google Developer Groups are like in action</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>3<sup>rd</sup> – 4<sup>th</sup> of October 2015</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Designer, Marketing, Research, and QA</strong> at <strong><a href="http://www.linguahack.com/">Linguahack</a></strong></span>
+                </summary>
+                <ul>
+                  <li>attended my first hackathon ever and changed my life beyond retrieve</li>
+                  <li>got invited into the most talented team of developers</li>
+                  <li>developed a web-game, where the user (or up to 10 of them) plays Alias with A.I. <em>(which talks Ukrainian and swears occasionally)</em></li>
+                  <li>presented the game and took 1<sup>st</sup> place for it</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>August 2015 – February 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Project Manager, Mentor Lead</strong> at <strong>GoIT</strong></span>
+                </summary>
+                <ul>
+                  <li>established a community (organizational questions on curriculum, informal knowledge sharing and teambuilding events) for present and incoming course mentors</li>
+                  <li>coaches and mentors onboarding and problem-solving</li>
+                  <li>started learning basic stuff and the particular differences between IT branches at that time</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>July 2015 – September 2015</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Volunteer Assistant</strong> at <strong>PR Department</strong> of the National University of Kyiv-Mohyla Academy</span>
+                </summary>
+                <ul>
+                  <li>helped on a project basis: prepared the 500<sup>th</sup> Anniversary of NaUKMA celebration</li>
+                  <li>prepared agenda, sponsorship offers, created texts for promo and media</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <!-- 2014 -->
+          <div class="year" data-year="2014">
+            <div class="event">
+              <div>
+                <em>December 2014 – July 2015</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Administrator</strong> at <strong>Bukovski Anticafe</strong></span>
+                </summary>
+                <ul>
+                  <li>initially came to the most bookish anticafe's to fill its agenda with events, but after talk a with the owner I was asked to stay on the team</li>
+                  <li>apart from greeting customers and managing supplies, kept the place clean and cozy</li>
+                  <li>read a great number of books</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>22<sup>nd</sup> of October 2014</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>2<sup>nd</sup> place in Sociology nomination</strong> at the <strong>TNS Youth Studies Marketing competition</strong></span>
+                </summary>
+                <ul>
+                  <li>presented a paper on the classification of communuication between internet-users</li>
+                  <li>sample topic for research - discussions on social and political events in Ukraine in 2014</li><!--Типологізація стилів комунікації інтернет-користувачів з приводу соціально-політичних подій 2014 року в Україні-->
+                </ul>
+              </details>
+            </div>
+          </div>
+          <!-- 2013 -->
+          <div class="year" data-year="2013">
+            <div class="event">
+              <div>
+                <em>1<sup>st</sup> of November 2013</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>2<sup>nd</sup> place in PR nomination</strong> at the <strong>TNS Youth Studies Marketing competition</strong></span>
+                </summary>
+                <ul>
+                  <li>presented research on storytelling in digital brand promotion</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>October 2013 – November 2014</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>English Teacher</strong> at <strong><a href="https://yappi.com.ua/">Yappi Corporate Business School</a>/Self-employed</strong></span>
+                </summary>
+                <ul>
+                  <li>created curriculum and planned learning activities for individual students and company-based groups</li>
+                  <li>worked with individual students, emphasizing speaking and listening practice</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <!-- Teen -->
+          <div class="year" data-year="Teen">
+            <div class="event">
+              <div>
+                <em>June 2013 – September 2013</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Intern Analyst</strong> at <strong><a href="https://www.thomsonreuters.com/en.html/" rel="external">Thomson Reuters</a></strong> Ukraine</span>
+                </summary>
+                <ul>
+                  <li>researched data on EU carbon facilities</li>
+                  <li>organized databases and checked existing ones for mistakes</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>October 2012 – June 2013</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Office Manager</strong> at <strong>Orange Travel LLC</strong></span>
+                </summary>
+                <ul>
+                  <li>learned how to organize and handle documentation, office maintenance</li>
+                  <li>worked with USA partners and inbound customers</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>1<sup>st</sup> of September 2012 – 15<sup>th</sup> of June 2016</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Student</strong> at <strong>Sociology Faculty</strong> at <a href="http://www.ukma.edu.ua/eng/" rel="external"><strong>National University "Kyiv-Mohyla Academy"</strong></a></span>
+                </summary>
+                <ul>
+                  <li>tasted a mix of qualitative methods in social studies, applied math, philosophy, brand management, Polish language, economic and political sociology and content-analysis</li>
+                  <li>mostly made up my conclusions on above-listed subjects because I didn't like to read academic papers in PDF format, and improvised on practical tasks</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>1<sup>st</sup> of September 2007 – 20<sup>th</sup> of June 2012</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Student</strong> at <strong>Gymnasium 183 with an emphasis on foreign languages study</strong></span>
+                </summary>
+                <ul>
+                  <li>defended two MAS researches on Logarithm appliance in pottery and Ukrainian theater during WWII</li>
+                  <li>took 2<sup>nd</sup> place at the State Kyiv Olympiad in English twice</li>
+                </ul>
+              </details>
+            </div>
+            <div class="event">
+              <div>
+                <em>September 2007 – May 2010</em>
+              </div>
+              <details>
+                <summary>
+                  <span><strong>Played violin</strong> at <strong><a href="http://js.kiev.ua/">Jazz-Variety School</a></strong></span>
+                </summary>
+                <ul>
+                  <li>never aimed to be a professional musician, but years of mastering violin gave me confidence to improvise</li>
+                  <li>joined a band, where I applied whole range of emotions and available musical notes for 8 years in a row</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui basic very padded segment" style="background: #f8f8f8;">
+        <style>
+                            .ui.label {
+                                margin: 5px;
+                            }
+        </style>
+        <div class="ui equal width grid">
+          <div class="sixteen wide column">
+            <div class="">
+              <h3>POSESS</h3><a class="ui label">irony</a> <a class="ui label">20 games on steam</a> <a class="ui label">loud voice</a> <a class="ui label">empathy</a> <a class="ui label">extreme agility</a> <a class="ui label">devotion</a>
+              <a class="ui label">motorcycle</a> <a class="ui label">diplomacy</a> <a class="ui label">readiness to fight</a> <a class="ui label">care</a> <a class="ui label">chauvinism</a> <a class="ui label">confidence</a>
+              <div class="ui label">
+                public speaking counter
+                <div class="detail">
+                  <font weight="700">62</font>
+                </div>
+              </div><a class="ui label">common language with difficult people</a> <a class="ui label">ability not to eat/sleep for a long time if needed</a> <a class="ui label">affection for people i work with</a> <a class="ui label">affection from
+              them</a> <a class="ui label">upper-int English</a> <a class="ui label">passion</a>
+            </div>
+          </div>
+          <div class="sixteen wide column">
+            <div class="">
+              <h3>USE</h3><a class="ui label">google products</a> <a class="ui label">trello</a> <a class="ui label">improvisation</a> <a class="ui label">thesaurus</a> <a class="ui label">noisly</a> <a class="ui label">canva</a> <a class=
+              "ui label">piskel</a> <a class="ui label">unity</a> <a class="ui label">github</a> <a class="ui label">mailjet</a> <a class="ui label">udemy</a> <a class="ui label">adobe cs</a>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="">
+              <h3>LIKE</h3>
+              <p><a class="ui label">fc barcelona</a> <a class="ui label">pixel art</a> <a class="ui label">K<font color="red">inder</font></a> <a class="ui label">game jams</a> <a class="ui label">A24 movies</a> <a class="ui label">apple cider</a>
+              <a class="ui label">books in Polish</a> <a class="ui label">fog</a> <a class="ui label">grey colour</a> <a class="ui label">nerdy jokes</a> <a class="ui label">techno</a> <a class="ui label">google products</a> <a class=
+              "ui label">smell of washing machine powder</a></p>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="">
+              <h3>DISLIKE</h3>
+              <p><a class="ui label">small talk</a> <a class="ui label">public transport</a> <a class="ui label">mushrooms</a> <a class="ui label">comedies</a> <a class="ui label">irresponsibility</a> <a class="ui label">cocktails</a> <a class=
+              "ui label">beauty salons</a> <a class="ui label">bergamot</a> <a class="ui label">weather under -3°C</a> <a class="ui label">lies</a> <a class="ui label">gift certificates</a> <a class="ui label">candy saga</a> <a class=
+              "ui label">bureaucracy</a> <a class="ui label">facebook</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>
