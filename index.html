@@ -241,9 +241,13 @@
     details summary::-webkit-details-marker {
       display: none;
     }
-    .about {
+    #about {
+      font-weight: 400;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
       color: rgb(7, 23, 74);
     }
+    #hello { font-weight: 600; }
     .year,
     .event:not(:last-child) {
       margin-bottom: 1em;
@@ -267,10 +271,8 @@
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
       font-weight: 500;
       color: #dddddd;
-      border-bottom: 1px solid #dddddd;
     }
     @media only screen and (min-width: 1200px){
       #desktop {
@@ -288,33 +290,48 @@
     <div class="ui container" id="a4">
       <div class="ui basic very padded segment">
         <div class="ui basic segment">
-          <h1 class="ui capitalized header" style="margin-bottom: 0;">Daria Korotkih</h1>
-          <h5 class="ui header" style="margin: 0;">community developer &bullet; code ninja &bullet; mawangev &bullet; academy guru</h5>
-          <!-- Contacts -->
-          <div class="ui horizontal list">
-            <div class="item">
-              <i class="mail icon"></i>
-              <a href="mailto:daria@binary-studio.com">daria@binary-studio.com</a>
+          <div class="ui stackable grid">
+            <div class="ui three wide column">
+
             </div>
-            <div class="item">
-              <i class="black facebook f icon"></i>
-              <a class="facebook" href="https://www.facebook.com/darina.korotkih">Darina Korotkih</a>
-            </div>
-            <div class="item">
-              <i class="black telegram plane icon"> </i>
-              <a class="telegram" href="https://telegram.me/dariakorotkih" rel="author">@dariakorotkih</a>
-            </div>
-            <div class="item">
-                <i class="phone icon"></i>
-                <a href="skype:+380935514714">+38(093)55 14 7 14</a>
+            <div class="ui thirteen wide column">
+              <h1 class="ui capitalized header" style="margin-bottom: 0;">Daria Korotkih</h1>
+              <h5 class="ui header" style="margin: 0;">community developer &bullet; code ninja &bullet; mawangev &bullet; academy guru</h5>
+              <!-- Contacts -->
+              <div class="ui horizontal list">
+                <div class="item">
+                  <i class="mail icon"></i>
+                  <a href="mailto:daria@binary-studio.com">daria@binary-studio.com</a>
+                </div>
+                <div class="item">
+                  <i class="black facebook f icon"></i>
+                  <a class="facebook" href="https://www.facebook.com/darina.korotkih">Darina Korotkih</a>
+                </div>
+                <div class="item">
+                  <i class="black telegram plane icon"> </i>
+                  <a class="telegram" href="https://telegram.me/dariakorotkih" rel="author">@dariakorotkih</a>
+                </div>
+                <div class="item">
+                  <i class="phone icon"></i>
+                  <a href="skype:+380935514714">+38 (093) 5514714</a>
+                </div>
+              </div>
+              <h1 id="about">
+                <div id="hello">&mdash; Hello!</div>
+                <div>I’m a cheerful mawangev with 5 years of experience. Being not very sweet, I am good at problem solving and "putting out fires". I make sure that developers with whom I work are comfortable and happy at their jobsite, and handle the projects entrusted to me with attention to details and critical thinking.</div>
+              </h1>
             </div>
           </div>
-          <h1 class="about" style="font-weight: 500; margin-top: 2em; margin-bottom: 0.5em;"><span>&mdash; Hello!</span><br>
-          I’m a cheerful mawangev with 5 years of experience.<br>
-          Being not very sweet, I am good at problem solving and "putting out fires".<br>
-          I make sure that developers with whom I work are comfortable and happy at their jobsite, and handle the projects entrusted to me with attention to details and critical thinking.</h1>
         </div>
-        <div class="ui basic segment tags">
+        <div style="
+          background-image: url(https://assets-cdn.github.com/images/modules/pulls/progressive-disclosure-line@2x.png);
+          background-repeat: repeat-x;
+          height: 34px;
+          background-size: 34px;
+          margin-left: -3em;
+          margin-right: -3em;
+        "></div>
+        <div class="ui basic segment tags" style="display: none;">
           <h3>2018 CHALLENGES</h3>
           <a class="ui label">blind typing in English</a> 
           <a class="ui label" href="https://www.facebook.com/events/233409717172818/">complete a game within 7 days at Castle Game Jam</a> 
