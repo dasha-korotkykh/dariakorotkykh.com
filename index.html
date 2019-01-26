@@ -22,6 +22,7 @@
     <meta content="&mdash; Hello! I’m cheerful event-mawangev with 3 years of experience. I strive to make developers I work with feel comfortable and happy at their jobsite." property="og:description" />
     <meta content="http://https://dariakorotkykh.com/images/avatar.gif" property="og:image" />
     <meta content="en_US" property="og:locale" />
+    <!--
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" rel="stylesheet" />
     <style>
       @import url("https://rsms.me/inter/inter-ui.css");
@@ -49,15 +50,6 @@
       details summary::-webkit-details-marker {
         margin-left: 0.25em;
         margin-right: 0.25em;
-      }
-      #about {
-        font-weight: 400;
-        margin-top: 2em;
-        margin-bottom: 0.5em;
-        color: darkgrey;
-      }
-      #hello {
-        font-weight: 600;
       }
       .ui.container {
         margin-top: 100px;
@@ -95,60 +87,6 @@
         background-position: top left;
         background-repeat: repeat-x;
         background-size: 16px 16px;
-      }
-      .event .meta:after {
-        font-family: "Roboto Mono", monospace !important;
-        font-weight: 500;
-        font-size: 11px;
-        line-height: 16px;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        color: #ffffff;
-        display: inline-block;
-        padding: 0 8px;
-        border-radius: 15px;
-        height: 16px;
-        margin-left: 2px;
-        vertical-align: middle;
-        content: "work";
-        background: blue;
-      }
-      .event[data-type="education"] .meta:after {
-        content: "education";
-        background: violet;
-      }
-      .event[data-type="competition"] .meta:after {
-        content: "competition";
-        background: darkviolet;
-      }
-      .event[data-type="hackathon"] .meta:after {
-        content: "hackathon";
-        background: midnightblue;
-      }
-      .event[data-type="jam"] .meta:after {
-        content: "jam";
-        background: deepskyblue;
-      }
-      .event[data-type="jam"],
-      .event[data-type="hackathon"],
-      .event[data-type="competition"] {
-        transition: all 0.2s ease-in-out;
-        opacity: 0.5;
-        filter: grayscale(1);
-      }
-      .event[data-type="jam"]:not(:hover) .meta:after,
-      .event[data-type="hackathon"]:not(:hover) .meta:after,
-      .event[data-type="competition"]:not(:hover) .meta:after {
-        background: none;
-        border: 1px solid;
-        color: inherit;
-        line-height: 14px;
-      }
-      .event[data-type="jam"]:hover,
-      .event[data-type="hackathon"]:hover,
-      .event[data-type="competition"]:hover {
-        opacity: 1;
-        filter: none;
       }
       details > summary {
         position: relative;
@@ -213,71 +151,123 @@
         top: 0;
         font-weight: 500;
       }
-      @media only screen and (min-width: 1200px) {
-        #desktop {
-          margin: calc((100% - 1127px) / 2) 0;
-        }
+    </style>
+    -->
+    <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <style>
+      .event .meta:after {
+        font-family: "Roboto Mono", monospace !important;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: inline-block;
+        padding: 0 8px;
+        border-radius: 15px;
+        height: 16px;
+        margin-left: 2px;
+        vertical-align: middle;
+        content: "work";
+        background: blue;
       }
-      #a4 {
-        box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
-        background: white;
+      .event[data-type="education"] .meta:after {
+        content: "education";
+        background: violet;
       }
-      .ui.label {
-        margin: 5px;
+      .event[data-type="competition"] .meta:after {
+        content: "competition";
+        background: darkviolet;
       }
+      .event[data-type="hackathon"] .meta:after {
+        content: "hackathon";
+        background: midnightblue;
+      }
+      .event[data-type="jam"] .meta:after {
+        content: "jam";
+        background: deepskyblue;
+      }
+      /*
+      .event[data-type="jam"],
+      .event[data-type="hackathon"],
+      .event[data-type="competition"] {
+        transition: all 0.2s ease-in-out;
+        opacity: 0.5;
+        filter: grayscale(1);
+      }
+      .event[data-type="jam"]:not(:hover) .meta:after,
+      .event[data-type="hackathon"]:not(:hover) .meta:after,
+      .event[data-type="competition"]:not(:hover) .meta:after {
+        background: none;
+        border: 1px solid;
+        color: inherit;
+        line-height: 14px;
+      }
+      .event[data-type="jam"]:hover,
+      .event[data-type="hackathon"]:hover,
+      .event[data-type="competition"]:hover {
+        opacity: 1;
+        filter: none;
+      }
+      */
     </style>
   </head>
   <body>
     <div id="desktop">
-      <div class="ui container" id="a4">
-        <div class="ui basic very padded segment">
-          <div class="ui basic segment">
-            <div>
-              <img src="assets/images/avatar.jpg" style="height:9em; float: left" />
-            </div>
-            <h1 class="ui capitalized header" style="margin-bottom: 0;">
-              Daria Korotkykh
-            </h1>
-            <h5 class="ui header" style="margin: 0;">
-              community developer &bull; product owner &bull; mawangev &bull; pixel artist
-            </h5>
-            <!-- Contacts -->
-            <div class="ui horizontal list">
-              <div class="item">
-                <i class="mail icon"></i>
-                <a href="mailto:daria@binary-studio.com">daria.korotkykh@icloud.com</a>
-              </div>
-              <div class="item">
-                <i class="black facebook f icon"></i>
-                <a class="facebook" href="https://www.facebook.com/darina.korotkih">Daria Korotkykh</a>
-              </div>
-              <div class="item">
-                <i class="black telegram plane icon"> </i>
-                <a class="telegram" href="https://telegram.me/dasha_korotkykh" rel="author">@dasha_korotkykh</a>
+      <div id="page-1" class="page">
+        <div class="stackable grid">
+          <div class="row">
+            <div class="three wide center aligned column">
+              <div id="avatar-wrapper">
+                <object id="avatar" data="./assets/images/avatar.svg" role="img" aria-label="My profile picture"></object>
               </div>
             </div>
             <div class="thirteen wide column">
-              <h1 id="about">
-                <div id="hello">&mdash; Hello,</div>
-                <div>
-                  I’m community developer with 5 years experience of handling urgent management requests and carrying out long-run corporate projects and one-time events. I am not very sweet but ever curious about tech and committed to my team. Apart from that I am a growing gamedev fan.
+              <div class="stackable grid">
+                <div class="sixteen wide column">
+                  <h1 id="name">Daria Korotkykh</h1>
+                  <div>community developer &bull; product owner &bull; mawangev &bull; pixel artist</div>
+                  <ul id="contacts">
+                    <li>
+                      <a href="https://www.facebook.com/darina.korotkih" rel="author" class="facebook">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/></svg>
+                        <span>darina.korotkih</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:dasha.korotkykh@me.com" rel="author" class="mail">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                        <span>dasha.korotkykh@me.com</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://telegram.me/dasha_korotkykh" rel="author" class="skype">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"/></svg>
+                        <span>dasha_korotkykh</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </h1>
+                <div class="sixteen wide mobile only column">
+                  <div class="divider"></div>
+                </div>
+                <div class="sixteen wide column">
+                  <h2>Résumé</h2>
+                  <p>&mdash; Hello! I’m community developer with 5 years experience of handling urgent management requests and carrying out long-run corporate projects and one-time events. I am not very sweet but ever curious about tech and committed to my team. Apart from that I am a growing gamedev fan.</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="zigzag"></div>
-          <div class="ui basic segment tags" style="display: none;">
-            <h3>2019 CHALLENGES</h3>
-            <a class="ui label">blind typing in English</a>
-            <a class="ui label">do a workout every day</a>
-            <a class="ui label" href="https://github.com/dasha-korotkykh">push some stuff here on regular basis<i class="github icon"></i></a>
-            <a class="ui label">stop being lousy, stop being coward</a>
-            <a class="ui-label">actually play some of these games on steam</a>
-            <a class="ui label" href="https://www.freecodecamp.org/daria-korotkih">finish freeCodeCamp</a>
+          <div class="row">
+            <div class="sixteen wide column">
+              <div class="fat divider"></div>
+            </div>
           </div>
-          <div class="ui basic segment">
-            <div class="ui equal width stackable grid">
-              <div class="ui ten wide column">
+          <div class="row">
+            <div class="ten wide column">
+              <div class="segment">
+                <h3>Experience</h3>
                 <!-- 2018 -->
                 <div class="year" data-year="2018">
                   <div class="event" data-type="jam">
@@ -1365,84 +1355,59 @@
                   </div>
                 </div>
               </div>
-              <div class="ui six wide column">
-                <div class="">
-                  <h3>POSESS</h3>
-                  <a class="ui label">upper-int English</a>
-                  <a class="ui label" href="https://www.16personalities.com/esfp-personality">entertainer personality</a>
-                  <audio preload="none">
+            </div>
+            <div class="six wide column">
+              <div class="segment">
+                <h3>Languages</h3>
+              </div>
+              <div class="segment">
+                <h3>Skills</h3>
+              </div>
+              <div class="segment">
+                <h3>Character</h3>
+              </div>
+              <div class="segment">
+                <h3>Possess</h3>
+                <p class="tags">
+                  <span class="nowrap">UPPER-INT ENGLISH</span> <a class="nowrap" href="https://www.16personalities.com/esfp-personality">ENTERTAINER PERSONALITY</a> <audio preload="none">
                     <source src="./assets/EntertainerPersonality.mp3" type="audio/mpeg" />
-                  </audio>
-                  <a class="ui label" href="https://steamcommunity.com/id/dashakorotkykh/">52 games on steam</a>
-                  <a class="ui label">loud voice</a>
-                  <a class="ui label">empathy</a>
-                  <a class="ui label">extreme agility</a>
-                  <a class="ui label">devotion</a>
-                  <a class="ui label">motorcycle</a>
-                  <a class="ui label">diplomacy</a> <a class="ui label">care</a>
-                  <a class="ui label">chauvinism</a>
-                  <a class="ui label">confidence</a>
-                  <div class="ui label">
-                    public speaking counter
-                    <div class="detail">
-                      <font weight="700">43</font>
-                    </div>
-                  </div>
-                  <a class="ui label">common language with difficult people</a>
-                  <a class="ui label">affection for people i work with</a>
-                  <a class="ui label">affection from them</a>
-                </div>
-                <div class="">
-                  <h3>USE</h3>
-                  <a class="ui label" href=" " title="Apart from general products included in G Suite – Flights, Jamboard, Fonts & Data Studio.">google products</a>
-                  <a class="ui label" href=" " title="To plan and track">trello & toggl</a>
-                  <a class="ui label" href=" " title="For birthday congratulations & 'deliver it yesterday' requests">improvisation</a>
-                  <a class="ui label" href=" " title="To block out open-space and jot down texts for posts and newsletters">noisly</a>
-                  <a class="ui label" href="_" title="Though it requires attention all the time, it looks and feels so much better">ubuntu os</a>
-                  <a class="ui label" href=" " title="Draft some posters, cards and SM pics real quick">canva</a>
-                  <a class="ui label" href=" " title="Best pixel art SW out there, and open-source!">piskel</a>
-                  <a class="ui label" href=" " title="Basic but exciting gamedev engine, now in browser">construct</a>
-                  <a class="ui label" href=" " title="For the sake of comfortable version control">github & gitkraken</a>
-                  <a class="ui label" href=" " title="Newsletters and campaigns, large and even larger">mailjet & mailchimp</a>
-                  <a class="ui label" href=" " title="Hateful but useful, particularly in videomaking">adobe cs</a>
-                </div>
-                <div class="">
-                  <h3>LIKE</h3>
-                  <p>
-                    <a class="ui label">fc barcelona</a>
-                    <a class="ui label">pixel art</a>
-                    <a class="ui label">K<font color="red">inder</font></a>
-                    <a class="ui label">game jams</a>
-                    <a class="ui label">dawn</a>
-                    <a class="ui label">apple cider & red semisweet</a>
-                    <a class="ui label">books in Polish</a>
-                    <a class="ui label">fog</a>
-                    <a class="ui label">grey colour</a>
-                    <a class="ui label">programming jokes</a>
-                    <a class="ui label">techno</a>
-                    <a class="ui label">smell of washing machine powder</a>
-                  </p>
-                </div>
-                <div class="">
-                  <h3>DISLIKE</h3>
-                  <p>
-                    <a class="ui label">small talk</a>
-                    <a class="ui label">public transport</a>
-                    <a class="ui label">mushrooms</a>
-                    <a class="ui label">comedies</a>
-                    <a class="ui label">irresponsibility</a>
-                    <a class="ui label">cocktails</a>
-                    <a class="ui label">bergamot</a>
-                    <a class="ui label">weather under -3°C</a>
-                    <a class="ui label">lies</a>
-                    <a class="ui label">gift certificates</a>
-                    <a class="ui label">bureaucracy</a>
-                    <a class="ui label">facebook</a>
-                  </p>
-                </div>
+                  </audio> <a class="nowrap" href="https://steamcommunity.com/id/dashakorotkykh/" rel="external">52 GAMES ON STEAM</a> <span class="nowrap">LOUD VOICE</span> EMPATHY <span class="nowrap">EXTREME AGILITY</span> DEVOTION MOTORCYCLE DIPLOMACY CARE CHAUVINISM CONFIDENCE <span class="nowrap">43 PUBLIC TALKS</span> <span class="nowrap">COMMON LANGUAGE WITH DIFFICULT PEOPLE</span> <span class="nowrap">AFFECTION FOR PEOPLE I WORK WITH</span> <span class="nowrap">AFFECTION FROM THEM</span>
+                </p>
+              </div>
+              <div class="segment">
+                <h3>Use</h3>
+                <p class="tags">
+                  <a class="nowrap" href="" rel="external" title="Apart from general products included in G Suite – Flights, Jamboard, Fonts & Data Studio.">GOOGLE PRODUCTS</a> <a href="" rel="external" title="To plan and track">TRELLO</a> <a href="" rel="external" title="To plan and track">TOGGL</a> <span title="For birthday congratulations & 'deliver it yesterday' requests">IMPROVISATION</span> <a href="" rel="external" title="To block out open-space and jot down texts for posts and newsletters">NOISLY</a> <a href="" rel="external" title="Though it requires attention all the time, it looks and feels so much better">UBUNTU</a> <a href="" rel="external" title="Draft some posters, cards and SM pics real quick">CANVA</a> <a href="" rel="external" title="Best pixel art SW out there, and open-source!">PISKEL</a> <a href="" rel="external" title="Basic but exciting gamedev engine, now in browser">CONSTRUCT</a> <a href="" rel="external" title="For the sake of comfortable version control">GITHUB</a> <a href="" rel="external" title="For the sake of comfortable version control">GITKRAKEN</a> <a href="" rel="external" title="Newsletters and campaigns, large and even larger">MAILJET</a> <a href="" rel="external" title="Newsletters and campaigns, large and even larger">MAILCHIMP</a> <a class="nowrap" href="" rel="external" title="Hateful but useful, particularly in videomaking">ADOBE CS</a>
+                </p>
+              </div>
+              <div class="segment">
+                <h3>Likes&#x1f603;</h3>
+                <p class="tags">
+                  <span class="nowrap">FC BARCELONA</span> <span class="nowrap">PIXEL ART</span> KINDER <span class="nowrap">GAME JAMS</span> DAWN <span class="nowrap">APPLE CIDER</span> <span class="nowrap">RED SEMISWEET</span> <span class="nowrap">BOOKS IN POLISH</span> FOG <span class="nowrap">GREY COLOUR</span> <span class="nowrap">PROGRAMMING JOKES</span> TECHNO <span class="nowrap">SMELL OF WASHING MACHINE POWDER</span>
+                </p>
+              </div>
+              <div class="segment">
+                <h3>Dislikes&#x1f61e;</h3>
+                <p class="tags"><span class="nowrap">SMALL TALK</span> <span class="nowrap">PUBLIC TRANSPORT</span> MUSHROOMS COMEDIES IRRESPONSIBILITY COCKTAILS BERGAMOT <span class="nowrap">WEATHER UNDER -3°C</span> LIES <span class="nowrap">GIFT CERTIFICATES</span> BUREAUCRACY FACEBOOK</p>
+              </div>
+              <div class="segment">
+                <h3>Wants&#x263a;</h3>
+                <p class="tags bulleted">
+                  <span>BLIND TYPING IN ENGLISH</span><span>DO A WORKOUT EVERY DAY</span><span><a href="https://github.com/dasha-korotkykh" rel="external">PUSH SOME STUFF HERE ON REGULAR BASIS</a></span> <span>STOP BEING LOUSY</span><span>STOP BEING COWARD</span><span>ACTUALLY PLAY SOME OF THESE GAMES ON STEAM</span><span><a href="https://www.freecodecamp.org/daria-korotkih" rel="external">FINISH FREECODECAMP</a></span>
+                </p>
+              </div>
+              <div class="segment">
+                <h3>Education</h3>
+              </div>
+              <div class="segment">
+                <h3>Values</h3>
+                <p class="tags">RESPECT TRANSPARENCY</p>
+              </div>
+              <div class="segment">
+                <h3>Cultivates</h3>
+                <p class="tags">HONESTY OPEN-MINDNESS</p>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
