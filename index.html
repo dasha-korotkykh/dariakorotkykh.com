@@ -19,48 +19,70 @@
   <meta content="http://https://dariakorotkykh.com/" property="og:url" />
   <meta content="website" property="og:type" />
   <meta content="Résumé" property="og:title" />
-  <meta content="&mdash; Hello! I’m cheerful event-mawangev with 4 years of experience. I strive to make developers I work with feel comfortable and happy at their jobsite."
-    property="og:description" />
+  <meta content="&mdash; Hello! I’m cheerful event-mawangev with 4 years of experience. I strive to make developers I work with feel comfortable and happy at their jobsite." property="og:description" />
   <meta content="http://https://dariakorotkykh.com/images/avatar.gif" property="og:image" />
   <meta content="en_US" property="og:locale" />
   <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
   <style>
-    .event .meta:after {
-        font-family: "Roboto Mono", monospace !important;
-        font-weight: 500;
-        font-size: 11px;
-        line-height: 16px;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        color: #ffffff;
-        display: inline-block;
-        padding: 0 8px;
-        border-radius: 15px;
-        height: 16px;
-        margin-left: 2px;
-        vertical-align: middle;
-        content: "work";
-        background: blue;
-      }
-      .event[data-type="education"] .meta:after {
-        content: "education";
-        background: violet;
-      }
-      .event[data-type="competition"] .meta:after {
-        content: "competition";
-        background: darkviolet;
-      }
-      .event[data-type="hackathon"] .meta:after {
-        content: "hackathon";
-        background: midnightblue;
-      }
-      .event[data-type="jam"] .meta:after {
-        content: "jam";
-        background: deepskyblue;
-      }
-    </style>
+    /* Tags */
+    [data-tag] > *:first-child:after {
+      font-size: 0.6em;
+      line-height: 1rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      display: inline-block;
+      padding: 0em 0.75em;
+      border-radius: 15px;
+      height: 1rem;
+      margin-left: 0.5em;
+      margin-top: -1px;
+      vertical-align: middle;
+      content: "work";
+      background: blue;
+    }
+    [data-tag="education"] > *:first-child:after {
+      content: "education";
+      background: violet;
+    }
+    [data-tag="hackathon"] > *:first-child:after {
+      content: "hackathon";
+      background: midnightblue;
+    }
+    [data-tag="jam"] > *:first-child:after {
+      content: "jam";
+      background: deepskyblue;
+    }
+    [data-tag="talk"] > *:first-child:after {
+      content: "talk";
+      background: fuchsia;
+    }
+
+    /* Wave */
+    #wave {
+      border-top: 20em solid;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      color: #0052CC;
+    }
+
+    /* Pages */
+    #pages {
+      background: white;
+      z-index: 2;
+      position: relative;
+    }
+  </style>
 </head>
 <body>
+  <div id="wave">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 126" style="enable-background: new 0 0 1440 126; display: block; transform: rotate(180deg); position: relative; top: -1px;" xml:space="preserve">
+      <path fill="currentColor" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z"></path>
+    </svg>
+  </div>
   <div id="pages">
     <div class="page">
       <div class="stackable grid">
@@ -74,7 +96,7 @@
             <div class="stackable grid">
               <div class="sixteen wide column">
                 <h1 class="name">Daria Korotkykh</h1>
-                <div class="job">community developer &bull; product owner &bull; mawangev &bull; pixel artist</div>
+                <div class="job">community developer • product owner • mawangev • pixel artist</div>
                 <ul class="contacts">
                   <li>
                     <a href="mailto:dasha.korotkykh@me.com" rel="author" class="mail">
@@ -93,7 +115,7 @@
                   <li>
                     <a href="https://www.facebook.com/daria.korotkykh" rel="author" class="facebook">
                       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" /></svg>
+                        <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg>
                       <span>daria.korotkykh</span>
                     </a>
                   </li>
@@ -112,7 +134,7 @@
               </div>
               <div class="sixteen wide column">
                 <h2>Résumé</h2>
-                <p>&mdash; Hello! I’m a community developer with 5 years experience of handling urgent management
+                <p>— Hello! I’m a community developer with 5 years experience of handling urgent management
                   requests and carrying out long-run corporate projects and one-time events. I am not very sweet but
                   ever curious about tech and committed to my team. Apart from that I am a growing gamedev fan.</p>
               </div>
@@ -128,81 +150,76 @@
           <div class="ten wide column">
             <div class="segment">
               <h3>Experience</h3>
-              <!-- 2018 -->
+              <h6>Recent</h6>
               <ul class="timeline">
-                <li class="event" data-type="jam">
+                <li data-tag="talk">
                   <p><em>23<sup>th</sup> November 2018</em></p>
                   <p>Gave a lightning talk about <strong>Happiness Management</strong> at <strong>.NET User Group</strong></p>
                 </li>
-              </ul>
-              <ul class="timeline">	
-                <li class="event" data-type="jam">
-                  <p><em>November 2018</em></p>
-                  <p>Covered basics of Construct, easy and flexible 2D game engine</p>
-                </li>
-              </ul>
-              <ul class="timeline">
-                <li class="event" data-type="jam">
-                  <p><em>7<sup>th</sup> – 15<sup>th</sup> July 2018</em></p>
-                  <p>Spent white nights on a multi-level pixel art slasher <strong>Raido</strong> at week-long
-                    <strong>Castle Game Jam</strong> in an actual Sweden castle</p>
-                </li>
-              </ul>
-              <ul class="timeline">
-                <li class="event" data-type="jam">
-                  <p><em>26<sup>th</sup> – 28<sup>th</sup> January 2018</em></p>
-                  <p>Did pixel-art, localization in 4 languages and voiceover for top-down shooter "Transmission
-                    Lost" at <strong><a href="http://krakjam.pl/">KrakJam - Global Game Jam</a></strong></p>
-                </li>
-              </ul>
-              <!-- 2017 -->
-              <ul class="timeline">
-                <li class="event" data-type="jam">
-                  <p><em>9<sup>th</sup> – 10<sup>th</sup> December 2017</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="przeddziemmie">
-                        <label for="przeddziemmie" class="summary">Invented a new Polish word <em>Przeddzemie</em> at
-                        <strong><a href="http://senseigamejam.pl/">Wroclaw Sensei Game Jam</a></strong></label> 
-                        <div>
-                            <ul>
-                              <li>Przeddzemmie describes organizers' ambiance right before game jam, and we wrote a <a href="https://daniko.itch.io/przeddzemie">game about it</a></li>
-                            <li>Learned a few Catholic / folklore songs in Polish </li>
-                          </ul>
-                        </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <ul class="timeline">
-                <li class="event" data-type="jam">
-                  <p><em>November 2017</em></p>
-                  <p>Created an extremely low resolution one-level game with four endings <a href="https://merlin-ua.itch.io/tower-64">Tower 62<sup>2</sup></a> at <strong>LowRezJam</strong> <em><sup>(online)</sup></em></p>
-                </li>
-              </ul>
-              <ul class="timeline">
-                <li class="event" data-type="jam">
-                  <p><em>28<sup>th</sup> – 30<sup>th</sup> July 2017</em></p>
-                  <p>Compiled 2D and 3D art in a one-level game <em>Jas Sni o Nieznanym</em> at <strong><a href="http://slavicgamejam.org/">Warsaw Slavic Game Jam</a></strong></p>
-                </li>
-              </ul>
-              <ul class="timeline">
-                <li class="event" data-type="jam">
-                  <p><em>27<sup>th</sup> – 29<sup>th</sup> January 2017</em></p>
-                  <p>Started a habit of attending game jams in Poland with <strong><a href="hhttps://www.facebook.com/events/1116260575151201">KrakJam Global Game Jam</a></strong></p>
-                </li>
-              </ul>
-              <!-- 2016 -->
-              <ul class="timeline">
-                <li class="event">
-                  <p><em>1<sup>st</sup> September 2016</em></p>
+                <li>
+                  <p><em>1<sup>st</sup> September 2017</em></p>
                   <p>Stopped hating Lviv</p>
+                </li>
+                <li class="details">
+                  <input type="checkbox" id="jamming">
+                  <label for="jamming" class="summary">I really love jamming! So I <strong>jammed</strong> on <strong>7 game jams</strong>🕹!</label>
+                  <div style="
+                    margin-top: 0.5em;
+                    padding-left: 0.75em;
+                    border-left: 1px dotted black;
+                    margin-left: -0.75em;
+                  ">
+                    <ul class="timeline">
+                      <li data-tag="jam">
+                        <p><em>November 2018</em></p>
+                        <p>Covered basics of Construct, easy and flexible 2D game engine</p>
+                      </li>
+                      <li data-tag="jam">
+                        <p><em>7<sup>th</sup> – 15<sup>th</sup> July 2018</em></p>
+                        <p>Spent white nights on a multi-level pixel art slasher <strong>Raido</strong> at week-long
+                          <strong>Castle Game Jam</strong> in an actual Sweden castle</p>
+                      </li>
+                      <li data-tag="jam">
+                        <p><em>26<sup>th</sup> – 28<sup>th</sup> January 2018</em></p>
+                        <p>Did pixel-art, localization in 4 languages and voiceover for top-down shooter "Transmission
+                          Lost" at <strong><a href="http://krakjam.pl/">KrakJam - Global Game Jam</a></strong></p>
+                      </li>
+                      <li data-tag="jam">
+                        <p><em>9<sup>th</sup> – 10<sup>th</sup> December 2017</em></p>
+                        <ul>
+                          <li class="details">
+                            <input type="checkbox" id="przeddziemmie">
+                              <label for="przeddziemmie" class="summary">Invented a new Polish word <em>Przeddzemie</em> at
+                              <strong><a href="http://senseigamejam.pl/">Wroclaw Sensei Game Jam</a></strong></label> 
+                              <div>
+                                  <ul>
+                                    <li>Przeddzemmie describes organizers' ambiance right before game jam, and we wrote a <a href="https://daniko.itch.io/przeddzemie">game about it</a></li>
+                                  <li>Learned a few Catholic / folklore songs in Polish </li>
+                                </ul>
+                              </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li data-tag="jam">
+                        <p><em>November 2017</em></p>
+                        <p>Created an extremely low resolution one-level game with four endings <a href="https://merlin-ua.itch.io/tower-64">Tower 62<sup>2</sup></a> at <strong>LowRezJam</strong> <em><sup>(online)</sup></em></p>
+                      </li>
+                      <li data-tag="jam">
+                        <p><em>28<sup>th</sup> – 30<sup>th</sup> July 2017</em></p>
+                        <p>Compiled 2D and 3D art in a one-level game <em>Jas Sni o Nieznanym</em> at <strong><a href="http://slavicgamejam.org/">Warsaw Slavic Game Jam</a></strong></p>
+                      </li>
+                      <li data-tag="jam">
+                        <p><em>27<sup>th</sup> – 29<sup>th</sup> January 2017</em></p>
+                        <p>Started a habit of attending game jams in Poland with <strong><a href="hhttps://www.facebook.com/events/1116260575151201">KrakJam Global Game Jam</a></strong></p>
+                      </li>
+                    </ol>
+                  </div>
                 </li>
               </ul>
               <ul class="timeline highlighted">
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>28<sup>th</sup> November 2016 – current</em></p>
-                  <p><strong>HR Marketing, Head of Academy</strong> at <strong><a href="binary-studio.com">Binary	Studio</a></strong></span></p>
+                  <p><strong>HR Marketing, Head of Academy</strong> at <strong><a href="binary-studio.com">Binary	Studio</a></strong></p>
                     <ul>
                       <li>write weekly newsletter Pirozhki, see to timely posting in corporate media channels, budget and help with any kind of administrative tasks</li>
                       <li>make Binary Studio Academy known within university students, prepare curriculum with
@@ -315,8 +332,8 @@
                               </li>
                               <li>
                                 <p><em>16<sup>th</sup> March 2017</em> AWS Services. University meetup</p>
-                                <p>Vinnytsa — DonNU <!--(21)--><p>
-                              </li>
+                                <p>Vinnytsa — DonNU <!--(21)--></p><p>
+                              </p></li>
                               <li>
                                 <p><em>26<sup>th</sup> February 2017</em> Ski Weekend</p>
                                 <p>Slavske — Trostian <!--(26)--></p>
@@ -335,25 +352,9 @@
                     </ul>
                 </li>
               </ul>	
+              <h6>Back then</h6>		
               <ul class="timeline">
-                <li class="event" data-type="education">
-                  <p><em>October 2016 – December 2016</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="campus">
-                      <label for="campus" class="summary"><strong>Graduate</strong> of <strong><a href="https://education.github.com/experts">GitHub Campus Experts programme</a></strong></label>
-                      <div>
-                        <ul>
-                          <li>completed GitHub course following <a href="https://hackcon.mlh.io/events/europe/">HackCon IV</a></li>
-                          <li>organized <a href="https://localhackday.mlh.io/">Kyiv Local Hack Day</a> on 3<sup>rd</sup> of December</li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>		
-              <ul class="timeline">
-                <li class="event" data-type="hackathon">
+                <li data-tag="hackathon">
                   <p><em>28<sup>th</sup> – 30<sup>th</sup> October 2016</em></p>
                   <ul>
                     <li class="details">
@@ -373,7 +374,7 @@
                 </li>
               </ul>			
               <ul class="timeline">
-                <li class="event" data-type="hackathon">
+                <li data-tag="hackathon">
                   <p><em>6<sup>th</sup> – 8<sup>th</sup> May 2016</em></p>
                   <ul>
                     <li class="details">
@@ -391,7 +392,7 @@
                 </li>
               </ul>	
               <ul class="timeline">
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>May 2016 – October 2016</em></p>
                   <ul>
                     <li class="details">
@@ -409,7 +410,7 @@
                 </li>
               </ul>	
               <ul class="timeline">
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>April 2016</em></p>
                   <ul>
                     <li class="details">
@@ -428,7 +429,7 @@
                 </li>
               </ul>	
               <ul class="timeline">
-                <li class="event" data-type="hackathon">
+                <li data-tag="hackathon">
                   <p><em>5<sup>th</sup> – 6<sup>th</sup> March 2016</em></p>
                   <ul>
                     <li class="details">
@@ -448,7 +449,7 @@
                 </li>
               </ul>			
               <ul class="timeline"> 
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>March 2016 – June 2016</em></p>
                   <ul>
                     <li class="details">
@@ -468,98 +469,102 @@
                 </li>
               </ul>	
               <ul class="timeline">
-                <li class="event" data-type="hackathon">
-                  <p><em>27<sup>th</sup> – 28<sup>th</sup> February 2016</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="nses">
-                      <label for="nses" class="summary">Presented small app called "No Spam Epic Shit" at <strong><a href="https://dou.ua/calendar/9777/">INT20H
-                        Hackathon</a></strong></label>
-                      <div>
+                <li class="details">
+                  <input type="checkbox" id="hackathoning">
+                  <label for="hackathoning" class="summary">I like hackathoning! So I <strong>hackathoned</strong> on <strong>5 hackathons</strong>⌨!</label>
+                  <div style="
+                    margin-top: 0.5em;
+                    padding-left: 0.75em;
+                    border-left: 1px dotted black;
+                    margin-left: -0.75em;
+                  ">
+                    <ul class="timeline">
+                      <li data-tag="hackathon">
+                        <p><em>27<sup>th</sup> – 28<sup>th</sup> February 2016</em></p>
                         <ul>
-                          <li>our team created algorithm in Machine Learning category for detecting spam in given mail
-                              database, therefore it didn't require pretty design or any kind of mockups</li>
+                          <li class="details">
+                            <input type="checkbox" id="nses">
+                            <label for="nses" class="summary">Presented small app called "No Spam Epic Shit" at <strong><a href="https://dou.ua/calendar/9777/">INT20H
+                              Hackathon</a></strong></label>
+                            <div>
+                              <ul>
+                                <li>our team created algorithm in Machine Learning category for detecting spam in given mail
+                                    database, therefore it didn't require pretty design or any kind of mockups</li>
+                              </ul>
+                            </div>
+                          </li>
                         </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>	
-              <!-- 2015 -->
-              <ul class="timeline">	
-                <li class="event" data-type="hackathon">
-                  <p><em>12<sup>th</sup> – 13<sup>th</sup> December 2015</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="proffstore">
-                      <label for="proffstore" class="summary">Enlisted as Product Manager at <strong>Proffstore Hackathon</strong></label>
-                      <div>
+                      </li>
+                      <li data-tag="hackathon">
+                        <p><em>12<sup>th</sup> – 13<sup>th</sup> December 2015</em></p>
                         <ul>
-                          <li>gathered the biggest team at the biggest EU hackathon <em>(when organizing hacking/jamming event, chasing the numbers is a bad idea)</em></li>
-                          <li>built a web-platform called "Lite" for connecting freelancers and customers</li>
-                          <li>our presentation was so <strong>hot</strong>, that the heating pipe actually caught fire while I was doing it</li>
+                          <li class="details">
+                            <input type="checkbox" id="proffstore">
+                            <label for="proffstore" class="summary">Enlisted as Product Manager at <strong>Proffstore Hackathon</strong></label>
+                            <div>
+                              <ul>
+                                <li>gathered the biggest team at the biggest EU hackathon <em>(when organizing hacking/jamming event, chasing the numbers is a bad idea)</em></li>
+                                <li>built a web-platform called "Lite" for connecting freelancers and customers</li>
+                                <li>our presentation was so <strong>hot</strong>, that the heating pipe actually caught fire while I was doing it</li>
+                              </ul>
+                            </div>
+                          </li>
                         </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>	
-              <ul class="timeline">
-                <li class="event" data-type="jam">
-                  <p><em>28<sup>th</sup> – 29<sup>th</sup> November 2015</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="jamkpi">
-                      <label for="jamkpi" class="summary">Stepped into gamedev as Artist & Marketing person at <strong><a href="http://gamejamkpi.github.io/">Game
-                        Jam KPI</a></strong></label>
-                      <div>
+                      </li>
+                      <li data-tag="jam">
+                        <p><em>28<sup>th</sup> – 29<sup>th</sup> November 2015</em></p>
                         <ul>
-                          <li>created art and wrote jokes for an 8-bit game about developers hunting zombies and looking for
-                              expensive cheese</li>
-                          <li>took the People's Choice Award and won the Ubisoft nomination for Best Presentation</li>
+                          <li class="details">
+                            <input type="checkbox" id="jamkpi">
+                            <label for="jamkpi" class="summary">Stepped into gamedev as Artist &amp; Marketing person at <strong><a href="http://gamejamkpi.github.io/">Game
+                              Jam KPI</a></strong></label>
+                            <div>
+                              <ul>
+                                <li>created art and wrote jokes for an 8-bit game about developers hunting zombies and looking for
+                                    expensive cheese</li>
+                                <li>took the People's Choice Award and won the Ubisoft nomination for Best Presentation</li>
+                              </ul>
+                            </div>
+                          </li>
                         </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>		
-              <ul class="timeline">
-                <li class="event" data-type="hackathon">
-                  <p><em>23<sup>rd</sup> – 24<sup>th</sup> October 2015</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="gdg">
-                      <label for="gdg" class="summary">Explored tech con <strong><a href="https://devfest.gdg.org.ua/">GDG Lviv</a></strong></label>
-                      <div>
+                      </li>
+                      <li data-tag="hackathon">
+                        <p><em>23<sup>rd</sup> – 24<sup>th</sup> October 2015</em></p>
                         <ul>
-                          <li>learned how to use IDE in a browser</li>
-                          <li>hated Lviv for the first time</li>
-                          <li>realized that my vocation is to care for my developers <em>(feed them, give them medicine and deliver them to the hotel after the midnight afterparty)</em></li>
-                          <li>became acquaitanted with GDG orgteam, and helped them organize 4 events in Kyiv later in exchange for a grasp on what Google Developer Groups are like in action</li>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>					
-              <ul class="timeline">
-                <li class="event" data-type="hackathon">
-                  <p><em>3<sup>rd</sup> – 4<sup>th</sup> October 2015</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="linguahack">
-                      <label for="linguahack" class="summary"><strong>Started hackathoning</strong> at <strong><a href="http://www.linguahack.com/">Linguahack</a></strong></label>
-                      <div>
+                          <li class="details">
+                            <input type="checkbox" id="gdg">
+                            <label for="gdg" class="summary">Explored tech con <strong><a href="https://devfest.gdg.org.ua/">GDG Lviv</a></strong></label>
+                            <div>
+                              <ul>
+                                <li>learned how to use IDE in a browser</li>
+                                <li>hated Lviv for the first time</li>
+                                <li>realized that my vocation is to care for my developers <em>(feed them, give them medicine and deliver them to the hotel after the midnight afterparty)</em></li>
+                                <li>became acquaitanted with GDG orgteam, and helped them organize 4 events in Kyiv later in exchange for a grasp on what Google Developer Groups are like in action</li>
+                            </ul></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li data-tag="hackathon">
+                        <p><em>3<sup>rd</sup> – 4<sup>th</sup> October 2015</em></p>
                         <ul>
-                          <li>attended my first hackathon ever and joined amazing team, which imipacted my life beyond retrieve</li>
-                          <li>with my little knowledge and utmost efforts did interface mockups, testing and presentation for a browser-based game of Alias you (or up to 10 players) can play with A.I. <em>(which talks Ukrainian and swears occasionally)</em></li>
-                          <li>presented the game and took 1<sup>st</sup> place for it</li>
-                      </div>
-                    </li>
-                  </ul>
+                          <li class="details">
+                            <input type="checkbox" id="linguahack">
+                            <label for="linguahack" class="summary"><strong>Started hackathoning</strong> at <strong><a href="http://www.linguahack.com/">Linguahack</a></strong></label>
+                            <div>
+                              <ul>
+                                <li>attended my first hackathon ever and joined amazing team, which imipacted my life beyond retrieve</li>
+                                <li>with my little knowledge and utmost efforts did interface mockups, testing and presentation for a browser-based game of Alias you (or up to 10 players) can play with A.I. <em>(which talks Ukrainian and swears occasionally)</em></li>
+                                <li>presented the game and took 1<sup>st</sup> place for it</li>
+                            </ul></div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </div>
                 </li>
-              </ul>		
+              </ul>
               <ul class="timeline">
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>August 2015 – February 2016</em></p>
                   <ul>
                     <li class="details">
@@ -568,19 +573,19 @@
                       <div>
                         <ul>
                           <li>established community of Java, JS, PHP engineers and QAs employed as volunteer mentors (about
-                              200 people, Kyiv & remote) and libbied their interests</li>
+                              200 people, Kyiv &amp; remote) and libbied their interests</li>
                           <li>had the opportunity to invent the whole pipeline of onboarding, knowledge sharing and support
                               from scratch</li>
                           <li>supervised educational process (4 to 8 tracks simultaneously)</li>
                           <li>hired myself assistant to help with operational tasks</li>
                           <li>started learning IT basiсs</li>
-                      </div>
+                      </ul></div>
                     </li>
                   </ul>
                 </li>
               </ul>		
               <ul class="timeline">
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>July 2015 – September 2015</em></p>
                   <ul>
                     <li class="details">
@@ -594,14 +599,13 @@
                           <li>prepared marketing strategy (announcements, texts and where to place them)</li>
                           <li>contacted media partners on press releases and donators on providing valuable charity lottery
                               items</li>
-                      </div>
+                      </ul></div>
                     </li>
                   </ul>
                 </li>
-              </ul>		
-              <!-- 2014 -->
+              </ul>
               <ul class="timeline">	
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>December 2014 – July 2015</em></p>
                     <ul>
                       <li class="details">
@@ -620,7 +624,7 @@
                 </li>
               </ul>
               <ul class="timeline">
-                <li class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>June 2013 – September 2013</em></p>
                   <ul>
                     <li class="details">
@@ -638,9 +642,8 @@
                   </ul>
                 </li>
               </ul>
-              <!-- 2012 -->
               <ul class="timeline">	
-                <div class="event" data-type="work">
+                <li data-tag="work">
                   <p><em>October 2012 – June 2013</em></p>
                   <ul>
                     <li class="details">
@@ -659,13 +662,111 @@
                   </ul>
                 </li>
               </ul>
-              <ul class="timeline highlighted">
-                <li class="event" data-type="education">
+            </div>
+          </div>
+          <div class="six wide column">          
+            <div class="segment">
+              <h3>Languages</h3>
+              <p class="tags small"><span>🇺🇦<strong>УКРАЇНСЬКА</strong></span> <span>🇷🇺<strong>РУССКИЙ</strong></span> <span>🇺🇸<strong>ENGLISH</strong></span></p>
+            </div>
+            <div class="segment">
+              <h3>Possess</h3>
+              <p class="tags small">
+                <span class="nowrap">UPPER-INT ENGLISH</span> <a class="nowrap" href="https://www.16personalities.com/esfp-personality">ENTERTAINER
+                  PERSONALITY</a> <audio preload="none">
+                  <source src="./assets/sounds/EntertainerPersonality.mp3" type="audio/mpeg">
+                </audio> <a class="nowrap" href="https://steamcommunity.com/id/dashakorotkykh/" rel="external">56 GAMES
+                  ON STEAM</a> RESOURCEFULLNESS EMPATHY <span class="nowrap">EXTREME AGILITY</span>
+                DEVOTION MOTORCYCLE DIPLOMACY CARE LOYALTY <span class="nowrap">43 PUBLIC TALKS</span>
+                <span class="nowrap">COMMON LANGUAGE WITH DIFFICULT PEOPLE</span>
+              </p>
+            </div>
+            <div class="segment">
+              <h3>Use</h3>
+              <p class="tags small">
+                <a class="nowrap" href="" title="Apart from general products included in G Suite – Flights, Jamboard, Fonts &amp; Data Studio.">GOOGLE
+                  PRODUCTS</a> 
+                <a href="https://trello.com" title="And 'branches' on most of things I work with">BACKUPS</a>  
+                <a href="https://trello.com" title="To plan and track">TRELLO</a> 
+                <a href="https://toggl.com/" title="To plan and track">TOGGL</a> 
+                <a href="https://coub.com/view/10si69" title="For birthday congratulations &amp; 'deliver it yesterday' requests">IMPROVISATION
+                </a><a href="https://www.noisli.com/" title="To block out open-space and jot down texts for posts and newsletters">NOISLY</a>
+                <a href="" title="Though it requires attention all the time, it looks and feels so much better">UBUNTU</a>
+                <a href="https://www.canva.com/" title="Draft some posters, cards and SM pics real quick">CANVA</a> 
+                <a href="https://www.piskelapp.com" title="Best pixel art SW out there, and open-source!">PISKEL</a> 
+                <a href="" title="Basic but exciting gamedev engine, now in browser">CONSTRUCT</a> 
+                <a href="" title="For the sake of comfortable version control">GITHUB</a> 
+                <a href="" title="For the sake of comfortable version control">GITKRAKEN</a>
+                <a href="" title="Newsletters and campaigns, large and even larger">MAILJET</a> 
+                <a href="" title="Newsletters and campaigns, large and even larger">MAILCHIMP</a> 
+                <a class="nowrap" href="" title="Hateful but useful, particularly in videomaking">ADOBE CS</a>
+              </p>
+            </div>
+            <div class="segment">
+              <h3>Like 😋</h3>
+              <p class="tags small">
+                <span class="nowrap">FC BARCELONA</span> <span class="nowrap">PIXEL ART</span> K<span style="color:red">INDER</span> <span class="nowrap">GAME
+                  JAMS</span> DAWN <span class="nowrap">APPLE CIDER</span> FORMATTING <span class="nowrap">RED SEMISWEET</span>
+                <span class="nowrap">BOOKS IN POLISH</span> FOG <span class="nowrap">GREY COLOUR</span> <span class="nowrap">PROGRAMMING
+                  JOKES</span> KRAKOW GITKRAKEN DANCE <span class="nowrap">IRISH ACCENT</span> <span class="nowrap">SMELL OF WASHING MACHINE POWDER</span>
+              </p>
+            </div>
+            <div class="segment">
+              <h3>Dislike 😕</h3>
+              <p class="tags small"><span class="nowrap">SMALL TALK</span> <span class="nowrap">PUBLIC TRANSPORT</span>
+                MUSHROOMS CONAN DELLUSIONS COCKTAILS BERGAMOT <span class="nowrap">WEATHER UNDER -3°C</span>
+                LIES <span class="nowrap">PASSIVE AGGRESSIVE</span> BUREAUCRACY FACEBOOK</p>
+            </div>
+            <div class="segment">
+              <h3>Want</h3>
+              <p class="tags small bulleted">
+                <span class="tag">BLIND TYPING IN ENGLISH</span><span class="tag">LEARN TO OBSERVE</span><span class="tag">BE FIT</span><span class="tag"><a href="https://github.com/dasha-korotkykh" rel="external">PUSH SOME STUFF HERE ON REGULAR BASIS</a></span> <span class="tag">LEARN VIDEO EDITING</span><span class="tag">BUILD SOTD WEB-APP WITH VOLODYMYR KUSHNIR</span><span><a href="https://www.freecodecamp.org/daria-korotkih" rel="external">FINISH FREECODECAMP</a><span class="tag">LEARN TO DANCE CUTTING-EDGES</span></span>
+              </p>
+            </div>
+            <div class="segment">
+              <h3>Learn</h3>
+              <p class="tags small">
+                <span class="nowrap"><a href="https://www.w3schools.com/">W3SCHOOLS</a></span>
+                <span class="nowrap"><a href="https://developer.mozilla.org/en-US/">MDN</a></span>
+                <span class="nowrap"><a href="https://css-tricks.com/">CSS TRICKS</a></span>
+                <span class="nowrap"><a href="http://maximilyahov.ru/hello/">GLVRD</a></span>
+                <span class="nowrap"><a href="https://www.patreon.com/saint11">PEDRO MEDEIROS</a></span>
+                <span class="nowrap"><a href="https://t.me/gamedevporn">GDP</a></span>
+                <span class="nowrap"><a href="https://what-if.xkcd.com/">XKCD</a></span>
+              </p>
+            </div>            
+            <div class="segment">
+              <h3>Value</h3>
+              <p class="tags small">RESPECT TRANSPARENCY RESPONSIBILITY CONTINUOUS STUDYING ASSISTANCE GENEROSITY ATTENTION FOR DETAILS CRAFTING &amp; CUSTOMIZATION</p>
+            </div>
+            <div class="segment">
+              <h3>Cultivate</h3>
+              <p class="tags small">HONESTY AFFECTION CLARITY CALM ATTITUDE HEDONISM TRUST</p> 
+            </div>
+            <div class="segment">
+              <h3>Education</h3>
+              <ul class="timeline">
+                <li>
+                  <p><em>October 2016 – December 2016</em></p>
+                  <ul>
+                    <li class="details">
+                      <input type="checkbox" id="campus">
+                      <label for="campus" class="summary"><strong>Graduate</strong> of <strong><a href="https://education.github.com/experts">GitHub Campus Experts</a></strong></label>
+                      <div>
+                        <ul>
+                          <li>completed GitHub course following <a href="https://hackcon.mlh.io/events/europe/">HackCon IV</a></li>
+                          <li>organized <a href="https://localhackday.mlh.io/">Kyiv Local Hack Day</a> on 3<sup>rd</sup> of December</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
                   <p><em>1<sup>st</sup> September 2012 – 15<sup>th</sup> June 2016</em></p>
                   <ul>
                     <li class="details">
                       <input type="checkbox" id="naukma">
-                        <label for="naukma" class="summary"><strong>Student</strong> at <strong>Sociology Faculty</strong> at <a href="http://www.ukma.edu.ua/eng/" rel="external"><strong>National University "Kyiv-Mohyla Academy"</strong></a></label> 
+                        <label for="naukma" class="summary"><strong>Student</strong> at <strong>Sociology Faculty</strong> at <a href="http://www.ukma.edu.ua/eng/" rel="external"><strong>National University of "Kyiv-Mohyla Academy"</strong></a></label> 
                         <div>
                           <ul>
                             <li>I chose Sociology as my major for combination of humanitarian, engineering and natural
@@ -679,10 +780,23 @@
                     </li>
                   </ul>
                 </li>
-              </ul>
-              <!-- Teen -->              
-              <ul class="timeline">
-                <li class="event" data-type="education">
+                <li>
+                  <p><em>1<sup>st</sup> September 2007 – 20<sup>th</sup> June 2012</em></p>
+                  <ul>
+                    <li class="details">
+                      <input type="checkbox" id="school">
+                        <label for="school" class="summary"><strong>Student</strong> at <strong>Gymnasium 183 with an emphasis on foreign languages
+                            study</strong></label> 
+                        <div>
+                          <ul>
+                            <li>defended two MAS researches on Logarithm appliance in pottery and Ukrainian theater during WWII</li>
+                            <li>took 2<sup>nd</sup> place at the State Kyiv Olympiad in English twice</li>
+                          </ul>
+                        </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
                   <p><em>September 2007 – May 2010</em></p>
                   <ul>
                     <li class="details">
@@ -699,109 +813,12 @@
                     </li>
                   </ul>
                 </li>
-              </ul>              
-              <ul class="timeline">
-                <li class="event" data-type="education">
-                  <p><em>1<sup>st</sup> September 2007 – 20<sup>th</sup> June 2012</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="school">
-                        <label for="school" class="summary"><strong>Student</strong> at <strong>Gymnasium 183 with an emphasis on foreign languages
-                            study</strong></label> 
-                        <div>
-                          <ul>
-                            <li>defended two MAS researches on Logarithm appliance in pottery and Ukrainian theater during WWII</li>
-                            <li>took 2<sup>nd</sup> place at the State Kyiv Olympiad in English twice</li>
-                          </ul>
-                        </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="six wide column">
-            <div class="segment">
-              <h3>&#128539; Languages</h3>
-              <p class="tags small">&#x1f1fa;&#x1f1e6; <span>УКРАЇНСЬКА</span> &#x1f1f7;&#x1f1fa; <span>РУССКИЙ</span> <span> &#x1f1fa;&#x1f1f8; ENGLISH</span></p>
-            </div>
-            <div class="segment">
-              <h3>&#128524; Possess</h3>
-              <p class="tags small">
-                <span class="nowrap">UPPER-INT ENGLISH</span> <a class="nowrap" href="https://www.16personalities.com/esfp-personality">ENTERTAINER
-                  PERSONALITY</a> <audio preload="none">
-                  <source src="./assets/sounds/EntertainerPersonality.mp3" type="audio/mpeg" />
-                </audio> <a class="nowrap" href="https://steamcommunity.com/id/dashakorotkykh/" rel="external">56 GAMES
-                  ON STEAM</a> RESOURCEFULLNESS EMPATHY <span class="nowrap">EXTREME AGILITY</span>
-                DEVOTION MOTORCYCLE DIPLOMACY CARE LOYALTY <span class="nowrap">43 PUBLIC TALKS</span>
-                <span class="nowrap">COMMON LANGUAGE WITH DIFFICULT PEOPLE</span>
-              </p>
-            </div>
-            <div class="segment">
-              <h3>&#128567; Use</h3>
-              <p class="tags small">
-                <a class="nowrap" href="" title="Apart from general products included in G Suite – Flights, Jamboard, Fonts & Data Studio.">GOOGLE
-                  PRODUCTS</a> 
-                <a href="https://trello.com" title="And 'branches' on most of things I work with">BACKUPS</a>  
-                <a href="https://trello.com" title="To plan and track">TRELLO</a> 
-                <a href="https://toggl.com/" title="To plan and track">TOGGL</a> 
-                <a href="https://coub.com/view/10si69" title="For birthday congratulations & 'deliver it yesterday' requests">IMPROVISATION</span>
-                <a href="https://www.noisli.com/"  title="To block out open-space and jot down texts for posts and newsletters">NOISLY</a>
-                <a href="" title="Though it requires attention all the time, it looks and feels so much better">UBUNTU</a>
-                <a href="https://www.canva.com/" title="Draft some posters, cards and SM pics real quick">CANVA</a> 
-                <a href="https://www.piskelapp.com" title="Best pixel art SW out there, and open-source!">PISKEL</a> 
-                <a href="" title="Basic but exciting gamedev engine, now in browser">CONSTRUCT</a> 
-                <a href="" title="For the sake of comfortable version control">GITHUB</a> 
-                <a href="" title="For the sake of comfortable version control">GITKRAKEN</a>
-                <a href="" title="Newsletters and campaigns, large and even larger">MAILJET</a> 
-                <a href="" title="Newsletters and campaigns, large and even larger">MAILCHIMP</a> 
-                <a class="nowrap" href="" title="Hateful but useful, particularly in videomaking">ADOBE CS</a>
-              </p>
-            </div>
-            <div class="segment">
-              <h3>&#128523; Like</h3>
-              <p class="tags small">
-                <span class="nowrap">FC BARCELONA</span> <span class="nowrap">PIXEL ART</span> K<span style="color:red">INDER</span> <span class="nowrap">GAME
-                  JAMS</span> DAWN <span class="nowrap">APPLE CIDER</span> FORMATTING <span class="nowrap">RED SEMISWEET</span>
-                <span class="nowrap">BOOKS IN POLISH</span> FOG <span class="nowrap">GREY COLOUR</span> <span class="nowrap">PROGRAMMING
-                  JOKES</span> KRAKOW GITKRAKEN DANCE <span class="nowrap">IRISH ACCENT</span> <span class="nowrap">SMELL OF WASHING MACHINE POWDER</span>
-              </p>
-            </div>
-            <div class="segment">
-              <h3>&#128533; Dislike</h3>
-              <p class="tags small"><span class="nowrap">SMALL TALK</span> <span class="nowrap">PUBLIC TRANSPORT</span>
-                MUSHROOMS CONAN DELLUSIONS COCKTAILS BERGAMOT <span class="nowrap">WEATHER UNDER -3°C</span>
-                LIES <span class="nowrap">PASSIVE AGGRESSIVE</span> BUREAUCRACY FACEBOOK</p>
-            </div>
-            <div class="segment">
-              <h3>&#128515; Want</h3>
-              <p class="tags small bulleted">
-                <span class="tag">BLIND TYPING IN ENGLISH</span><span class="tag">LEARN TO OBSERVE</span><span class="tag">BE FIT</span><span class="tag"><a href="https://github.com/dasha-korotkykh" rel="external">PUSH SOME STUFF HERE ON REGULAR BASIS</a></span> <span class="tag">LEARN VIDEO EDITING</span><span class="tag">BUILD SOTD WEB-APP WITH VOLODYMYR KUSHNIR</span><span><a href="https://www.freecodecamp.org/daria-korotkih" rel="external">FINISH FREECODECAMP</a><span class="tag">LEARN TO DANCE CUTTING-EDGES</span></span>
-              </p>
-            </div>
-            <div class="segment">
-              <h3>&#128558; Learn</h3>
-              <p class="tags small">
-                <span class="nowrap"><a href="https://www.w3schools.com/">W3SCHOOLS</a></span>
-                <span class="nowrap"><a href="https://developer.mozilla.org/en-US/">MDN</a></span>
-                <span class="nowrap"><a href="https://css-tricks.com/">CSS TRICKS</a></span>
-                <span class="nowrap"><a href="http://maximilyahov.ru/hello/">GLVRD</a></span>
-                <span class="nowrap"><a href="https://www.patreon.com/saint11">PEDRO MEDEIROS</a></span>
-                <span class="nowrap"><a href="https://t.me/gamedevporn">GDP</a></span>
-                <span class="nowrap"><a href="https://what-if.xkcd.com/">XKCD</a></span>
-              </p>
-            </div>
-            <div class="segment">
-              <h3>&#128519; Value</h3>
-              <p class="tags small">RESPECT TRANSPARENCY RESPONSIBILITY CONTINUOUS STUDYING ASSISTANCE GENEROSITY ATTENTION FOR DETAILS CRAFTING & CUSTOMIZATION</p>
-            </div>
-            <div class="segment">
-              <h3>&#128512; Cultivate</h3>
-              <p class="tags small">HONESTY AFFECTION CLARITY CALM ATTITUDE HEDONISM TRUST</p> 
+              </ul> 
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </body>
 </html>
