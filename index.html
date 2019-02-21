@@ -26,11 +26,11 @@
   <style>
     /* Tags */
     [data-tag] > *:first-child:after {
+      cursor: pointer;
       font-size: 0.6em;
       line-height: 1rem;
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      color: #ffffff;
       display: inline-block;
       padding: 0em 0.75em;
       border-radius: 15px;
@@ -38,25 +38,23 @@
       margin-left: 0.5em;
       margin-top: -1px;
       vertical-align: middle;
-      content: "work";
-      background: blue;
+      box-shadow: inset 0 0 0 1px;
+      opacity: 0.5;
+      transition: opacity 0.2s linear;
     }
-    [data-tag="education"] > *:first-child:after {
-      content: "education";
-      background: violet;
+    [data-tag]:hover > *:first-child:after {
+      color: #ffffff;
+      opacity: 1;
+      box-shadow: none;
     }
-    [data-tag="hackathon"] > *:first-child:after {
-      content: "hackathon";
-      background: midnightblue;
-    }
-    [data-tag="jam"] > *:first-child:after {
-      content: "jam";
-      background: deepskyblue;
-    }
-    [data-tag="talk"] > *:first-child:after {
-      content: "talk";
-      background: fuchsia;
-    }
+    [data-tag="work"] > *:first-child:after { content: "work"; }
+    [data-tag="hackathon"] > *:first-child:after { content: "hackathon"; }
+    [data-tag="jam"] > *:first-child:after { content: "jam"; }
+    [data-tag="talk"] > *:first-child:after { content: "talk"; }
+    [data-tag="work"]:hover > *:first-child:after { background: blue; }
+    [data-tag="hackathon"]:hover > *:first-child:after { background: midnightblue; }
+    [data-tag="jam"]:hover > *:first-child:after { background: deepskyblue; }
+    [data-tag="talk"]:hover > *:first-child:after { background: fuchsia; }
 
     /* Wave */
     #wave {
@@ -66,7 +64,7 @@
       left: 0;
       width: 100%;
       z-index: 1;
-      color: #0052CC;
+      color: blue;
     }
 
     /* Pages */
@@ -74,6 +72,33 @@
       background: white;
       z-index: 2;
       position: relative;
+    }
+
+    /* Tags */
+    #experience[data-tags="talk"] li[data-tag]:not([data-tag="talk"]),
+    #experience[data-tags="talk"] li[data-tags]:not([data-tags*="talk"]) {
+      display: none;
+    }
+    #experience[data-tags="work"] li[data-tag]:not([data-tag="work"]),
+    #experience[data-tags="work"] li[data-tags]:not([data-tags*="work"]) {
+      display: none;
+    }
+    #experience[data-tags="hackathon"] li[data-tag]:not([data-tag="hackathon"]),
+    #experience[data-tags="hackathon"] li[data-tags]:not([data-tags*="hackathon"]) {
+      display: none;
+    }
+    #experience[data-tags="jam"] li[data-tag]:not([data-tag="jam"]),
+    #experience[data-tags="jam"] li[data-tags]:not([data-tags*="jam"]) {
+      display: none;
+    }
+
+    /* Life in colors */
+    .life-in-colors:not(:only-child):after {
+      content: " → ";
+    }
+    .doing-what {
+      cursor: pointer;
+      letter-spacing: 0.5px;
     }
   </style>
 </head>
@@ -148,25 +173,27 @@
         </div>
         <div class="row">
           <div class="ten wide column">
-            <div class="segment">
-              <h3>Experience</h3>
+            <div id="experience" class="segment">
+              <h3 id="life">
+                <span class="life-in-colors">Life in colors</span>
+              </h3>
               <h6>Recent</h6>
               <ul class="timeline">
                 <li data-tag="talk">
                   <p><em>23<sup>th</sup> November 2018</em></p>
-                  <p>Gave a lightning talk about <strong>Happiness Management</strong> at <strong>.NET User Group</strong></p>
+                  <p><strong>Gave a lightning talk</strong> about <strong>Happiness Management</strong> at <strong><a nref="https://www.facebook.com/groups/LvivDotNet/" rel="external">.NET User Group</a></strong></p>
                 </li>
-                <li>
+                <li data-tag="none">
                   <p><em>1<sup>st</sup> September 2017</em></p>
-                  <p>Stopped hating Lviv</p>
+                  <p><strong>Stopped hating Lviv</strong></p>
                 </li>
-                <li class="details">
+                <li class="details" data-tags="jam">
                   <input type="checkbox" id="jamming">
                   <label for="jamming" class="summary">I really love jamming! So I <strong>jammed</strong> on <strong>7 game jams</strong>🕹!</label>
                   <div style="
                     margin-top: 0.5em;
                     padding-left: 0.75em;
-                    border-left: 1px dotted black;
+                    border-left: 1px solid #999999;
                     margin-left: -0.75em;
                   ">
                     <ul class="timeline">
@@ -215,9 +242,7 @@
                     </ol>
                   </div>
                 </li>
-              </ul>
-              <ul class="timeline highlighted">
-                <li data-tag="work">
+                <li class="highlighted" data-tag="work">
                   <p><em>28<sup>th</sup> November 2016 – current</em></p>
                   <p><strong>HR Marketing, Head of Academy</strong> at <strong><a href="binary-studio.com">Binary	Studio</a></strong></p>
                     <ul>
@@ -359,7 +384,7 @@
                   <ul>
                     <li class="details">
                       <input type="checkbox" id="wattaheat">
-                      <label for="wattaheat" class="summary">Along with the team created "Wattaheat" and won 1<sup>st</sup>
+                      <label for="wattaheat" class="summary"><strong>Created "Wattaheat"</strong> along with the team and won 1<sup>st</sup>
                         place at
                         <strong><a href="https://www.facebook.com/events/191289977949171/">Garage 48 Dnipro IoT Hackathon</a></strong></label>
                       <div>
@@ -372,14 +397,12 @@
                     </li>
                   </ul>
                 </li>
-              </ul>			
-              <ul class="timeline">
                 <li data-tag="hackathon">
                   <p><em>6<sup>th</sup> – 8<sup>th</sup> May 2016</em></p>
                   <ul>
                     <li class="details">
                       <input type="checkbox" id="hacktus">
-                      <label for="hacktus" class="summary">Worked on a web-app called "Hacktus" at <strong><a href="https://www.facebook.com/events/1570965446562758/">Garage
+                      <label for="hacktus" class="summary"><strong>Worked on a "Hacktus" web-app</strong> at <strong><a href="https://www.facebook.com/events/1570965446562758/">Garage
                         48 Odessa Gamification Hackathon</a></strong></label>
                       <div>
                         <ul>
@@ -390,26 +413,15 @@
                     </li>
                   </ul>
                 </li>
-              </ul>	
-              <ul class="timeline">
                 <li data-tag="work">
                   <p><em>May 2016 – October 2016</em></p>
+                  <p><strong>People Partner</strong> at <strong><a href="https://www.daxx.com/">DAXX</a></strong></p>
                   <ul>
-                    <li class="details">
-                      <input type="checkbox" id="daxx">
-                      <label for="daxx" class="summary"><strong>People Partner</strong> at <strong><a href="https://www.daxx.com/">DAXX</a></strong></label>
-                      <div>
-                        <ul>
-                          <li>oversaw renovations and enhancements while company was settling in the new 200 people office</li>
-                          <li>started developing culture of company parties, retreats and office leisure</li>
-                          <li>gave honest feedback on whether things (tasks, plans, goals) were making sense</li>
-                        </ul>
-                      </div>
-                    </li>
+                    <li>oversaw renovations and enhancements while company was settling in the new 200 people office</li>
+                    <li>started developing culture of company parties, retreats and office leisure</li>
+                    <li>gave honest feedback on whether things (tasks, plans, goals) were making sense</li>
                   </ul>
                 </li>
-              </ul>	
-              <ul class="timeline">
                 <li data-tag="work">
                   <p><em>April 2016</em></p>
                   <ul>
@@ -427,14 +439,12 @@
                     </li>
                   </ul>
                 </li>
-              </ul>	
-              <ul class="timeline">
                 <li data-tag="hackathon">
                   <p><em>5<sup>th</sup> – 6<sup>th</sup> March 2016</em></p>
                   <ul>
                     <li class="details">
                       <input type="checkbox" id="ditro">
-                      <label for="ditro" class="summary">Managed product development and marketing at <strong><a href="https://dou.ua/calendar/9783/">STEM
+                      <label for="ditro" class="summary"><strong>Managed product development and marketing</strong> at <strong><a href="https://dou.ua/calendar/9783/">STEM
                             Hackathon</a></strong></label>
                       <div>
                         <ul>
@@ -447,35 +457,24 @@
                     </li>
                   </ul>
                 </li>
-              </ul>			
-              <ul class="timeline"> 
                 <li data-tag="work">
                   <p><em>March 2016 – June 2016</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="kit">
-                      <label for="kit" class="summary"><strong>Project Manager</strong> at <strong>KIT</strong> startup</label>
-                      <div>
-                        <ul>
-                          <li>was driving events, tech training schedules (up to 3 internal courses at once) and SMM (at least 2-3 posts a week)</li>
-                          <li>biggest achievement in that role was making our stall at ITForum 2016 (Kyiv) one of three most noticeable and perkful for visitors</li>
-                          <li>brought to team 5 people</li>
-                          <li>I know how to buy, hand wash, wipe dry and deliver to your visitors 300kg of matsu apples</li>
-                          <li>drank an enormous amount of tea with the company iOS dev unit</li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
+                  <p><strong>Project Manager</strong> at <strong>KIT</strong> startup</p>
+                    <ul>
+                      <li>was driving events, tech training schedules (up to 3 internal courses at once) and SMM (at least 2-3 posts a week)</li>
+                      <li>biggest achievement in that role was making our stall at ITForum 2016 (Kyiv) one of three most noticeable and perkful for visitors</li>
+                      <li>brought to team 5 people</li>
+                      <li>I know how to buy, hand wash, wipe dry and deliver to your visitors 300kg of matsu apples</li>
+                      <li>drank an enormous amount of tea with the company iOS dev unit</li>
+                    </ul>
                 </li>
-              </ul>	
-              <ul class="timeline">
-                <li class="details">
+                <li class="details" data-tags="hackathon,jam">
                   <input type="checkbox" id="hackathoning">
                   <label for="hackathoning" class="summary">I like hackathoning! So I <strong>hackathoned</strong> on <strong>5 hackathons</strong>⌨!</label>
                   <div style="
                     margin-top: 0.5em;
                     padding-left: 0.75em;
-                    border-left: 1px dotted black;
+                    border-left: 1px solid #999999;
                     margin-left: -0.75em;
                   ">
                     <ul class="timeline">
@@ -484,7 +483,7 @@
                         <ul>
                           <li class="details">
                             <input type="checkbox" id="nses">
-                            <label for="nses" class="summary">Presented small app called "No Spam Epic Shit" at <strong><a href="https://dou.ua/calendar/9777/">INT20H
+                            <label for="nses" class="summary"><strong>Presented small app called "No Spam Epic Shit"</strong> at <strong><a href="https://dou.ua/calendar/9777/">INT20H
                               Hackathon</a></strong></label>
                             <div>
                               <ul>
@@ -500,7 +499,7 @@
                         <ul>
                           <li class="details">
                             <input type="checkbox" id="proffstore">
-                            <label for="proffstore" class="summary">Enlisted as Product Manager at <strong>Proffstore Hackathon</strong></label>
+                            <label for="proffstore" class="summary"><strong>Participated as Product Manager</strong> at <strong>Proffstore Hackathon</strong></label>
                             <div>
                               <ul>
                                 <li>gathered the biggest team at the biggest EU hackathon <em>(when organizing hacking/jamming event, chasing the numbers is a bad idea)</em></li>
@@ -516,7 +515,7 @@
                         <ul>
                           <li class="details">
                             <input type="checkbox" id="jamkpi">
-                            <label for="jamkpi" class="summary">Stepped into gamedev as Artist &amp; Marketing person at <strong><a href="http://gamejamkpi.github.io/">Game
+                            <label for="jamkpi" class="summary"><strong>Stepped into gamedev as Artist &amp; Marketing person</strong> at <strong><a href="http://gamejamkpi.github.io/">Game
                               Jam KPI</a></strong></label>
                             <div>
                               <ul>
@@ -533,7 +532,7 @@
                         <ul>
                           <li class="details">
                             <input type="checkbox" id="gdg">
-                            <label for="gdg" class="summary">Explored tech con <strong><a href="https://devfest.gdg.org.ua/">GDG Lviv</a></strong></label>
+                            <label for="gdg" class="summary"><strong>Explored tech con <a href="https://devfest.gdg.org.ua/">GDG Lviv</a></strong></label>
                             <div>
                               <ul>
                                 <li>learned how to use IDE in a browser</li>
@@ -562,36 +561,26 @@
                     </ol>
                   </div>
                 </li>
-              </ul>
-              <ul class="timeline">
                 <li data-tag="work">
                   <p><em>August 2015 – February 2016</em></p>
-                  <ul>
-                    <li class="details">
-                      <input type="checkbox" id="goit">
-                      <label for="goit" class="summary"><strong>Project Manager, Mentor Lead</strong> at <strong>GoIT</strong></label>
-                      <div>
-                        <ul>
-                          <li>established community of Java, JS, PHP engineers and QAs employed as volunteer mentors (about
-                              200 people, Kyiv &amp; remote) and libbied their interests</li>
-                          <li>had the opportunity to invent the whole pipeline of onboarding, knowledge sharing and support
-                              from scratch</li>
-                          <li>supervised educational process (4 to 8 tracks simultaneously)</li>
-                          <li>hired myself assistant to help with operational tasks</li>
-                          <li>started learning IT basiсs</li>
-                      </ul></div>
-                    </li>
-                  </ul>
+                  <p><strong>Project Manager, Mentor Lead</strong> at <a href="https://goit.ua/" rel="external"><strong>GoIT</strong></a></p>
+                    <ul>
+                      <li>established community of Java, JS, PHP engineers and QAs employed as volunteer mentors (about
+                          200 people, Kyiv &amp; remote) and lobbied their interests</li>
+                      <li>had the opportunity to invent the whole pipeline of onboarding, knowledge sharing and support
+                          from scratch</li>
+                      <li>supervised educational process (4 to 8 tracks simultaneously)</li>
+                      <li>hired myself assistant to help with operational tasks</li>
+                      <li>started learning IT basiсs</li>
+                    </ul>
                 </li>
-              </ul>		
-              <ul class="timeline">
                 <li data-tag="work">
                   <p><em>July 2015 – September 2015</em></p>
                   <ul>
                     <li class="details">
                       <input type="checkbox" id="pr">
-                      <label for="pr" class="summary"><strong>Project Volunteer</strong> at <strong>PR Department</strong> of the National
-                        University of Kyiv-Mohyla Academy</label>
+                      <label for="pr" class="summary"><strong>Project Volunteer</strong> at <strong>PR Department</strong> of the <strong><a href="http://www.ukma.edu.ua/eng/" rel="external">National
+                        University of Kyiv-Mohyla Academy</a></strong></label>
                       <div>
                         <ul>
                           <li>enlisted to help with 500<sup>th</sup> Anniversary of NaUKMA celebration and gain some
@@ -603,8 +592,6 @@
                     </li>
                   </ul>
                 </li>
-              </ul>
-              <ul class="timeline">	
                 <li data-tag="work">
                   <p><em>December 2014 – July 2015</em></p>
                     <ul>
@@ -622,8 +609,6 @@
                       </li>
                     </ul>
                 </li>
-              </ul>
-              <ul class="timeline">
                 <li data-tag="work">
                   <p><em>June 2013 – September 2013</em></p>
                   <ul>
@@ -641,8 +626,6 @@
                     </li>
                   </ul>
                 </li>
-              </ul>
-              <ul class="timeline">	
                 <li data-tag="work">
                   <p><em>October 2012 – June 2013</em></p>
                   <ul>
@@ -820,5 +803,46 @@
       </div>
     </div>
   </div>
+  <script>
+    function resetTimeline(event) {
+      event.target.innerHTML = "";
+      document.getElementById("experience").setAttribute("data-tags", "");
+      document.getElementById("wave").style.color = "blue";
+      event.target.remove();
+    }
+
+    document.querySelectorAll("[data-tag] > *:first-child").forEach(function(element) {
+      element.addEventListener("click", function(event) {
+        var element = event.target;
+        var el = document.createElement("span");
+        el.className = "doing-what";
+        switch (element.parentNode.getAttribute("data-tag")) {
+          case "talk":
+            document.getElementById("experience").setAttribute("data-tags", "talk");
+            el.innerHTML = "talking &times;";
+            break;
+          case "work":
+            document.getElementById("experience").setAttribute("data-tags", "work");
+            el.innerHTML = "working &times;";
+            break;
+          case "jam":
+            document.getElementById("experience").setAttribute("data-tags", "jam");
+            el.innerHTML = "jamming &times;";
+            break;
+          case "hackathon":
+            document.getElementById("experience").setAttribute("data-tags", "hackathon");
+            el.innerHTML = "hackathoning &times;";
+            break;
+          default:
+            break;
+        }
+        el.addEventListener("click", resetTimeline, false);
+        document.getElementById("life").appendChild(el);
+        var color = window.getComputedStyle(element, ":after").backgroundColor;
+        document.getElementById("wave").style.color = color;
+        el.style.color = color;
+      }, false);
+    });
+  </script>
 </body>
 </html>
