@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics  -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135383703-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-135383703-1');
+  </script>
   <title>Daria Korotkykh &mdash; Résumé</title>
   <meta charset="utf-8" />
   <meta content="ie=edge" http-equiv="x-ua-compatible" />
@@ -38,7 +46,6 @@
     }
     #wave svg {
       display: block;
-      transform: rotate(180deg);
       position: relative;
       top: calc(7em - 1px);
     }
@@ -109,8 +116,8 @@
       <div class="credits">
         Built using <a href="https://volodymyrkushnir.com/" rel="external"><strong>volodymyrkushnir.com</strong></a> &#x1f9f1;
       </div>
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 126" xml:space="preserve">
-        <path fill="currentColor" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z"></path>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="414 334 1440 118">
+        <path fill="currentColor" d="M1168.4,421.2c266.9,49.9,515.4,28.9,685.6,8.8v-96H414v96C601.3,407.8,844,360.6,1168.4,421.2z"/>
       </svg>
     </div>
     <article>
@@ -164,9 +171,7 @@
                 </div>
                 <div class="sixteen wide column">
                   <h2>Résumé</h2>
-                  <p>— Hello! I’m a community developer with 5 years experience of handling urgent management
-                    requests and carrying out long-run corporate projects and one-time events. I am not very sweet but
-                    ever curious about tech and committed to my team. Apart from that I am a growing gamedev fan.</p>
+                  <p>— Hello! I’m a community developer with 5 years experience of handling urgent management requests and carrying out long-run corporate projects and one-time events. I am not very sweet but ever curious about tech and committed to my team. Apart from that I am a growing gamedev fan.</p>
                 </div>
               </div>
             </div>
@@ -184,194 +189,214 @@
                 <ul class="timeline">
                   <li data-tag="talk">
                     <p><em>23<sup>th</sup> November 2018</em></p>
-                    <p><strong>Gave a lightning talk</strong> about <strong>Happiness Management</strong> at <strong><a nref="https://www.facebook.com/groups/LvivDotNet/" rel="external">.NET User Group</a></strong></p>
+                    <p><strong>Gave a lightning talk</strong> about <strong>Happiness Management</strong> at <strong><a href="https://www.facebook.com/groups/LvivDotNet/" rel="external">.NET User Group</a></strong></p>
                   </li>
                   <li data-tag="none">
                     <p><em>1<sup>st</sup> September 2017</em></p>
                     <p><strong>Stopped hating Lviv</strong> 🌇</p>
                   </li>
-                  <li class="details" data-tags="jam">
-                    <input type="checkbox" id="jamming">
-                    <label for="jamming" class="summary"><strong>I really love jamming</strong>! During <em>2017 – 2018</em> I jammed abroad <strong>7 times</strong> 🎮</label>
-                    <div style="
-                      margin-top: 0.5em;
-                      padding-left: 0.75em;
-                      border-left: 1px solid #999999;
-                      margin-left: -0.75em;
-                    ">
-                      <ul class="timeline">
-                        <li data-tag="jam">
-                          <p><em>November 2018</em></p>
-                          <p>Covered basics of Construct, easy and flexible 2D game engine</p>
-                        </li>
-                        <li data-tag="jam">
-                          <p><em>7<sup>th</sup> – 15<sup>th</sup> July 2018</em></p>
-                          <p>Spent white nights on a multi-level pixel art slasher <strong>Raido</strong> at week-long
-                            <strong>Castle Game Jam</strong> in an actual Sweden castle</p>
-                        </li>
-                        <li data-tag="jam">
-                          <p><em>26<sup>th</sup> – 28<sup>th</sup> January 2018</em></p>
-                          <p>Did pixel-art, localization in 4 languages and voiceover for top-down shooter "Transmission
-                            Lost" at <strong><a href="http://krakjam.pl/">KrakJam - Global Game Jam</a></strong></p>
-                        </li>
-                        <li data-tag="jam">
-                          <p><em>9<sup>th</sup> – 10<sup>th</sup> December 2017</em></p>
-                          <ul>
-                            <li class="details">
-                              <input type="checkbox" id="przeddziemmie">
-                                <label for="przeddziemmie" class="summary">Invented a new Polish word <em>Przeddzemie</em> at
-                                <strong><a href="http://senseigamejam.pl/">Wroclaw Sensei Game Jam</a></strong></label> 
-                                <div>
-                                    <ul>
-                                      <li>Przeddzemmie describes organizers' ambiance right before game jam, and we wrote a <a href="https://daniko.itch.io/przeddzemie">game about it</a></li>
-                                    <li>Learned a few Catholic / folklore songs in Polish </li>
-                                  </ul>
-                                </div>
+                  <li class="bordered">
+                    <ul>
+                      <li class="details" data-tags="jam">
+                        <input type="checkbox" id="jamming">
+                        <label for="jamming" class="summary"><strong>I really loved jamming 🎮</strong>! In <em>January 2017 &ndash; November 2018</em> I jammed abroad <strong>7 times</strong>!</label>
+                        <div>
+                          <ul class="timeline">
+                            <li data-tag="jam">
+                              <p><em>November 2018</em></p>
+                              <p><strong>Learned the basics of Construct</strong> &mdash; an easy and flexible 2D game engine</p>
                             </li>
-                          </ul>
-                        </li>
-                        <li data-tag="jam">
-                          <p><em>November 2017</em></p>
-                          <p>Created an extremely low resolution one-level game with four endings <a href="https://merlin-ua.itch.io/tower-64">Tower 62<sup>2</sup></a> at <strong>LowRezJam</strong> <em><sup>(online)</sup></em></p>
-                        </li>
-                        <li data-tag="jam">
-                          <p><em>28<sup>th</sup> – 30<sup>th</sup> July 2017</em></p>
-                          <p>Compiled 2D and 3D art in a one-level game <em>Jas Sni o Nieznanym</em> at <strong><a href="http://slavicgamejam.org/">Warsaw Slavic Game Jam</a></strong></p>
-                        </li>
-                        <li data-tag="jam">
-                          <p><em>27<sup>th</sup> – 29<sup>th</sup> January 2017</em></p>
-                          <p>Started a habit of attending game jams in Poland with <strong><a href="hhttps://www.facebook.com/events/1116260575151201">KrakJam Global Game Jam</a></strong></p>
-                        </li>
-                      </ol>
-                    </div>
+                            <li data-tag="jam">
+                              <p><em>7<sup>th</sup> – 15<sup>th</sup> July 2018</em></p>
+                              <p><strong>Spent white nights working on a multi-level pixel art slasher Raido</strong> at the week-long <strong>Castle Game Jam</strong> in an actual Swedish castle</p>
+                            </li>
+                            <li data-tag="jam">
+                              <p><em>26<sup>th</sup> – 28<sup>th</sup> January 2018</em></p>
+                              <p><strong>Made pixel-art, localization to 4 languages, and voiceover</strong> for the top-down shooter <strong>Transmission Lost</strong> at <strong><a href="http://krakjam.pl/" rel="external">KrakJam - Global Game Jam</a></strong></p>
+                            </li>
+                            <li data-tag="jam">
+                              <p><em>9<sup>th</sup> – 10<sup>th</sup> December 2017</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="przeddziemmie">
+                                    <label for="przeddziemmie" class="summary"><strong>Invented a new Polish word</strong> <em>"Przeddzemie"</em> at <strong><a href="http://senseigamejam.pl/" rel="external">Wroclaw Sensei Game Jam</a></strong></label> 
+                                    <div>
+                                      <ul>
+                                        <li>"Przeddzemmie" describes organizers' ambiance right before game jam &mdash; so we wrote <a href="https://daniko.itch.io/przeddzemie" rel="external"><strong>a game about it</strong></a></li>
+                                        <li>Learned a few Catholic/folklore songs in Polish</li>
+                                      </ul>
+                                    </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li data-tag="jam">
+                              <p><em>November 2017</em></p>
+                              <p><strong>Created an extremely low resolution one-level game</strong> with four endings <a href="https://merlin-ua.itch.io/tower-64" rel="external"><strong>Tower 62<sup>2</sup></strong></a> at <strong>LowRezJam</strong> <sup><em>(online)</em></sup></p>
+                            </li>
+                            <li data-tag="jam">
+                              <p><em>28<sup>th</sup> – 30<sup>th</sup> July 2017</em></p>
+                              <p><strong>Combined 2D and 3D art</strong> in a one-level game <strong>Jas Sni o Nieznanym</strong> at <strong><a href="http://slavicgamejam.org/" rel="external">Warsaw Slavic Game Jam</a></strong></p>
+                            </li>
+                            <li data-tag="jam">
+                              <p><em>27<sup>th</sup> – 29<sup>th</sup> January 2017</em></p>
+                              <p><strong>Started a habit of attending game jams in Poland</strong> with <strong><a href="hhttps://www.facebook.com/events/1116260575151201" rel="external">KrakJam Global Game Jam</a></strong></p>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                   <li class="highlighted" data-tag="work">
                     <p><em>28<sup>th</sup> November 2016 – current</em></p>
-                    <p><strong>HR Marketing, Head of Academy</strong> at <strong><a href="binary-studio.com">Binary	Studio</a></strong></p>
+                    <p><strong>HR Marketing, Head of Academy</strong> at <strong><a href="binary-studio.com" rel="external">Binary	Studio</a></strong></p>
                       <ul>
                         <li>write weekly newsletter Pirozhki, see to timely posting in corporate media channels, budget and help with any kind of administrative tasks</li>
-                        <li>make Binary Studio Academy known within university students, prepare curriculum with
-                          developers-coaches, select best 10% of candidates (including about 200 interviews a year),
-                          moderate product meetings and make sure things generally don't go south</li>
+                        <li>make Binary Studio Academy known within university students, prepare curriculum with developers-coaches, select best 10% of candidates (including about 200 interviews a year), moderate product meetings and make sure things generally don't go south</li>
                       </ul>
                       <ul>
                         <li class="details">
                           <input type="checkbox" id="binary">
-                            <label for="binary" class="summary">
-                              organize events of all ranges, from small office get-togethers to huge parties, from
-                              senior-level tech meetups to the annual company Eurotrip</label>
+                            <label for="binary" class="summary">organize events of all ranges, from small office get-togethers to huge parties, from senior-level tech meetups to the annual company Eurotrip</label>
                             <div>
                               <ul>
                                 <li>
-                                  <p><em>18<sup>th</sup> December 2018</em> Eurotrip 2018</p>
+                                  <p><em>18<sup>th</sup> December 2018</em></p>
+                                  <p>Eurotrip 2018</p>
                                   <p>Bratislava, Vienna, Stuttgart, Strasbourg, Frankfurt <!--(26)--></p>
                                 </li>
                                 <li>
-                                  <p><em>14<sup>th</sup> December 2018</em> The Way of Whiskey</p>
+                                  <p><em>14<sup>th</sup> December 2018</em></p>
+                                  <p>The Way of Whiskey</p>
                                   <p>Lviv — Binary Studio office <!--(33)--></p>
                                 </li>
                                 <li>
-                                  <p><em>23<sup>rd</sup> October 2018</em> Fort Svirge Quest</p>
+                                  <p><em>23<sup>rd</sup> October 2018</em></p>
+                                  <p>Fort Svirge Quest</p>
                                   <p>Svirge castle, Lviv region <!--(42)--></p>
                                 </li>
                                 <li>
-                                  <p><em>15<sup>th</sup> September 2018</em> Binary Studio Academy 2018 Graduation</p>
+                                  <p><em>15<sup>th</sup> September 2018</em></p>
+                                  <p>Binary Studio Academy 2018 Graduation</p>
                                   <p>Lviv — Binary Studio office <!--(83)--></p>
                                 </li>
                                 <li>
-                                  <p><em>13<sup>th</sup> September 2018</em> Binary Nights: Thoughts on Frontend Architecture</p>
+                                  <p><em>13<sup>th</sup> September 2018</em></p>
+                                  <p>Binary Nights: Thoughts on Frontend Architecture</p>
                                   <p>Lviv — Binary Studio office <!--(70)--></p>
                                 </li>
                                 <li>
-                                  <p><em>30<sup>th</sup> June 2018</em> Binary Studio Academy 2018 Launch</p>
+                                  <p><em>30<sup>th</sup> June 2018</em></p>
+                                  <p>Binary Studio Academy 2018 Launch</p>
                                   <p>Lviv — Binary Studio office <!--(104)--></p>
                                 </li>
                                 <li>
-                                  <p><em>15<sup>th</sup> June 2018</em> Westwood trip</p>
+                                  <p><em>15<sup>th</sup> June 2018</em></p>
+                                  <p>Westwood trip</p>
                                   <p>Transcarpathians — Knyahynia <!--(29)--></p>
                                 </li>
                                 <li>
-                                  <p><em>21<sup>st</sup> April 2018</em> Global Azure Bootcamp</p>
+                                  <p><em>21<sup>st</sup> April 2018</em></p>
+                                  <p>Global Azure Bootcamp</p>
                                   <p>Lviv — Binary Studio office <!--(79)--></p>
                                 </li>
                                 <li>
-                                  <p><em>20<sup>th</sup> March 2018</em> Boardgame Night</p>
+                                  <p><em>20<sup>th</sup> March 2018</em></p>
+                                  <p>Boardgame Night</p>
                                   <p>Lviv — Binary Studio office <!--(32)--></p>
                                 </li>
                                 <li>
-                                  <p><em>22<sup>nd</sup> February 2018</em> Ski Weekend</p>
+                                  <p><em>22<sup>nd</sup> February 2018</em></p>
+                                  <p>Ski Weekend</p>
                                   <p>Rakhiv — Bukovel <!--(24)--></p>
                                 </li>
                                 <li>
-                                  <p><em>20<sup>th</sup> January 2018</em> Company 12<sup>th</sup> Anniversary</p>
+                                  <p><em>20<sup>th</sup> January 2018</em></p>
+                                  <p>Company 12<sup>th</sup> Anniversary</p>
                                   <p>Lviv — Park. Art of Rest <!--(72)--></p>
                                 </li>
                                 <li>
-                                  <p><em>21<sup>st</sup> December 2017</em> Eurotrip 2017</p>
+                                  <p><em>21<sup>st</sup> December 2017</em></p>
+                                  <p>Eurotrip 2017</p>
                                   <p>Nuremberg, Budapest, Berlin, Krakow <!-- (21)--></p>
                                 </li>
                                 <li>
-                                  <p><em>17<sup>th</sup> November 2017</em> Poker Night</p>
+                                  <p><em>17<sup>th</sup> November 2017</em></p>
+                                  <p>Poker Night</p>
                                   <p>Lviv — Binary Studio office <!--(50)--></p>
                                 </li>
                                 <li>
-                                  <p><em>24<sup>th</sup> September 2017</em> Programmers' Rooftop Party</p>
+                                  <p><em>24<sup>th</sup> September 2017</em></p>
+                                  <p>Programmers' Rooftop Party</p>
                                   <p>Lviv — Lviv Film Center <!--(36)--></p>
                                 </li>
                                 <li>
-                                  <p><em>23<sup>rd</sup> September 2017</em> Academy Graduation</p>
+                                  <p><em>23<sup>rd</sup> September 2017</em></p>
+                                  <p>Academy Graduation</p>
                                   <p>Lviv — Binary Studio office <!--(56)--></p>
                                 </li>
                                 <li>
-                                  <p><em>16<sup>th</sup> September 2017</em> Submit.NET</p>
+                                  <p><em>16<sup>th</sup> September 2017</em></p>
+                                  <p>Submit.NET</p>
                                   <p>Lviv — Binary Studio office <!--(70)--></p>
                                 </li>
                                 <li>
-                                  <p><em>19<sup>th</sup> August 2017</em> Rafting trip</p>
+                                  <p><em>19<sup>th</sup> August 2017</em></p>
+                                  <p>Rafting trip</p>
                                   <p>Volyn — Dnister <!--(23)--></p>
                                 </li>
                                 <li>
-                                  <p><em>5<sup>th</sup> August 2017</em> Transcarpathian company trip</p>
+                                  <p><em>5<sup>th</sup> August 2017</em></p>
+                                  <p>Transcarpathian company trip</p>
                                   <p>Knyahynia — Westwood <!--(36)--></p>
                                 </li>
                                 <li>
-                                  <p><em>1<sup>st</sup> July 2017</em> Academy Launch</p>
+                                  <p><em>1<sup>st</sup> July 2017</em></p>
+                                  <p>Academy Launch</p>
                                   <p>Lviv — Binary Studio office <!--(78)--></p>
                                 </li>
                                 <li>
-                                  <p><em>10<sup>th</sup> June 2017</em> SubmitJS</p>
+                                  <p><em>10<sup>th</sup> June 2017</em></p>
+                                  <p>SubmitJS</p>
                                   <p>Lviv — Binary Studio office <!--(95)--></p>
                                 </li>
                                 <li>
-                                  <p><em>2<sup>nd</sup> June 2017</em> Sea trip</p>
+                                  <p><em>2<sup>nd</sup> June 2017</em></p>
+                                  <p>Sea trip</p>
                                   <p>Odessa — Zatoka <!--(27)--></p>
                                 </li>
                                 <li>
-                                  <p><em>22<sup>nd</sup> April 2017</em> BBQ Party</p>
+                                  <p><em>22<sup>nd</sup> April 2017</em></p>
+                                  <p>BBQ Party</p>
                                   <p>Lviv — Bukhta Vikingiv <!--(43)--></p>
                                 </li>
                                 <li>
-                                  <p><em>13<sup>th</sup> April 2017</em> Modern use of Laravel. University meetup</p>
+                                  <p><em>13<sup>th</sup> April 2017</em></p>
+                                  <p>Modern use of Laravel. University meetup</p>
                                   <p>Kharkiv — NU KhPI <!--(73)--></p>
                                 </li>
                                 <li>
-                                  <p><em>3<sup>rd</sup> April 2017</em> Web-Services: the Other Side. University meetup</p>
+                                  <p><em>3<sup>rd</sup> April 2017</em></p>
+                                  <p>Web-Services: the Other Side. University meetup</p>
                                   <p>Kyiv — NaUKMA <!--(45)--></p>
                                 </li>
                                 <li>
-                                  <p><em>16<sup>th</sup> March 2017</em> AWS Services. University meetup</p>
+                                  <p><em>16<sup>th</sup> March 2017</em></p>
+                                  <p>AWS Services. University meetup</p>
                                   <p>Vinnytsa — DonNU <!--(21)--></p><p>
                                 </p></li>
                                 <li>
-                                  <p><em>26<sup>th</sup> February 2017</em> Ski Weekend</p>
+                                  <p><em>26<sup>th</sup> February 2017</em></p>
+                                  <p>Ski Weekend</p>
                                   <p>Slavske — Trostian <!--(26)--></p>
                                 </li>
                                 <li>
-                                  <p><em>20<sup>th</sup> January 2017</em> Company 11th Anniversary</p>
+                                  <p><em>20<sup>th</sup> January 2017</em></p>
+                                  <p>Company 11th Anniversary</p>
                                   <p>Lviv — Binary Studio office <!--(56)--></p>
                                 </li>
                                 <li>
-                                  <p><em>22<sup>nd</sup> December 2016</em> Eurotrip 2016</p>
+                                  <p><em>22<sup>nd</sup> December 2016</em></p>
+                                  <p>Eurotrip 2016</p>
                                   <p>Cologne, Bruges, Brussels <!--(23)--></p>
                                 </li>
                               </ul>
@@ -382,47 +407,56 @@
                 </ul>	
                 <h6>Back then</h6>		
                 <ul class="timeline">
-                  <li data-tag="hackathon">
-                    <p><em>28<sup>th</sup> – 30<sup>th</sup> October 2016</em></p>
+                  <li class="bordered">
                     <ul>
-                      <li class="details">
-                        <input type="checkbox" id="wattaheat">
-                        <label for="wattaheat" class="summary"><strong>Created "Wattaheat"</strong> along with the team and won 1<sup>st</sup>
-                          place at
-                          <strong><a href="https://www.facebook.com/events/191289977949171/">Garage 48 Dnipro IoT Hackathon</a></strong></label>
+                      <li class="details" data-tags="jam">
+                        <input type="checkbox" id="more-hackathoning">
+                        <label for="more-hackathoning" class="summary">Attended <strong>2 more hackathons</strong> in <em>May 2016 &ndash; October 2016</em></label>
                         <div>
-                          <ul>
-                            <li>"Wattaheat" is a one-of-a-kind smart device, which calculates boiling time and sends it to a mobile app in real-time</li>
-                            <li>our team TeamCook was asked to present the technology at Lviv Maker's Faire <em>(which we did)</em>
-                              and develop it for possible mass production <em>(which we didn't)</em></li>
+                          <ul class="timeline">
+                            <li data-tag="hackathon">
+                              <p><em>28<sup>th</sup> – 30<sup>th</sup> October 2016</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="wattaheat">
+                                  <label for="wattaheat" class="summary">Me and my team have <strong>created "Wattaheat" and won 1<sup>st</sup> place</strong> at <strong><a href="https://www.facebook.com/events/191289977949171/">Garage 48 Dnipro IoT Hackathon</a></strong></label>
+                                  <div>
+                                    <ul>
+                                      <li>"Wattaheat" is a one-of-a-kind smart device, which calculates boiling time and sends it to a mobile app in real-time</li>
+                                      <li>our team "TeamCook" was asked to present the technology at Lviv Maker's Faire <sup><em>(we did)</em></sup> and develop it for possible mass production <sup><em>(we didn't)</em></sup></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li data-tag="hackathon">
+                              <p><em>6<sup>th</sup> – 8<sup>th</sup> May 2016</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="hacktus">
+                                  <label for="hacktus" class="summary"><strong>Worked on a "Hacktus" web-app</strong> at <strong><a href="https://www.facebook.com/events/1570965446562758/">Garage 48 Odessa Gamification Hackathon</a></strong></label>
+                                  <div>
+                                    <ul>
+                                      <li>idea behind the project was to collect and gamify different online education resources (edX, Codewars, Coursera, etc.) in one single app</li>
+                                      <li>lesson learned &mdash; sometimes even a decent project with a solid backend cannot be marketed without a good frontend</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
                           </ul>
                         </div>
                       </li>
                     </ul>
-                  </li>
-                  <li data-tag="hackathon">
-                    <p><em>6<sup>th</sup> – 8<sup>th</sup> May 2016</em></p>
-                    <ul>
-                      <li class="details">
-                        <input type="checkbox" id="hacktus">
-                        <label for="hacktus" class="summary"><strong>Worked on a "Hacktus" web-app</strong> at <strong><a href="https://www.facebook.com/events/1570965446562758/">Garage
-                          48 Odessa Gamification Hackathon</a></strong></label>
-                        <div>
-                          <ul>
-                            <li>idea behind the project was to gather and gamify different online education resources on one interface(edX, Codewars, Coursera etc.)</li>
-                            <li>important lesson: even a fine project with a cool backend cannot be marketed without a solid frontend cover</li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
+                  </li>                  
                   <li data-tag="work">
                     <p><em>May 2016 – October 2016</em></p>
-                    <p><strong>People Partner</strong> at <strong><a href="https://www.daxx.com/">DAXX</a></strong></p>
+                    <p><strong>People Partner</strong> at <strong><a href="https://www.daxx.com/" rel="external">DAXX</a></strong></p>
                     <ul>
-                      <li>oversaw renovations and enhancements while company was settling in the new 200 people office</li>
-                      <li>started developing culture of company parties, retreats and office leisure</li>
-                      <li>gave honest feedback on whether things (tasks, plans, goals) were making sense</li>
+                      <li>oversaw renovations, amenities, conveniences and niceties when company was settling in the new 200 people office</li>
+                      <li>started developing company party and retreat routines</li>
+                      <li>organized office leisure and chill-out zones</li>
+                      <li>gave honest feedback on whether company's plans and goals were making sense to the employees</li>
                     </ul>
                   </li>
                   <li data-tag="work">
@@ -430,13 +464,11 @@
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="pycon">
-                        <label for="pycon" class="summary"><strong>Orgteam Volunteer</strong> at <strong><a href="https://www.facebook.com/pg/uapycon/photos/?tab=album&amp;album_id=979059962175962">PyCon
-                              2016</a></strong></label>
+                        <label for="pycon" class="summary"><strong>Volunteer</strong> at <strong><a href="https://www.facebook.com/pg/uapycon/photos/?tab=album&amp;album_id=979059962175962" rel="external">PyCon 2016</a></strong></label>
                         <div>
                           <ul>
-                            <li>ordinary help - setting up the place, registering participants, supervising facility and
-                                helping speakers</li>
-                            <li>ask me how PyCon (or any other tech con) is different from Lviv IT Arena</li>
+                            <li>provided ordinary help with the organization of the event &mdash; setting up the place, registering participants, supervising the facility, assisting speakers, etc.</li>
+                            <li>l-l-l-loved the experience &mdash; just ask me how PyCon <em>(and some other tech conferences)</em> is different from, say, Lviv IT Arena</li>
                           </ul>
                         </div>
                       </li>
@@ -447,14 +479,11 @@
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="ditro">
-                        <label for="ditro" class="summary"><strong>Managed product development and marketing</strong> at <strong><a href="https://dou.ua/calendar/9783/">STEM
-                              Hackathon</a></strong></label>
+                        <label for="ditro" class="summary"><strong>Managed product development and marketing</strong> at <strong><a href="https://dou.ua/calendar/9783/" rel="external">STEM Hackathon</a></strong></label>
                         <div>
                           <ul>
-                            <li>our team worked on DITRO, an Open CV app for drones, which would allow the user to build a
-                                stable route and tasklist</li>
-                            <li>we created both a software platform and implemented it on hardware - a radio-controlled car</li>
-                            <li>took 2<sup>nd</sup> place for the accomplished product</li>
+                            <li>we've built "DITRO" &mdash; an OpenCV app for drones, which would allow the user to plan drone's route and actions (land, take off, snap a picture, etc.) &mdash; and installed it on a radio controlled car</li>
+                            <li>took 2<sup>nd</sup> place</li>
                           </ul>
                         </div>
                       </li>
@@ -464,165 +493,155 @@
                     <p><em>March 2016 – June 2016</em></p>
                     <p><strong>Project Manager</strong> at <strong>KIT</strong> startup</p>
                       <ul>
-                        <li>was driving events, tech training schedules (up to 3 internal courses at once) and SMM (at least 2-3 posts a week)</li>
-                        <li>biggest achievement in that role was making our stall at ITForum 2016 (Kyiv) one of three most noticeable and perkful for visitors</li>
-                        <li>brought to team 5 people</li>
-                        <li>I know how to buy, hand wash, wipe dry and deliver to your visitors 300kg of matsu apples</li>
-                        <li>drank an enormous amount of tea with the company iOS dev unit</li>
+                        <li>organized events, scheduled internal tech trainings (up to 3 at once)</li>
+                        <li>posted to social media at least 3 times a week</li>
+                        <li>brought marketing manager and 4 senior developers to our team</li>
+                        <li>drank an enormous amount of tea with the company's iOS dev team</li>
+                        <li>one of the brightest achievements was making our stall at ITForum 2016 in Kyiv become one of the most noticeable and give away the most perks to visitors &mdash; that's how I know how to buy, hand wash, wipe dry and deliver to your visitors 300kg of matsu apples</li>
                       </ul>
                   </li>
-                  <li class="details" data-tags="hackathon,jam">
-                    <input type="checkbox" id="hackathoning">
-                    <label for="hackathoning" class="summary"><strong>I grew fond of hackathoning</strong> even before learning how to code. <br>Here are <strong>5 hackathons</strong> where I demoed 💻</label>
-                    <div style="
-                      margin-top: 0.5em;
-                      padding-left: 0.75em;
-                      border-left: 1px solid #999999;
-                      margin-left: -0.75em;
-                    ">
-                      <ul class="timeline">
-                        <li data-tag="hackathon">
-                          <p><em>27<sup>th</sup> – 28<sup>th</sup> February 2016</em></p>
-                          <ul>
-                            <li class="details">
-                              <input type="checkbox" id="nses">
-                              <label for="nses" class="summary"><strong>Presented small app called "No Spam Epic Shit"</strong> at <strong><a href="https://dou.ua/calendar/9777/">INT20H
-                                Hackathon</a></strong></label>
-                              <div>
-                                <ul>
-                                  <li>our team created algorithm in Machine Learning category for detecting spam in given mail
-                                      database, therefore it didn't require pretty design or any kind of mockups</li>
-                                </ul>
-                              </div>
+                  <li class="bordered">
+                    <ul>
+                      <li class="details" data-tags="hackathon,jam">
+                        <input type="checkbox" id="hackathoning">
+                        <label for="hackathoning" class="summary"><strong>Grew fond of hackathoning and jamming</strong>, even though I couldn't code &#x1f412;. So I demoed!</label>
+                        <div>
+                          <ul class="timeline">
+                            <li data-tag="hackathon">
+                              <p><em>27<sup>th</sup> – 28<sup>th</sup> February 2016</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="nses">
+                                  <label for="nses" class="summary"><strong>Presented "No Spam Epic Shit"</strong> at <strong><a href="https://dou.ua/calendar/9777/" rel="external">INT20H Hackathon</a></strong></label>
+                                  <div>
+                                    <ul>
+                                      <li>my team registered in the Machine Learning category and created an algorithm (almost no UI) for detecting spam in a given mail database &mdash; and I was the one who presented it</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
                             </li>
-                          </ul>
-                        </li>
-                        <li data-tag="hackathon">
-                          <p><em>12<sup>th</sup> – 13<sup>th</sup> December 2015</em></p>
-                          <ul>
-                            <li class="details">
-                              <input type="checkbox" id="proffstore">
-                              <label for="proffstore" class="summary"><strong>Participated as Product Manager</strong> at <strong>Proffstore Hackathon</strong></label>
-                              <div>
-                                <ul>
-                                  <li>gathered the biggest team at the biggest EU hackathon <em>(when organizing hacking/jamming event, chasing the numbers is a bad idea)</em></li>
-                                  <li>built a web-platform called "Lite" for connecting freelancers and customers</li>
-                                  <li>our presentation was so <strong>hot</strong>, that the heating pipe actually caught fire while I was doing it</li>
-                                </ul>
-                              </div>
+                            <li data-tag="hackathon">
+                              <p><em>12<sup>th</sup> – 13<sup>th</sup> December 2015</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="proffstore">
+                                  <label for="proffstore" class="summary"><strong>Became</strong> a <strong>Product Manager</strong> at <strong>Proffstore Hackathon</strong></label>
+                                  <div>
+                                    <ul>
+                                      <li>gathered the biggest team at the biggest hackathon in EU <em>(side note: when organizing hacking or jamming event &mdash; chasing the numbers may be a bad idea)</em></li>
+                                      <li>built "Lite" &mdash; a web-platform for connecting freelancers and customers</li>
+                                      <li>our presentation was so hot that the heating pipe actually caught fire while I was presenting it</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
                             </li>
-                          </ul>
-                        </li>
-                        <li data-tag="jam">
-                          <p><em>28<sup>th</sup> – 29<sup>th</sup> November 2015</em></p>
-                          <ul>
-                            <li class="details">
-                              <input type="checkbox" id="jamkpi">
-                              <label for="jamkpi" class="summary"><strong>Stepped into gamedev as Artist &amp; Marketing person</strong> at <strong><a href="http://gamejamkpi.github.io/">Game
-                                Jam KPI</a></strong></label>
-                              <div>
-                                <ul>
-                                  <li>created art and wrote jokes for an 8-bit game about developers hunting zombies and looking for
-                                      expensive cheese</li>
-                                  <li>took the People's Choice Award and won the Ubisoft nomination for Best Presentation</li>
-                                </ul>
-                              </div>
+                            <li data-tag="jam">
+                              <p><em>28<sup>th</sup> – 29<sup>th</sup> November 2015</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="jamkpi">
+                                  <label for="jamkpi" class="summary"><strong>Stepped into gamedev</strong> as an <strong>Artist &amp; Marketing person</strong> at <strong><a href="http://gamejamkpi.github.io/" rel="external">Game Jam KPI</a></strong></label>
+                                  <div>
+                                    <ul>
+                                      <li>created art and wrote jokes for the 8-bit game about developers who hunt zombies and search for an expensive cheese</li>
+                                      <li>got the People's Choice Award and also won the Ubisoft nomination for Best Presentation</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
                             </li>
-                          </ul>
-                        </li>
-                        <li data-tag="hackathon">
-                          <p><em>23<sup>rd</sup> – 24<sup>th</sup> October 2015</em></p>
-                          <ul>
-                            <li class="details">
-                              <input type="checkbox" id="gdg">
-                              <label for="gdg" class="summary"><strong>Explored tech con <a href="https://devfest.gdg.org.ua/">GDG Lviv</a></strong></label>
-                              <div>
-                                <ul>
-                                  <li>learned how to use IDE in a browser</li>
-                                  <li>hated Lviv for the first time</li>
-                                  <li>realized that my vocation is to care for my developers <em>(feed them, give them medicine and deliver them to the hotel after the midnight afterparty)</em></li>
-                                  <li>became acquaitanted with GDG orgteam, and helped them organize 4 events in Kyiv later in exchange for a grasp on what Google Developer Groups are like in action</li>
-                              </ul></div>
+                            <li data-tag="hackathon">
+                              <p><em>23<sup>rd</sup> – 24<sup>th</sup> October 2015</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="gdg">
+                                  <label for="gdg" class="summary"><strong>Explored</strong> <a href="https://devfest.gdg.org.ua/" rel="external"><strong>GDG Lviv</strong></a></strong></label>
+                                  <div>
+                                    <ul>
+                                      <li>learned how to use browser-based IDE</li>
+                                      <li>hated Lviv for the first time</li>
+                                      <li>felt the joy of caring for developers by organizing meals, logistics, accommodations, medication</li>
+                                      <li>became acquaitanted with GDG orgteam, helped them organize 4 events in Kyiv later in exchange for a grasp on what Google Developer Groups are like in action</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
                             </li>
-                          </ul>
-                        </li>
-                        <li data-tag="hackathon">
-                          <p><em>3<sup>rd</sup> – 4<sup>th</sup> October 2015</em></p>
-                          <ul>
-                            <li class="details">
-                              <input type="checkbox" id="linguahack">
-                              <label for="linguahack" class="summary"><strong>Started hackathoning</strong> at <strong><a href="http://www.linguahack.com/">Linguahack</a></strong></label>
-                              <div>
-                                <ul>
-                                  <li>attended my first hackathon ever and joined amazing team, which imipacted my life beyond retrieve</li>
-                                  <li>with my little knowledge and utmost efforts did interface mockups, testing and presentation for a browser-based game of Alias you (or up to 10 players) can play with A.I. <em>(which talks Ukrainian and swears occasionally)</em></li>
-                                  <li>presented the game and took 1<sup>st</sup> place for it</li>
-                              </ul></div>
+                            <li data-tag="hackathon">
+                              <p><em>3<sup>rd</sup> – 4<sup>th</sup> October 2015</em></p>
+                              <ul>
+                                <li class="details">
+                                  <input type="checkbox" id="linguahack">
+                                  <label for="linguahack" class="summary"><strong>Started hackathoning</strong> at <strong><a href="http://www.linguahack.com/" rel="external">Linguahack</a></strong></label>
+                                  <div>
+                                    <ul>
+                                      <li>attended my first ever hackathon and joined an amazing team, which had a tremendous impact on my life</li>
+                                      <li>with my little knowledge and utmost efforts did interface mockups, testing and presentation for a browser-based game of Alias that up to 10 players can play against an AI <em>(which speaks Ukrainian and swears occasionally)</em></li>
+                                      <li>presented the game and won 1<sup>st</sup> place</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
                             </li>
-                          </ul>
-                        </li>
-                      </ol>
-                    </div>
+                          </ol>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                   <li data-tag="work">
                     <p><em>August 2015 – February 2016</em></p>
                     <p><strong>Project Manager, Mentor Lead</strong> at <a href="https://goit.ua/" rel="external"><strong>GoIT</strong></a></p>
-                      <ul>
-                        <li>established community of Java, JS, PHP engineers and QAs employed as volunteer mentors (about
-                            200 people, Kyiv &amp; remote) and lobbied their interests</li>
-                        <li>had the opportunity to invent the whole pipeline of onboarding, knowledge sharing and support
-                            from scratch</li>
-                        <li>supervised educational process (4 to 8 tracks simultaneously)</li>
-                        <li>hired myself assistant to help with operational tasks</li>
-                        <li>started learning IT basiсs</li>
-                      </ul>
+                    <ul>
+                      <li>established a community of over 200 people (Java, JavaScript, PHP, and QA engineers, who volunteered as a mentors) and lobbied their interests</li>
+                      <li>took the opportunity to create the brand new processes of onboarding new mentors, knowledge sharing between them, and supporting them</li>
+                      <li>supervised educational process (4 to 8 tracks simultaneously)</li>
+                      <li>learned IT basiсs (SCRUM, team roles, reporting, basic programming concepts)</li>
+                    </ul>
                   </li>
                   <li data-tag="work">
                     <p><em>July 2015 – September 2015</em></p>
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="pr">
-                        <label for="pr" class="summary"><strong>Project Volunteer</strong> at <strong>PR Department</strong> of the <strong><a href="http://www.ukma.edu.ua/eng/" rel="external">National
-                          University of Kyiv-Mohyla Academy</a></strong></label>
+                        <label for="pr" class="summary"><strong>Project Volunteer</strong> at <strong>PR Department</strong> of the <strong><a href="http://www.ukma.edu.ua/eng/" rel="external">National University of Kyiv-Mohyla Academy</a></strong></label>
                         <div>
                           <ul>
-                            <li>enlisted to help with 500<sup>th</sup> Anniversary of NaUKMA celebration and gain some
-                              experience with large-scale event</li>
-                            <li>prepared marketing strategy (announcements, texts and where to place them)</li>
-                            <li>contacted media partners on press releases and donators on providing valuable charity lottery
-                                items</li>
-                        </ul></div>
+                            <li>enlisted to help with the celebration of the 500<sup>th</sup> Anniversary of NaUKMA &mdash; gained some experience in organizing a large-scale event</li>
+                            <li>prepared marketing strategy (announcements, posts, and where to publish them)</li>
+                            <li>contacted media partners on press releases and sponsors on providing valuable charity lottery items</li>
+                          </ul>
+                        </div>
                       </li>
                     </ul>
                   </li>
                   <li data-tag="work">
                     <p><em>December 2014 – July 2015</em></p>
-                      <ul>
-                        <li class="details">
-                          <input type="checkbox" id="bukovski">
-                            <label for="bukovski" class="summary"><strong>Administrator</strong> at <strong>Bukovski Anticafe</strong></label> 
-                            <div>
-                              <ul>
-                                <li>one day went in for book hunting and ended up with a job offer</li>
-                                <li>organized and cleaned space and co-working area, took care of supplies delivery</li>
-                                <li>sourced / moderated workshops, literature evenings etc (about 10 during the time of my service)</li>
-                                <li>made sure visitors had pleasant experience and worked out urgent issues with administration of the building</li>
-                              </ul>
-                            </div>
-                        </li>
-                      </ul>
+                    <ul>
+                      <li class="details">
+                        <input type="checkbox" id="bukovski">
+                          <label for="bukovski" class="summary"><strong>Administrator</strong> at <strong>Bukovski Anticafe</strong></label> 
+                          <div>
+                            <ul>
+                              <li>one day went in to hunt for a book and ended up getting a job offer</li>
+                              <li>organized and cleaned main space and co-working area, took care of supplies delivery</li>
+                              <li>sourced and moderated many workshops, literature evenings, etc. (about a dozen during the time of my service)</li>
+                              <li>tried to create a cozy atmosphere, sorted out urgent issues with the administration of the building</li>
+                            </ul>
+                          </div>
+                      </li>
+                    </ul>
                   </li>
                   <li data-tag="work">
                     <p><em>June 2013 – September 2013</em></p>
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="reuters">
-                          <label for="reuters" class="summary"><strong>Intern Analyst</strong> at
-                            <strong><a href="https://www.thomsonreuters.com/en.html/" rel="external">Thomson Reuters</a></strong>
-                            Ukraine</label> 
+                          <label for="reuters" class="summary"><strong>Intern Analyst</strong> at <strong><a href="https://www.thomsonreuters.com/en.html/" rel="external">Thomson Reuters</a></strong> Ukraine</label> 
                           <div>
                             <ul>
-                              <li>researched data on EU carbon facilities</li>
+                              <li>gathered and analyzed data on EU carbon emission facilities</li>
                               <li>organized databases and checked existing ones for mistakes</li>
                             </ul>
                           </div>
@@ -637,10 +656,8 @@
                           <label for="orangetravel" class="summary"><strong>HR / Office Manager</strong> at <strong>Orange Travel LLC</strong></label> 
                           <div>
                             <ul>
-                              <li>worked with the Work and Travel USA program, kept track of government updates, communicated	with foreign partners</li>
-                              <li>handled all necessary paperwork for program participation</li>
-                              <li>consulted and instructed clients through the while period of application, preparation,
-                                  interviewing, and visa approval process</li>
+                              <li>worked with over 150 clients throughout the full cycle of Work & Travel USA program &mdash; consulted and instructed on application, preparation, interviewing, and visa approval processes</li>
+                              <li>handled all the paperwork, kept track of government updates, communicated with over 300 foreign partners</li>
                               <li>wrote articles for the Orange Travel blog</li>
                             </ul>
                           </div>
@@ -737,11 +754,11 @@
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="campus">
-                        <label for="campus" class="summary"><strong>Graduate</strong> of <strong><a href="https://education.github.com/experts">GitHub Campus Experts</a></strong></label>
+                        <label for="campus" class="summary"><strong>Graduate</strong> of <a href="https://education.github.com/experts/" rel="external"><strong>GitHub Campus Experts</strong></a></label>
                         <div>
                           <ul>
-                            <li>completed GitHub course following <a href="https://hackcon.mlh.io/events/europe/">HackCon IV</a></li>
-                            <li>organized <a href="https://localhackday.mlh.io/">Kyiv Local Hack Day</a> on 3<sup>rd</sup> of December</li>
+                            <li>completed the course after attending <a href="https://hackcon.mlh.io/" rel="external">HackCon IV</a></li>
+                            <li>organized <a href="https://localhackday.mlh.io/" rel="external">Kyiv Local Hack Day</a> on December, 3<sup>rd</sup></li>
                           </ul>
                         </div>
                       </li>
@@ -755,12 +772,10 @@
                           <label for="naukma" class="summary"><strong>Student</strong> at <strong>Sociology Faculty</strong> at <a href="http://www.ukma.edu.ua/eng/" rel="external"><strong>National University of "Kyiv-Mohyla Academy"</strong></a></label> 
                           <div>
                             <ul>
-                              <li>I chose Sociology as my major for combination of humanitarian, engineering and natural
-                                  sciences, which allowed me to study economics, entepreneurship, brand making, history,
-                                  probability theory and statistics, psychology and many more</li>
-                              <li>found at the Academy my first job after first month of study</li>
-                              <li>took second place in TNS marketing competitions twice - for quantitative research on types of communications on internet and PR project on storytelling in digital brand promotion</li> 
-                              <li>studied <strong>Polish</strong> for a year. <em>Thanks, Academy!</em></li>
+                              <li>I chose Sociology as my major because of a combination of humanitarian, engineering and natural sciences, which allowed me to study economics, entrepreneurship, brand building, history, probability theory, statistics, psychology, and many more</li>
+                              <li>took 2<sup>nd</sup> place in TNS marketing competition, twice &mdash; for quantitative research on types of communications on the Internet, and PR project on storytelling in digital brand promotion</li> 
+                              <li>after just one month of study at the Academy I've found my very first job</li>
+                              <li>studied Polish for a year <sup><em>&mdash; Thanks, Academy!</em></sup></li>
                             </ul>
                           </div>
                       </li>
@@ -771,11 +786,10 @@
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="school">
-                          <label for="school" class="summary"><strong>Student</strong> at <strong>Gymnasium 183 with an emphasis on foreign languages
-                              study</strong></label> 
+                          <label for="school" class="summary"><strong>Student</strong> at <strong>Gymnasium 183 with an emphasis on foreign languages study</strong></label> 
                           <div>
                             <ul>
-                              <li>defended two MAS researches on Logarithm appliance in pottery and Ukrainian theater during WWII</li>
+                              <li>defended two MAS researches &mdash; "Logarithm Appliance in Pottery" and "Ukrainian Theater During WWII"</li>
                               <li>took 2<sup>nd</sup> place at the State Kyiv Olympiad in English twice</li>
                             </ul>
                           </div>
@@ -787,13 +801,11 @@
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="violin">
-                          <label for="violin" class="summary"><strong>Played violin</strong> at <strong><a href="http://js.kiev.ua/">Jazz-Variety School</a></strong></label> 
+                          <label for="violin" class="summary"><strong>Played violin</strong> &#x1f3bb; at <a href="http://js.kiev.ua/" rel="external"><strong>Jazz-Variety School</strong></a></label> 
                           <div>
                             <ul>
-                              <li>never aimed to be a professional musician, but years of mastering violin gave me confidence to
-                                  improvise</li>
-                              <li>joined a band, where I applied whole range of emotions and available musical notes for 8 years
-                                  in a row</li>
+                              <li>never aimed to be a professional musician, but years of mastering violin gave me confidence to improvise</li>
+                              <li>joined a band, where applied whole range of emotions and available musical notes for 8 years in a row</li>
                             </ul>
                           </div>
                       </li>
