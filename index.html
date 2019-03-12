@@ -72,12 +72,6 @@
       background: white;
     }
 
-    /* Pages */
-    #pages {
-      z-index: 2;
-      position: relative;
-    }
-
     /* Tags */
     [data-tag] > *:first-child:after {
       font-size: 0.6em;
@@ -109,12 +103,13 @@
     [data-tag="jam"]:hover > *:first-child:after { background: deepskyblue; }
     [data-tag="talk"]:hover > *:first-child:after { background: fuchsia; }
 
-    /* Events */
-    .eventslalala {
+    /* Highlighted list item */
+    ul:not(.timeline) > li.highlighted {
       margin: 0.25em 0 0.25em -1.75em;
-      background: rgba(0,0,0,0.05);
-      border-radius: 5px;
-      padding: 0.25em 0.5em 0.5em 1.75em;
+      padding: 0.25em 0.5em 0.25em 1.75em;
+    }
+    ul:not(.timeline) > li.highlighted > div {
+      margin-bottom: 0.25em;
     }
   </style>
 </head>
@@ -298,7 +293,7 @@
                                 </ul>
                               </div>
                             </li>
-                            <li class="details eventslalala">
+                            <li class="details highlighted">
                               <input type="checkbox" id="binary-studio-events-list">
                               <label for="binary-studio-events-list" class="summary"><strong>29 events</strong> already organized or whatever</label>
                               <div>
@@ -940,7 +935,7 @@
             <div class="six wide column">          
               <section>
                 <h3>Languages</h3>
-                <p class="tags small"><span>🇺🇦<strong>УКРАЇНСЬКА</strong></span> <span>🇷🇺<strong>РУССКИЙ</strong></span> <span>🇺🇸<strong>ENGLISH</strong></span></p>
+                <p class="tags small"><span class="language" lang="uk">&#x1f1fa;&#x1f1e6; <span>УКРАЇНСЬКА</span></span> <span class="language" lang="ru">&#x1f1f7;&#x1f1fa; <span>РУССКИЙ</span></span> <span class="language" lang="en">&#x1f1fa;&#x1f1f8; ENGLISH</span></p>
               </section>
               <section>
                 <h3>Use</h3>
