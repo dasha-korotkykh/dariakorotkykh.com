@@ -104,7 +104,8 @@
     [data-tag="talk"]:hover > *:first-child:after { background: fuchsia; }
 
     /* Highlighted list item */
-    ul:not(.timeline) > li.highlighted {
+    ul:not(.timeline) > li.highlighted,
+    ul:not(.timeline) > li.bordered {
       margin: 0.25em 0 0.25em -1.75em;
       padding: 0.25em 0.5em 0.25em 1.75em;
     }
@@ -292,7 +293,7 @@
                                 </ul>
                               </div>
                             </li>
-                            <li class="details highlighted">
+                            <li class="details bordered">
                               <input type="checkbox" id="binary-studio-events-list">
                               <label for="binary-studio-events-list" class="summary"><strong>29 events</strong> organized so far</label>
                               <div>
