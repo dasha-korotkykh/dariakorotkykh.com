@@ -112,6 +112,21 @@
     ul:not(.timeline) > li.highlighted > div {
       margin-bottom: 0.25em;
     }
+
+    /* Meh */
+    #are-you-not-entertained {
+      cursor: pointer;
+      background: inherit;
+      font: inherit;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    #are-you-not-entertained .icon {
+      height: 16px;
+      width: 16px;
+      vertical-align: text-top;
+    }
   </style>
 </head>
 <body>
@@ -936,6 +951,45 @@
                 <p class="tags small"><span class="language" lang="uk">&#x1f1fa;&#x1f1e6; <span>УКРАЇНСЬКА</span></span> <span class="language" lang="ru">&#x1f1f7;&#x1f1fa; <span>РУССКИЙ</span></span> <span class="language" lang="en">&#x1f1fa;&#x1f1f8; ENGLISH</span></p>
               </section>
               <section>
+                <h3>Character</h3>
+                <p class="tags small">
+                  HELPER <button id="are-you-not-entertained"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M576 256c0 100.586-53.229 189.576-134.123 239.04-7.532 4.606-17.385 2.241-21.997-5.304-4.609-7.539-2.235-17.388 5.304-21.997C496.549 424.101 544 345.467 544 256c0-89.468-47.452-168.101-118.816-211.739-7.539-4.609-9.913-14.458-5.304-21.997 4.608-7.539 14.456-9.914 21.997-5.304C522.77 66.424 576 155.413 576 256zm-96 0c0-66.099-34.976-124.572-88.133-157.079-7.538-4.611-17.388-2.235-21.997 5.302-4.61 7.539-2.236 17.388 5.302 21.998C418.902 152.963 448 201.134 448 256c0 54.872-29.103 103.04-72.828 129.779-7.538 4.61-9.912 14.459-5.302 21.998 4.611 7.541 14.462 9.911 21.997 5.302C445.024 380.572 480 322.099 480 256zm-138.14-75.117c-7.538-4.615-17.388-2.239-21.998 5.297-4.612 7.537-2.241 17.387 5.297 21.998C341.966 218.462 352 236.34 352 256s-10.034 37.538-26.841 47.822c-7.538 4.611-9.909 14.461-5.297 21.998 4.611 7.538 14.463 9.909 21.998 5.297C368.247 314.972 384 286.891 384 256s-15.753-58.972-42.14-75.117zM256 88.017v335.964c0 21.436-25.942 31.999-40.971 16.971L126.059 352H24c-13.255 0-24-10.745-24-24V184c0-13.255 10.745-24 24-24h102.059l88.971-88.954C230.037 56.038 256 66.551 256 88.017zm-32 19.311l-77.659 77.644A24.001 24.001 0 0 1 129.372 192H32v128h97.372a24.001 24.001 0 0 1 16.969 7.028L224 404.67V107.328z"/></svg>
+                  <audio preload="none">
+                    <source src="./assets/sounds/are-you-not-entertained.mp3" type="audio/mpeg">
+                    </audio>
+                  </button> <a href="https://www.16personalities.com/esfp-personality" rel="external">ENTERTAINER</a> RESOURCEFUL EMPATHETIC AGILE DEVOTED CARING LOYAL
+                  GREGARIOUS TALKATIVE SOCIABLE APPROACHABLE DOWN-TO-EARTH SPONTANEOUS CAREFREE
+                  OUTGOING ENTHUSIASTIC EXPRESSIVE CURIOUS LEARNER COOPERATIVE CREATIVE
+                  EXPERIENTIAL EXCITABLE SENSATION-LOVING PRACTICAL ADVENTUROUS PEOPLE-ORIENTED HARMONIOUS
+                  ACTION-LOVING EFFICIENT ACCEPTING FUN-LOVING PROBLEM SOLVER ATTENTION-LOVING
+                  FRIENDLY WARM VERBAL ASSERTIVE REALIST CONCRETE LIVELY IMPULSIVE
+                  FUNNY ANIMATED CHATTERBOX ANECDOTAL
+                  LIFE-LOVING PEOPLE-CENTRIC THRILLSEEKER IMMEDIATE
+                  GENEROUS BOLD ORIGINAL OBSERVANT SHOWMAN
+                  SENSITIVE CONFLICT-AVERSE UNFOCUSED
+                  SOCIAL FREE-SPIRITED
+                </p>
+              </section>
+              <section>
+                <h3>Credentials</h3>
+                <p class="tags small">HIRING FIRING EXPERTISE RELATIONS DISPUTES DIFFERENCES ETHICS HONESTY FAIRNESS DISCRETION HAPPINESS JOY ONBOARDING TRANSITION COMMUNICATION DEDICATION PAYROLL HELPING GIVING VOLUNTEERING TEACHING COACHING TUTORING MENTORING PERFORMANCE MONITORING 1-ON-1 360 TEAMWORK COLLABORATION PRIORITIZATION MULTITASKING ORGANIZATION SCHEDULING MOTIVATION APPROACHABILITY</p>
+              </section>
+              <section>
+                <h3>Likes 😋</h3>
+                <p class="tags small">
+                  <span class="nowrap">FC BARCELONA</span> <span class="nowrap">PIXEL ART</span> K<span style="color:red">INDER</span>
+                  DAWN <span class="nowrap">APPLE CIDER</span> HEDONISM OSTS FORMATTING CLARITY
+                  <span class="nowrap">BOOKS IN POLISH</span> GENEROSITY <span class="nowrap">RIDING MOTORCYCLE</span> MIST <span class="nowrap">GREY COLOUR</span> TELEGRAM KRAKOW <span class="nowrap">IRISH ACCENT</span> <span class="nowrap">CLEAN SMELLS</span>
+                </p>
+              </section>
+              <section>
+                <h3>Dislikes 😕</h3>
+                <p class="tags small"><span class="nowrap">SMALL TALK</span> <span class="nowrap">PUBLIC TRANSPORT</span>
+                  MUSHROOMS CONAN DELLUSIONS COCKTAILS BERGAMOT INSTAGRAM <span class="nowrap">WEATHER UNDER -3°C</span>
+                  <span class="nowrap">PASSIVE AGGRESSIVE</span> BUREAUCRACY FACEBOOK
+                </p>
+              </section>
+              <section>
                 <h3>Tools</h3>
                 <p class="tags small">
                   <sup>work</sup>
@@ -959,125 +1013,99 @@
                     <a href="" title="Extreme interface harrasment">UNITY 3D</a> 
                     <a href="" title="Basic but exciting gamedev engine, now also browser-based">CONSTRUCT</a> 
                     <span class="nowrap">UPPER-INT ENGLISH</span>
-                  </p>
-                </section>       
-                <section>
-                  <h3>Character</h3>
-                  <p class="tags small">
-                    <a class="nowrap" href="https://www.16personalities.com/esfp-personality">ENTERTAINER
-                    PERSONALITY</a> <audio preload="none">
-                      <source src="./assets/sounds/EntertainerPersonality.mp3" type="audio/mpeg">
-                      </audio>  RESOURCEFUL EMPATHETIC <span class="nowrap">EXTREMELY AGILE</span>
-                        <span class="nowrap">ATTENTIVE TO DETAILS</span> DEVOTED CARING LOYAL 
-                        <span class="nowrap">FIND COMMON LANGUAGE WITH DIFFICULT PEOPLE</span> <!--<a class="nowrap" href="https://steamcommunity.com/id/dashakorotkykh/" rel="external">56 GAMES
-                        ON STEAM</a> <span class="nowrap">43 PUBLIC TALKS</span>-->
-                  </p>
-                </section>
-                <section>
-                  <h3>Likes 😋</h3>
-                  <p class="tags small">
-                    <span class="nowrap">FC BARCELONA</span> <span class="nowrap">PIXEL ART</span> K<span style="color:red">INDER</span>
-                    DAWN <span class="nowrap">APPLE CIDER</span> HEDONISM OSTS FORMATTING CLARITY
-                    <span class="nowrap">BOOKS IN POLISH</span> GENEROSITY <span class="nowrap">RIDING MOTORCYCLE</span> MIST <span class="nowrap">GREY COLOUR</span> TELEGRAM KRAKOW <span class="nowrap">IRISH ACCENT</span> <span class="nowrap">CLEAN SMELLS</span>
-                  </p>
-                </section>
-                <section>
-                  <h3>Dislikes 😕</h3>
-                  <p class="tags small"><span class="nowrap">SMALL TALK</span> <span class="nowrap">PUBLIC TRANSPORT</span>
-                    MUSHROOMS CONAN DELLUSIONS COCKTAILS BERGAMOT INSTAGRAM <span class="nowrap">WEATHER UNDER -3°C</span>
-                    <span class="nowrap">PASSIVE AGGRESSIVE</span> BUREAUCRACY FACEBOOK</p>
-                  </section>
-                        <section>
-                          <h3>Goals</h3>
-                          <p class="tags small bulleted">
-                            <span class="tag">BLIND TYPING IN ENGLISH</span><span class="tag">OBSERVE &amp; LISTEN</span><span class="tag">BE FIT</span><span class="tag">UNDERSTAND UI/UX</span> <span class="tag">LEARN VIDEO EDITING</span><span class="tag">BUILD SOTD WEB-APP WITH VOLODYMYR KUSHNIR</span>
-                          </p>
-                        </section>
-                        <section>
-                    <h3>Education</h3>
-                    <ul class="timeline">
-                      <li>
-                        <p><em>Day to day</em></p><br>
-                        <p class="tags small">
-                        <sup>code</sup>
-                        <span class="nowrap"><a href="https://www.w3schools.com/">W3Schools</a></span>
-                        <span class="nowrap"><a href="https://css-tricks.com/">CSS Tricks</a></span>
-                        <span class="nowrap"><a href="http://www.pointer.io">Pointer.io</a></span>
-                        <span class="nowrap"><a href="https://developer.mozilla.org/en-US/">MDN</a></span>
-                        <span class="nowrap"><a href="https://goodui.org/">GoodUI</a></span>
-                        <span class="nowrap"><a href="learn.freecodecamp.org">freeCodeCamp</a></span>
-                        <br><sup>gamedev</sup>
-                        <span class="nowrap"><a href="www.udemy.com">Udemy</a></span>
-                        <span class="nowrap"><a href="https://www.patreon.com/saint11">Pedro Medeiros</a></span>
-                        <span class="nowrap"><a href="https://t.me/gamedevporn">GDP</a></span>
-                        <span class="nowrap"><a href="https://vk.com/last_indie_standing">Last Indie Standing</a></span>
-                        <br><sup>how things work</sup>
-                        <span class="nowrap"><a href="https://what-if.xkcd.com/">XKCD</a></span>
-                        </p>
-                      </li>     
-                      <li>
-                        <p><em>October 2016 – December 2016</em></p>
-                        <ul>
-                          <li class="details">
-                            <input type="checkbox" id="campus">
-                            <label for="campus" class="summary"><strong>Graduate</strong> of <a href="https://education.github.com/experts/" rel="external"><strong>GitHub Campus Experts</strong></a></label>
+                </p>
+              </section>
+              <section>
+                <h3>Goals</h3>
+                <p class="tags small bulleted">
+                  <span class="tag">BLIND TYPING IN ENGLISH</span><span class="tag">OBSERVE &amp; LISTEN</span><span class="tag">BE FIT</span><span class="tag">UNDERSTAND UI/UX</span> <span class="tag">LEARN VIDEO EDITING</span><span class="tag">BUILD SOTD WEB-APP WITH VOLODYMYR KUSHNIR</span>
+                </p>
+              </section>
+              <section>
+                <h3>Education</h3>
+                <ul class="timeline">
+                  <li>
+                    <p><em>Day to day</em></p><br>
+                    <p class="tags small">
+                    <sup>code</sup>
+                    <span class="nowrap"><a href="https://www.w3schools.com/">W3Schools</a></span>
+                    <span class="nowrap"><a href="https://css-tricks.com/">CSS Tricks</a></span>
+                    <span class="nowrap"><a href="http://www.pointer.io">Pointer.io</a></span>
+                    <span class="nowrap"><a href="https://developer.mozilla.org/en-US/">MDN</a></span>
+                    <span class="nowrap"><a href="https://goodui.org/">GoodUI</a></span>
+                    <span class="nowrap"><a href="learn.freecodecamp.org">freeCodeCamp</a></span>
+                    <br><sup>gamedev</sup>
+                    <span class="nowrap"><a href="www.udemy.com">Udemy</a></span>
+                    <span class="nowrap"><a href="https://www.patreon.com/saint11">Pedro Medeiros</a></span>
+                    <span class="nowrap"><a href="https://t.me/gamedevporn">GDP</a></span>
+                    <span class="nowrap"><a href="https://vk.com/last_indie_standing">Last Indie Standing</a></span>
+                    <br><sup>how things work</sup>
+                    <span class="nowrap"><a href="https://what-if.xkcd.com/">XKCD</a></span>
+                    </p>
+                  </li>     
+                  <li>
+                    <p><em>October 2016 – December 2016</em></p>
+                    <ul>
+                      <li class="details">
+                        <input type="checkbox" id="campus">
+                        <label for="campus" class="summary"><strong>Graduate</strong> of <a href="https://education.github.com/experts/" rel="external"><strong>GitHub Campus Experts</strong></a></label>
+                        <div>
+                          <ul>
+                            <li>completed the course after attending <a href="https://hackcon.mlh.io/" rel="external">HackCon IV</a></li>
+                            <li>organized <a href="https://localhackday.mlh.io/" rel="external">Kyiv Local Hack Day</a> on December, 3<sup>rd</sup></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><em>1<sup>st</sup> September 2012 – 15<sup>th</sup> June 2016</em></p>
+                    <ul>
+                      <li class="details">
+                        <input type="checkbox" id="naukma">
+                          <label for="naukma" class="summary"><strong>Student</strong> at <strong>Sociology Faculty</strong> at <a href="http://www.ukma.edu.ua/eng/" rel="external"><strong>National University of "Kyiv-Mohyla Academy"</strong></a></label> 
+                          <div>
+                            <ul>
+                              <li>I chose Sociology as my major because of a combination of humanitarian, engineering and natural sciences, which allowed me to study economics, entrepreneurship, brand building, history, probability theory, statistics, psychology, and many more</li>
+                              <li>took 2<sup>nd</sup> place in TNS marketing competition, twice &mdash; for quantitative research on types of communications on the Internet, and PR project on storytelling in digital brand promotion</li> 
+                              <li>after just one month of study at the Academy I've found my very first job</li>
+                              <li>studied Polish for a year <sup><em>&mdash; Thanks, Academy!</em></sup></li>
+                            </ul>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><em>1<sup>st</sup> September 2007 – 20<sup>th</sup> June 2012</em></p>
+                    <ul>
+                      <li class="details">
+                        <input type="checkbox" id="school">
+                          <label for="school" class="summary"><strong>Student</strong> at <strong>Gymnasium 183 with an emphasis on foreign languages study</strong></label> 
                             <div>
-                              <ul>
-                                <li>completed the course after attending <a href="https://hackcon.mlh.io/" rel="external">HackCon IV</a></li>
-                                <li>organized <a href="https://localhackday.mlh.io/" rel="external">Kyiv Local Hack Day</a> on December, 3<sup>rd</sup></li>
-                              </ul>
-                            </div>
-                          </li>
-                        </ul>
+                            <ul>
+                              <li>defended two MAS researches &mdash; "Logarithm Appliance in Pottery" and "Ukrainian Theater During WWII"</li>
+                              <li>took 2<sup>nd</sup> place at the State Kyiv Olympiad in English twice</li>
+                            </ul>
+                          </div>
                       </li>
-                      <li>
-                        <p><em>1<sup>st</sup> September 2012 – 15<sup>th</sup> June 2016</em></p>
-                        <ul>
-                          <li class="details">
-                            <input type="checkbox" id="naukma">
-                              <label for="naukma" class="summary"><strong>Student</strong> at <strong>Sociology Faculty</strong> at <a href="http://www.ukma.edu.ua/eng/" rel="external"><strong>National University of "Kyiv-Mohyla Academy"</strong></a></label> 
-                              <div>
-                                <ul>
-                                  <li>I chose Sociology as my major because of a combination of humanitarian, engineering and natural sciences, which allowed me to study economics, entrepreneurship, brand building, history, probability theory, statistics, psychology, and many more</li>
-                                  <li>took 2<sup>nd</sup> place in TNS marketing competition, twice &mdash; for quantitative research on types of communications on the Internet, and PR project on storytelling in digital brand promotion</li> 
-                                  <li>after just one month of study at the Academy I've found my very first job</li>
-                                  <li>studied Polish for a year <sup><em>&mdash; Thanks, Academy!</em></sup></li>
-                                </ul>
-                              </div>
-                          </li>
-                        </ul>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><em>September 2007 – May 2010</em></p>
+                    <ul>
+                      <li class="details">
+                        <input type="checkbox" id="violin">
+                          <label for="violin" class="summary"><strong>Played violin</strong> &#x1f3bb; at <a href="http://js.kiev.ua/" rel="external"><strong>Jazz-Variety School</strong></a></label> 
+                          <div>
+                            <ul>
+                              <li>never aimed to be a professional musician, but years of mastering violin gave me confidence to improvise</li>
+                              <li>joined a band, where applied whole range of emotions and available musical notes for 8 years in a row</li>
+                            </ul>
+                          </div>
                       </li>
-                      <li>
-                        <p><em>1<sup>st</sup> September 2007 – 20<sup>th</sup> June 2012</em></p>
-                        <ul>
-                          <li class="details">
-                            <input type="checkbox" id="school">
-                              <label for="school" class="summary"><strong>Student</strong> at <strong>Gymnasium 183 with an emphasis on foreign languages study</strong></label> 
-                              <div>
-                                <ul>
-                                  <li>defended two MAS researches &mdash; "Logarithm Appliance in Pottery" and "Ukrainian Theater During WWII"</li>
-                                  <li>took 2<sup>nd</sup> place at the State Kyiv Olympiad in English twice</li>
-                                </ul>
-                              </div>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <p><em>September 2007 – May 2010</em></p>
-                        <ul>
-                          <li class="details">
-                            <input type="checkbox" id="violin">
-                              <label for="violin" class="summary"><strong>Played violin</strong> &#x1f3bb; at <a href="http://js.kiev.ua/" rel="external"><strong>Jazz-Variety School</strong></a></label> 
-                              <div>
-                                <ul>
-                                  <li>never aimed to be a professional musician, but years of mastering violin gave me confidence to improvise</li>
-                                  <li>joined a band, where applied whole range of emotions and available musical notes for 8 years in a row</li>
-                                </ul>
-                              </div>
-                          </li>
-                        </ul>
-                      </li>
-                  </ul> 
+                    </ul>
+                  </li>
+                </ul> 
               </section>
             </div>
           </div>
@@ -1088,5 +1116,10 @@
   <footer>
     This footer says <em>"Cheers!"</em>   
   </footer>
+  <script>
+    document.getElementById("are-you-not-entertained").addEventListener("click", function() {
+			this.childNodes[2].play();
+		});
+  </script>
 </body>
 </html>
