@@ -9,27 +9,36 @@ Currently the main purpose of this page is to tell about myself in a readable an
 To do so I break down all the info in categories:
 
 * Contacts
+
 How to get in touch. Telegram is preferable by all means!
 
 * Intro
+
 Short summary of one's self-presentation
 
 * Experience & Education
+
 All important professinal events, jobs and projects from the most recent back to those oldest, e-e-e-e-every one — becuse together they form personality and skill portrait, and tell good stories also. I skipped the earliest, childhood ones for now
 
 * Languages
+
 Hope to add more in that block later
 
 * Skills
+
 It is always hard to decide whether to list them like items or describe them as actions. For the sake of clarity I took the best from both approaches
 
 * Character
+
 Hey, it is the best option to imagine that persone who wrote it without actually having to meet (: Anyway, while that block was being born I accidentally learned a lot about how other people perceive me
 
 * Likes & Dislikes
+
 Second most unexpected block on one's CV, on the other hand great opportunity to discover something in common <em>(hate for facebook, mmmmmm)</em> 
 
 * Wants
+
 The Most Unexpected block, suggested by my abovementioned mentor, I fill with goals I am really interested in. Guess it also kinda falls into personality description. Fun fact, since writing it in December <em>(approximately)</em> two goals have already been removed due to reaching. I am definitely keeping that part of CV as my both self-made motivator and promise
+
 
 I still strive to learn and practice Front End more, this project being a starting point.
