@@ -1,5 +1,5 @@
 — Heads up!
-Given repository consists of content, assets and a year-long story of my personal résumé hosted currently with GitHub Pages at [dariakorotkykh.com](dariakorotkykh.com).
+Given repository consists of content, assets and a year-long story of my personal résumé hosted currently with GitHub Pages at [dariakorotkykh.com](https://dariakorotkykh.com/).
 
 I started it <em>as a study for Binary Studio Academy lesson in GitHub</em> with simple html document and basic styles, based on already developed personal webpage by Volodymyr Kushnir, and continued prettyfying and refactoring with his help, guidance and urging <sup>(thanks, Volodya!)</sup>.
 In a year he developed his own [stylesheet available for use](https://github.com/volodymyr-kushnir/volodymyrkushnir.com/tree/master/assets/stylesheets), which I employ at my webpage too (with some custom changes, so there's almost no former CSS code left). And does it feel and look good! (:
