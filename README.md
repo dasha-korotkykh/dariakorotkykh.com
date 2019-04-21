@@ -1,8 +1,8 @@
 — Heads up!
-Given repository consists of content, assets and a year-long story of my personal résumé hosted currently at  dariakorotkykh.com.
+Given repository consists of content, assets and a year-long story of my personal résumé hosted currently with GitHub Pages at [dariakorotkykh.com](dariakorotkykh.com).
 
 I started it <em>as a study for Binary Studio Academy lesson in GitHub</em> with simple html document and basic styles, based on already developed personal webpage by Volodymyr Kushnir, and continued prettyfying and refactoring with his help, guidance and urging <sup>(thanks, Volodya!)</sup>.
-In a year he developed his own (stylesheet available for use)[https://github.com/volodymyr-kushnir/volodymyrkushnir.com/tree/master/assets/stylesheets], which I employ at my webpage too (with some custom changes, so there's almost no former CSS code left). And does it feel and look good! (:
+In a year he developed his own [stylesheet available for use](https://github.com/volodymyr-kushnir/volodymyrkushnir.com/tree/master/assets/stylesheets), which I employ at my webpage too (with some custom changes, so there's almost no former CSS code left). And does it feel and look good! (:
 
 Currently the main purpose of this page is to tell about myself in a readable and aesthetic way. I use it as a résumé accompanied with cover letter when applying for a job, and update it to keep my own curriculum vitae track of things and events. 
 To do so I break down all the info in categories:
