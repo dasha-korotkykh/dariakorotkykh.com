@@ -1,9 +1,10 @@
 — Heads up!
 Given repository consists of content, assets and a year-long story of my personal résumé hosted currently with GitHub Pages at [dariakorotkykh.com](https://dariakorotkykh.com/).
 
-I started it <em>as a study for Binary Studio Academy lesson in GitHub</em> with simple html document and basic styles, based on already developed personal webpage by Volodymyr Kushnir, and continued prettyfying and refactoring with his help, guidance and urging <sup>(thanks, Volodya!)</sup>.
+I started it <em>as a study for Binary Studio Academy lesson in GitHub</em> with simple html document and basic styles, based on already developed personal webpage by Volodymyr Kushnir, and continued prettyfying and refactoring with his help, guidance and urging <sup>(thanks, Volodya!)</sup>. 
 In a year he developed his own [stylesheet available for use](https://github.com/volodymyr-kushnir/volodymyrkushnir.com/tree/master/assets/stylesheets), which I employ at my webpage too (with some custom changes, so there's almost no former CSS code left). And does it feel and look good! (:
 
+I used to regard this page as a training in basic coding and learning and enjoying version control. Later it itransformed to object of UX-centered discucssions, and I strived to keep the repository clear and maintained as if it was a customer's project. 
 Currently the main purpose of this page is to tell about myself in a readable and aesthetic way. I use it as a résumé accompanied with cover letter when applying for a job, and update it to keep my own curriculum vitae track of things and events. 
 To do so I break down all the info in categories:
 
@@ -30,3 +31,5 @@ Second most unexpected block on one's CV, on the other hand great opportunity to
 
 * Wants
 The Most Unexpected block, suggested by my abovementioned mentor, I fill with goals I am really interested in. Guess it also kinda falls into personality description. Fun fact, since writing it in December <em>(approximately)</em> two goals have already been removed due to reaching. I am definitely keeping that part of CV as my both self-made motivator and promise. 
+
+I still strive to learn and practice Front End more, this project being a starting point.
