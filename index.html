@@ -103,10 +103,12 @@
     [data-tag="hackathon"] > *:first-child:after { content: "hackathon"; }
     [data-tag="jam"] > *:first-child:after { content: "jam"; }
     [data-tag="talk"] > *:first-child:after { content: "talk"; }
+    [data-tag="volunteering"] > *:first-child:after { content: "volunteering"; }
     [data-tag="work"]:hover > *:first-child:after { background: blue; }
     [data-tag="hackathon"]:hover > *:first-child:after { background: midnightblue; }
     [data-tag="jam"]:hover > *:first-child:after { background: deepskyblue; }
     [data-tag="talk"]:hover > *:first-child:after { background: fuchsia; }
+    [data-tag="volunteering"]:hover > *:first-child:after { background:rgb(255, 133, 154); }
 
     /* Highlighted list item */
     ul:not(.timeline) > li.highlighted,
@@ -119,6 +121,7 @@
     }
   </style>
 </head>
+
 <body>
   <main>
     <div id="wave">
@@ -180,7 +183,7 @@
                 </div>
                 <div class="sixteen wide column">
                   <h2>Résumé</h2>
-                  <p>— Hello! I am a manager with 5 years of experience in creating events and carrying out long-term projects with
+                  <p>— Hello! I am a manager with 6 years of experience in creating events and carrying out long-term projects with
                   practicality, creativity and empathy.<!-- Apart from that, I am a growing gamedev fan.--></p>
                 </div>
               </div>
@@ -197,7 +200,7 @@
                 <h3>Experience</h3>
                 <h6>Recent</h6>
                 <ul class="timeline">
-                  <li data-tag="jam">
+                  <li data-tag="volunteering">
                     <p><em>17<sup>th</sup> – 21<sup>st</sup> July 2019</em></p>
                     <p><strong>Volunteer</strong> at the annual <strong>Slavic Game Jam</strong></p>
                     <div>
@@ -211,11 +214,11 @@
                     <p><strong>Сommunity Developer</strong> at <strong>Ricker Lyman Robotic</strong></p>
                     <div>
                       <ul>
-                        <li>curating digital content and resource center for marketing purposes</li>
-                        <li>gap filler</li>
-                        <li>building marketing strategy and company product image at tech trade shows <em>(VMworld San Francisco, VMworld Barcelona)</em></li>
-                        <li>remaking a product website</li>
-                        <li>writing and editing copy, creating digital imagery, </li>
+                        <li>create digital content – datasheets, presentations, articles, newsletters for leads</li>
+                        <li>run company Google Analytics, Google Ads and social media accounts</li>
+                        <li>manage company participation in tech trade shows <em>(VMworld San Francisco, VMworld Barcelona)</em>, represent the company in <a href="https://www.cncf.io/">CNCF Members community</a></li>
+                        <li>rebuild the product website</li>
+                        <li><a href="https://dasha-korotkykh.github.io/mana/">bonus project</a> – run internal reward programme enabling employees from all three offices to show recognition to each other</li>
                       </ul>
                     </div>
                   </li>
@@ -230,7 +233,7 @@
                   <li data-tag="work">
                     <p><em>27<sup>th</sup> November 2016 – 19<sup>th</sup> April 2019</em></p>
                     <p><a href="https://jobs.dou.ua/companies/binary-studio/vacancies/33427/" rel="external"><strong>HR Marketing Specialist</strong></a><!--(<strong>Event Manager</strong> as of <em>18<sup>th</sup> February 2019</em>)--> at <strong><a href="binary-studio.com" rel="external">Binary	Studio</a></strong></p>
-                    <p>Here goes new text.</p>
+                    <p></p>
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="binary-studio-events" checked="">
@@ -651,7 +654,7 @@
                         </div>
                       </li>
                       <li><strong>SMM</strong> &mdash; wrote internal weekly newsletter <strong>Pirozhki</strong> and kept building online brand awareness through SMM channels (Facebook, Twitter, Instagram, etc.)</li>
-                      <li>helped select, order, prepare and distribute <strong>presents for employees</strong> &#x1f381;&#x1f384;&#x1f385;</li>
+                      <li>helped select, order, prepare and distribute <strong>gifts for employees</strong> &#x1f381;</li>
                       <li>helped with any kind of <strong>administrative tasks</strong>, making sure that our office is always clean, inspiring, and comfortable work environment, checked supplies and coordinated cleaning staff</li>
                       <li>presented information clearly and prepared reports, metrics, OKRs for the management</li>
                       <li><strong>assisted in other HR areas</strong> as needed</li>
@@ -677,7 +680,7 @@
                   </li>
                 </ul>
                   </li>
-                  <li data-tag="work">
+                  <li data-tag="volunteering">
                     <p><em>April 2016</em></p>
                     <ul>
                       <li class="details">
@@ -717,6 +720,10 @@
                         <label for="hackathoning" class="summary"><strong>Grew fond of hackathoning and jamming</strong>, even though I couldn't code &#x1f412;. So I demoed!</label>
                         <div>
                           <ul class="timeline">
+                            <li data-tag="jam">
+                              <p><em>19<sup>th</sup> – 26<sup>th</sup> June 2020</em></p>
+                              <p>Took 2<sup>nd</sup> place for graphics for <strong>Enemies & Foes</strong> game at <strong>Stranger Jam</strong></p>
+                            </li>
                             <li data-tag="jam">
                               <p><em>November 2018</em></p>
                               <p><strong>Learned the basics of Construct</strong> &mdash; an easy and flexible 2D game engine</p>
@@ -845,23 +852,6 @@
                               </ul>
                             </li>
                             <li data-tag="hackathon">
-                              <p><em>23<sup>rd</sup> – 24<sup>th</sup> October 2015</em></p>
-                              <ul>
-                                <li class="details">
-                                  <input type="checkbox" id="gdg">
-                                  <label for="gdg" class="summary"><strong>Explored</strong> <a href="https://devfest.gdg.org.ua/" rel="external"><strong>GDG Lviv</strong></a></strong></label>
-                                  <div>
-                                    <ul>
-                                      <li>learned how to use browser-based IDE</li>
-                                      <!--<li>hated Lviv for the first time</li>-->
-                                      <li>organized meals, logistics, accommodations and medication for programmers &mdash; <em>soon that would become my job</em> </li>
-                                      <li>became acquainted with GDG org team, helped them organize 4 events in Kyiv later</li>
-                                    </ul>
-                                  </div>
-                                </li>
-                              </ul>
-                            </li>
-                            <li data-tag="hackathon">
                               <p><em>3<sup>rd</sup> – 4<sup>th</sup> October 2015</em></p>
                               <ul>
                                 <li class="details">
@@ -899,12 +889,12 @@
                     </li>
                     </ul>
                     </li>
-                  <li data-tag="work">
+                  <li data-tag="volunteering">
                     <p><em>July 2015 – September 2015</em></p>
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="pr">
-                        <label for="pr" class="summary"><strong>Project Volunteer</strong> at <strong>PR Department</strong> of the <strong><a href="http://www.ukma.edu.ua/eng/" rel="external">National University of Kyiv-Mohyla Academy</a></strong></label>
+                        <label for="pr" class="summary"><strong>Volunteer</strong> at <strong>PR Department</strong> of the <strong><a href="http://www.ukma.edu.ua/eng/" rel="external">National University of Kyiv-Mohyla Academy</a></strong></label>
                         <div>
                           <ul>
                             <li>enlisted to help with the celebration of the 500<sup>th</sup> Anniversary of NaUKMA &mdash; gained some experience in organizing a large-scale event</li>
