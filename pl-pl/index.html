@@ -107,37 +107,16 @@
       box-shadow: none;
     }
 
-    [data-tag="work"]>*:first-child:after {
-      content: "work";
-    }
-
-    [data-tag="hackathon"]>*:first-child:after {
-      content: "hackathon";
-    }
-
-    [data-tag="jam"]>*:first-child:after {
-      content: "jam";
-    }
-
-    [data-tag="talk"]>*:first-child:after {
-      content: "talk";
-    }
-
-    [data-tag="work"]:hover>*:first-child:after {
-      background: blue;
-    }
-
-    [data-tag="hackathon"]:hover>*:first-child:after {
-      background: midnightblue;
-    }
-
-    [data-tag="jam"]:hover>*:first-child:after {
-      background: deepskyblue;
-    }
-
-    [data-tag="talk"]:hover>*:first-child:after {
-      background: fuchsia;
-    }
+    [data-tag="work"] > *:first-child:after { content: "work"; }
+    [data-tag="hackathon"] > *:first-child:after { content: "hackathon"; }
+    [data-tag="jam"] > *:first-child:after { content: "jam"; }
+    [data-tag="talk"] > *:first-child:after { content: "talk"; }
+    [data-tag="volunteering"] > *:first-child:after { content: "volunteering"; }
+    [data-tag="work"]:hover > *:first-child:after { background: blue; }
+    [data-tag="hackathon"]:hover > *:first-child:after { background: midnightblue; }
+    [data-tag="jam"]:hover > *:first-child:after { background: deepskyblue; }
+    [data-tag="talk"]:hover > *:first-child:after { background: fuchsia; }
+    [data-tag="volunteering"]:hover > *:first-child:after { background:rgb(255, 133, 154); }
 
     /* Highlighted list item */
     ul:not(.timeline)>li.highlighted,
@@ -949,8 +928,9 @@
                             umiałam programować. Więc nauczyłam się w trakcie &#x1f412;</strong></label>
                         <div>
                           <ul class="timeline">
+                          <li data-tag="jam">
                             <p><em>19. – 26. czerwca 2020</em></p>
-                            <p>2<sup>ge</sup> miejsce za grafiku dla gry <strong>Enemies & Foes</strong> na <strong>Stranger Jam</strong></p>
+                            <p>Gra <strong>Enemies & Foes</strong> na <strong>Stranger Jam</strong> – 2<sup>ge</sup> miejsce za grafiku</p>
                           </li>
                             <li data-tag="jam">
                               <p><em>listopad 2018</em></p>
@@ -959,31 +939,29 @@
                             </li>
                             <li data-tag="jam">
                               <p><em>7. – 15. lipca 2018</em></p>
-                              <p>Spędziłam białe noce pracując nad <strong>pixelartowym slasherem z wieloma poziomami
-                                  Raido</strong> podczas trwającego tydzień <strong>Castle Game Jam</strong> w
+                              <p>Pixelartowy slasher <strong>
+                                  Raido</strong> podczas trwającego tydzień <strong>Castle Game Jamu</strong> w
                                 prawdziwym szwedzkim zamku</p>
                             </li>
                             <li data-tag="jam">
                               <p><em>26. – 28. stycznia 2018</em></p>
-                              <p><strong>Tworzyłam pixel-art, lokalizację w 4 językach i voiceovery</strong> dla
-                                top-down shootera <strong>Utrata transmisji </strong> na <strong><a href="http://krakjam.pl/" rel="external">KrakJam
-                                    - Global Game Jam</a></strong></p>
+                              <p>Top-down shooter<strong>Utrata transmisji </strong> na <strong><a href="http://krakjam.pl/" rel="external">KrakJam
+                                    - Global Game Jam</a></strong> – pixel-art, lokalizację w 4 językach i voiceovery</p>
                             </li>
                             <li data-tag="jam">
                               <p><em>9. – 10. grudnia 2017</em></p>
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="przeddziemmie">
-                                  <label for="przeddziemmie" class="summary"><strong>Wynałazłam nowe polskie
-                                      słowo</strong> <em>"Przeddżemie"</em> na <strong><a href="http://senseigamejam.pl/" rel="external">Sensei Game
+                                  <label for="przeddziemmie" class="summary"><strong>Przeddżemie</strong> na <strong><a href="http://senseigamejam.pl/" rel="external">Sensei Game
                                         Jam</a> we
                                       Wroclawiu</strong></label>
                                   <div>
                                     <ul>
-                                      <li>"Przeddżemie" opisuje atmosferę tuż przed game jamem &mdash; więc napisaliśmy
+                                      <li>Przeddżemie – słowo-wynałazek – opisuje atmosferę tuż przed game jamem; napisaliśmy z zespółem
                                         <a href="https://daniko.itch.io/przeddzemie" rel="external"><strong>o tym
                                             grę</strong></a></li>
-                                      <li>Nauczyłam się kilku piosenek katolickich / folklorystycznych w języku polskim
+                                      <li>Nauczyłam się kilku piosenek katolickich w języku polskim
                                       </li>
                                       </ul>
                                       </div>
@@ -992,18 +970,28 @@
                                     </li>
                             <li data-tag="jam">
                               <p><em>listopada 2017</em></p>
-                              <p><strong>Stworzyłam grę w bardzo niskiej rozdzielczości</strong> z czterema
-                                zakończeniami <a href="https://merlin-ua.itch.io/tower-64" rel="external"><strong>Tower
+                              <p>Gra w bardzo niskiej rozdzielczości <a href="https://merlin-ua.itch.io/tower-64" rel="external"><strong>Tower
                                     62<sup>2</sup></strong></a> dla <strong>LowRezJam</strong>
                                 <sup><em>(online)</em></sup></p>
+                            </li>                            
+                            <li data-tag="jam">
+                              <p><em>28. – 30. lipca 2017</em></p>
+                              <p><strong>Jaś Śni o
+                                  Nieznanym</strong> na <strong><a href="http://slavicgamejam.org/" rel="external">Warsaw Slavic Game
+                                    Jam</a></strong></p>
+                            </li>
+                            <li data-tag="jam">
+                              <p><em>27. – 29. stycznia 2017</em></p>
+                              <p><strong>Surf the Sky</strong> na <strong><a
+                                    href="hhttps://www.facebook.com/events/1116260575151201" rel="external">KrakJam
+                                    Global Game Jam</a></strong></p>
                             </li>
                             <li data-tag="hackathon">
                               <p><em>28. – 30. października 2016</em></p>
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="wattaheat">
-                                  <label for="wattaheat" class="summary">Ja i mój zespół <strong>stworzyliśmy
-                                      "Wattaheat" i zajęli 1<sup>sze</sup> miejsce</strong> na <strong><a
+                                  <label for="wattaheat" class="summary"><strong>Wattaheat</strong> na <strong><a
                                         href="https://www.facebook.com/events/191289977949171/" rel="external">Garage 48
                                         Dnipro IoT Hackathon</a></strong></label>
                                   <div>
@@ -1011,6 +999,7 @@
                                       <li>"Wattaheat" to jedyne w swoim rodzaju urządzenie inteligentne, które oblicza
                                         czas gotowania płynów i przesyłam go do aplikacji mobilnej w czasie rzeczywistym
                                       </li>
+                                      <li>zajęliśmy 1<sup>sze</sup> miejsce</li>
                                       <li>nasz zespół „TeamCook” został poproszony o zaprezentowanie technologii na
                                         Lwowskim Maker Faire <sup><em>(zrobiliśmy to)</em></sup> i rozwinąć go do
                                         możliwej masowej produkcji <sup><em>(tego nie zrobiliśmy)</em></sup></li>
@@ -1024,14 +1013,14 @@
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="hacktus">
-                                  <label for="hacktus" class="summary"><strong>Pracowaliśmy nad aplikacją "Hacktus"
-                                    </strong> podczas <strong><a href="https://www.facebook.com/events/1570965446562758/" rel="external">Garage
+                                  <label for="hacktus" class="summary">Aplikacja <strong>Hacktus
+                                    </strong> na <strong><a href="https://www.facebook.com/events/1570965446562758/" rel="external">Garage
                                         48 Odessa Gamification Hackathon</a></strong></label>
                                   <div>
                                     <ul>
                                       <li>ideą projektu było zebranie i zgromizowanie różnych zasobów edukacji online
                                         (edX, Codewars, Coursera itp.) w jednej aplikacji</li>
-                                      <li>wnioski wyciągnięte: czasami nawet porządny projekt z solidnym zapleczem nie
+                                      <li>wnioski wyciągnięte: nawet porządny projekt z solidnym zapleczem nie
                                         może być sprzedawany bez dobrego interfejsu</li>
                                     </ul>
                                   </div>
@@ -1043,38 +1032,26 @@
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="ditro">
-                                  <label for="ditro" class="summary"><strong>Zarządzałam rozwojem produktu i marketingem</strong>
+                                  <label for="ditro" class="summary"><strong>DITRO</strong> app
                                     na <strong><a href="https://dou.ua/calendar/9783/" rel="external">STEM
                                         Hackathon</a></strong></label>
                                   <div>
                                     <ul>
-                                      <li>zbudowaliśmy "DITRO" &mdash; aplikacja OpenCV dla dronów, która pozwala użytkownikowi
-                                        zaplanować trasę i działania drona (lądowanie, start, zrobienie zdjęcia itp.) i
-                                        zainstalowaliśmy go w zdalnie sterowanym samochodzie</li>
+                                      <li>zbudowaliśmy aplikacje z OpenCV dla dronów, która pozwala użytkownikowi
+                                        zaplanować trasę i działania drona (lądowanie, start, zrobienie zdjęcia itp.)</li>
+                                        <li>zainstalowaliśmy go w zdalnie sterowanym samochodzie dla live prezentacji</li>
                                       <li>zdobyliśmy 2. miejsce</li>
                                     </ul>
                                   </div>
                                 </li>
                               </ul>
                             </li>
-                            <li data-tag="jam">
-                              <p><em>28. – 30. lipca 2017</em></p>
-                              <p><strong>Połączyłam 2D i 3D</strong> w grze o jednym poziomie <strong>Jaś Śni o
-                                  Nieznanym</strong> na <strong><a href="http://slavicgamejam.org/" rel="external">Warsaw Slavic Game
-                                    Jam</a></strong></p>
-                            </li>
-                            <li data-tag="jam">
-                              <p><em>27. – 29. stycznia 2017</em></p>
-                              <p><strong>Zaczęłam uczestniczać w game jamach w Polsce</strong> od <strong><a
-                                    href="hhttps://www.facebook.com/events/1116260575151201" rel="external">KrakJam
-                                    Global Game Jam</a></strong></p>
-                            </li>
                             <li data-tag="hackathon">
                               <p><em>27. – 28. lutego 2016</em></p>
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="nses">
-                                  <label for="nses" class="summary"><strong>"No Spam Epic Shit"</strong> na <strong><a
+                                  <label for="nses" class="summary"><strong>"No Spam Epic Sh*t"</strong> na <strong><a
                                         href="https://dou.ua/calendar/9777/" rel="external">INT20H
                                         Hackathon</a></strong></label>
                                   <div>
@@ -1092,15 +1069,14 @@
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="proffstore">
-                                  <label for="proffstore" class="summary"><strong>Proffstore Hackathon</strong></label>
+                                  <label for="proffstore" class="summary"><strong>Lite</strong> na <strong>Proffstore Hackathon</strong></label>
                                   <div>
                                     <ul>
                                       <li>zebralśmy największą drużynę podczas największego hackathonu w UE (note to
                                         myself: pogonia za liczbami to zły pomysł)</em></li>
-                                      <li>zbudowaliśmy prototyp "Lite" — platformy internetowej do łączenia freelancerów
+                                      <li>zbudowaliśmy prototyp platformy internetowej do łączenia freelancerów
                                         i klientów</li>
-                                      <li>nasza prezentacja była tak gorąca, że rura grzewcza się zapaliła, kiedy
-                                        prezentowałam produkt</li>
+                                      <li>nasza prezentacja była tak gorąca, że rura grzewcza się zapaliła</li>
                                     </ul>
                                   </div>
                                 </li>
@@ -1111,12 +1087,11 @@
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="jamkpi">
-                                  <label for="jamkpi" class="summary"><strong>Wkroczyłam w gamedev</strong> jako
-                                    <strong>Artysta</strong> na <strong><a href="http://gamejamkpi.github.io/"
+                                  <label for="jamkpi" class="summary"><strong>Full λ Life</strong> na <strong><a href="http://gamejamkpi.github.io/"
                                         rel="external">Game Jam KPI</a></strong></label>
                                   <div>
                                     <ul>
-                                      <li>tworzyłam sztukę i pisałam żarty do 8-bitowej gry o programistach, którzy
+                                      <li>tworzyłam pixel art i pisałam żarty do 8-bitowej gry o programistach, którzy
                                         polują na zombie i szukają drogiego sera</li>
                                       <li>otrzymałiśmy nagrodę People's Choice Award, a także zdobyliśmy nominację do
                                         nagrody Ubisoft za najlepszą prezentację</li>
@@ -1130,14 +1105,13 @@
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="linguahack">
-                                  <label for="linguahack" class="summary"><strong>Mój pierwszy hackathon <a
+                                  <label for="linguahack" class="summary">Gra z ML<strong>A.I.L.A.S.</strong> na <strong><a
                                         href="http://www.linguahack.com/" rel="external">Linguahack</a></strong></label>
                                   <div>
                                     <ul>
-                                      <li>uczestniczyłam w pierwszym hackathonie i dołączyłem do niesamowitego zespołu,
-                                        który miał ogromny wpływ na moje życie</li>
+                                      <li>mój pierwszy hackathon który miał ogromny wpływ na moje życie</li>
                                       <li>wykonałam makiety interfejsów, testy i prezentacje dla opartej na przeglądarce
-                                        gry Alias, w której do 10 graczy może grać przeciwko AI <em> (która mówi po
+                                        gry typu Alias, w której do 10 graczy może grać przeciwko sztucznej inteligencji <em> (która mówi po
                                           ukraińsku i od czasu do czasu przeklina)</em></li>
                                       <li>wygrali 1<sup>sze</sup> miejsce</li>
                                     </ul>
