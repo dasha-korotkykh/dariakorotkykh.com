@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ru">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics  -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135383703-1"></script>
@@ -100,13 +100,15 @@
         box-shadow: none;
       }
       [data-tag="work"] > *:first-child:after { content: "work"; }
-      [data-tag="hackathon"] > *:first-child:after { content: "hackathon"; }
-      [data-tag="jam"] > *:first-child:after { content: "jam"; }
-      [data-tag="talk"] > *:first-child:after { content: "talk"; }
-      [data-tag="work"]:hover > *:first-child:after { background: blue; }
-      [data-tag="hackathon"]:hover > *:first-child:after { background: midnightblue; }
-      [data-tag="jam"]:hover > *:first-child:after { background: deepskyblue; }
-      [data-tag="talk"]:hover > *:first-child:after { background: fuchsia; }
+    [data-tag="hackathon"] > *:first-child:after { content: "hackathon"; }
+    [data-tag="jam"] > *:first-child:after { content: "jam"; }
+    [data-tag="talk"] > *:first-child:after { content: "talk"; }
+    [data-tag="volunteering"] > *:first-child:after { content: "volunteering"; }
+    [data-tag="work"]:hover > *:first-child:after { background: blue; }
+    [data-tag="hackathon"]:hover > *:first-child:after { background: midnightblue; }
+    [data-tag="jam"]:hover > *:first-child:after { background: deepskyblue; }
+    [data-tag="talk"]:hover > *:first-child:after { background: fuchsia; }
+    [data-tag="volunteering"]:hover > *:first-child:after { background:rgb(255, 133, 154); }
   
       /* Highlighted list item */
       ul:not(.timeline) > li.highlighted,
@@ -180,7 +182,7 @@
                 </div>
                 <div class="sixteen wide column">
                   <h2>Резюме</h2>
-                  <p>— Привет! Я менеджер с 5-летним опытом создания мероприятий и выполнения долгосрочных проектов с практичностью, креативностью и эмпатией.
+                  <p>— Привет! Я менеджер с 6-летним опытом создания мероприятий и выполнения долгосрочных проектов с практичностью, креативностью и эмпатией.
                   </p>
                 </div>
               </div>
@@ -197,9 +199,9 @@
                 <h3>Опыт</h3>
                 <h6>Недавний</h6>
                 <ul class="timeline">
-                  <li data-tag="jam">
+                  <li data-tag="volunteering">
                     <p><em>17<sup>го</sup> – 21<sup>го</sup> июля 2019</em></p>
-                    <p><strong>Волонтерила</strong> на ежегодном <strong>Slavic Game Jam</strong></p>
+                    <p><strong>Волонтер</strong> на ежегодном <strong>Slavic Game Jam</strong></p>
                     <div>
                       <ul>
                         <li>лучшая команда на джеме – команда организаторов</li>
@@ -211,15 +213,17 @@
                     <p><strong>Сommunity Developer</strong> в <strong>Ricker Lyman Robotic</strong></p>
                     <div>
                       <ul>
-                        <li>строю внешнюю маркетинговую стратегию и имидж продукта компании на технических выставках <em>(VMworld 2019 San Francisco, VMworld 2019 Barcelona, KubeCon 2020 Amsterdam, Kafka Summit 2020 London)</em></li>
-                        <li>работаю над обновленным сайтом компании</li>
-                        <li>пишу и редактирую тексты, монтирую видео, нахожу/валидирую идеи</li>
+                        <li>создаю цифровой контент - таблицы, презентации, статьи, рассылки для лидов</li>
+                        <li>веду Google Analytics, Google Ads и корпоративные аккаунты в социальных сетях</li>
+                        <li>организовываю участие в индустриальных выставках <em>(VMworld 2019 San Francisco, VMworld 2019 Barcelona, KubeCon 2020 Amsterdam, Kafka Summit 2020 London)</em>, представляю компанию в коммьюнити <a href="https://www.cncf.io/">CNCF</a></li>
+                        <li>работаю над новым сайтом продукта</li>
+                        <li><a href="https://dasha-korotkykh.github.io/mana/">бонусный проект</a> - внутренняя программа, позволяющая сотрудникам трех офисов делиться признательностью и успехами друг друга</li>
                       </ul>
                     </div>
                   </li>
                   <li data-tag="talk">
                     <p><em>23<sup>го</sup> ноября 2018</em></p>
-                    <p>Рассказывала про <strong>Happiness Management</strong> на митапе <strong><a href="https://www.facebook.com/LvivDotNet/" rel="external">Lviv .NET Community</a></strong></p>
+                    <p>Выступление о <strong>Happiness Management</strong> на митапе <strong><a href="https://www.facebook.com/LvivDotNet/" rel="external">Lviv .NET Community</a></strong></p>
                   </li>
                   <!--<li data-tag="none">
                     <p><em>1<sup>го</sup> сентября 2017</em></p>
@@ -228,7 +232,7 @@
                   <li  data-tag="work">
                     <p><em>27<sup>го</sup> ноября 2016 – 19<sup>го</sup> апреля 2019</em></p>
                     <p><a href="https://jobs.dou.ua/companies/binary-studio/vacancies/33427/" rel="external"><strong>HR Marketing Specialist</strong></a><!--(<strong>Event Manager</strong> с <em>18 Лютого 2019</em>)--> в <strong><a href="binary-studio.com" rel="external">Binary	Studio</a></strong></p>
-                    <p>Но-о-о-о-овый текст.</p>
+                    <p></p>
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="binary-studio-events" checked="">
@@ -649,7 +653,7 @@
                         </div>
                       </li>
                       <li><strong>SMM</strong> &mdash; писала еженедельную внутреннюю рассылку <strong>Пирожки</strong>, развивала brand awareness с помощью Facebook, Twitter, Instagram и других каналов</li>
-                      <li>помогала подобрать, доставить, подготовить и вручить <strong>подарки для сотрудников</strong> &#x1f381;&#x1f384;&#x1f385;</li>
+                      <li>помогала подобрать, доставить, подготовить и вручить <strong>подарки для сотрудников</strong> &#x1f381;</li>
                       <li>выполняла <strong>административные поручения</strong> для поддержания чистоты, вдохновения и комфортных условий для всех в офисном пространстве</li>
                       <li><strong>готовила и презентовала информацию по результатам исследований</strong>, репорты, метрики, ОКРы для менеджмента</li>
                       <li>при необходимости <strong>помогала в других сферах HR </strong></li>
@@ -675,7 +679,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li data-tag="work">
+                  <li data-tag="volunteering">
                     <p><em>апрель 2016</em></p>
                     <ul>
                       <li class="details">
@@ -712,53 +716,73 @@
                     <ul>
                       <li class="details" data-tags="hackathon,jam">
                         <input type="checkbox" id="hackathoning">
-                        <label for="hackathoning" class="summary"><strong>Полюбила хакатонить</strong>, хоть и не умела программировать &#x1f412;. Я занималась всем остальным!</label>
+                        <label for="hackathoning" class="summary"><strong>Начала хакатонить</strong>. Не умея программировать &#x1f412;, занималась менеджментом проекта, дизайном и маркетингом.</label>
                         <div>
                           <ul class="timeline">
+                          <li data-tag="jam">
+                            <p><em>19<sup>го</sup> – 26<sup>го</sup> июня 2020</em></p>
+                            <p><strong>Enemies & Foes</strong> на <strong>Stranger Jam</strong> (2<sup>е</sup> место за графику для игры)</p>
+                          </li>
                           <li data-tag="jam">
                             <p><em>ноябрь 2018</em></p>
                             <p><strong>Разобралась с основами Construct</strong> &mdash; простого, но гибкого движка для 2D игр</p>
                           </li>
                           <li data-tag="jam">
                             <p><em>7<sup>го</sup> – 15<sup>го</sup> июля 2018</em></p>
-                            <p><strong>Целыми днями (и белыми ночами) работала над пиксель-артом для многоуровневой игры-слэшера Raido</strong> в
-                              настоящем шведском замке на <strong>Castle Game Jam</strong></p>
+                            <p>Слэшер <strong>Raido</strong> в шведском замке на семидневном <strong>Castle Game Jam</strong></p>
                           </li>
                           <li data-tag="jam">
                             <p><em>26<sup>го</sup> – 28<sup>го</sup> января 2018</em></p>
-                            <p><strong>Рисовала пиксель-арт, переводила на 4 языка и озвучивала</strong> топ-даун шутер <strong>Transmission
-                                Lost</strong> на <strong><a href="http://krakjam.pl/" rel="external">KrakJam - Global Game Jam</a></strong></p>
+                            <p>Топ-даун шутер <strong>Transmission
+                                Lost</strong> на <strong><a href="http://krakjam.pl/" rel="external">KrakJam - Global Game Jam</a></strong> – рисовала пиксель-арт, переводила на 4 языка и озвучивала</p>
                           </li>
                           <li data-tag="jam">
                             <p><em>9<sup>го</sup> – 10<sup>го</sup> декабря 2017</em></p>
                             <ul>
                               <li class="details">
                                 <input type="checkbox" id="przeddziemmie">
-                                <label for="przeddziemmie" class="summary"><strong>Изобрела новое польское слово</strong> <em>"Przeddzemie"</em>
-                                  во время <strong><a href="http://senseigamejam.pl/" rel="external">Wroclaw Sensei Game Jam</a></strong></label>
+                                <label for="przeddziemmie" class="summary"><strong>Przeddzemie"</strong>
+                                  на <strong><a href="http://senseigamejam.pl/" rel="external">Wroclaw Sensei Game Jam</a></strong></label>
                                 <div>
                                   <ul>
-                                    <li>"Przeddzemmie" (пшедджемье) описывает положение дел прямо перед началом джема &mdash; мы создали <a
+                                    <li>Новоизобретенное слово "przeddzemmie" (пшедджемье) описывает положение дел прямо перед началом джема &mdash; мы создали <a
                                         href="https://daniko.itch.io/przeddzemie" rel="external"><strong>игру именно об этом</strong></a></li>
                                     <li>выучила несколько католических песен на польском</li>
                                   </ul>
                                 </div>
                               </li>
                             </ul>
+                          </li>                          
+                          <li data-tag="jam">
+                            <p><em>ноябрь 2017</em></p>
+                            <p><strong><a
+                                href="https://merlin-ua.itch.io/tower-64" rel="external">Tower 62<sup>2</sup></strong></a> на
+                              <strong>LowRezJam</strong></p>
+                          </li>
+                          <li data-tag="jam">
+                            <p><em>28<sup>го</sup> – 30<sup>го</sup> июля 2017</em></p>
+                            <p><strong>Jas Sni o
+                                Nieznanym</strong> на <strong><a href="http://slavicgamejam.org/" rel="external">Warsaw Slavic Game
+                                  Jam</a></strong></p>
+                          </li>
+                          <li data-tag="jam">
+                            <p><em>27<sup>го</sup> – 29<sup>го</sup> января 2017</em></p>
+                            <p><strong>Surf the Sky</strong> с <strong><a
+                                  href="hhttps://www.facebook.com/events/1116260575151201" rel="external">KrakJam Global Game Jam</a></strong></p>
                           </li>
                           <li data-tag="hackathon">
                             <p><em>28 – 30 октября 2016</em></p>
                             <ul>
                               <li class="details">
                                 <input type="checkbox" id="wattaheat">
-                                <label for="wattaheat" class="summary">Мы с командой <strong>создали Wattaheat и выиграли 1<sup>е</sup>
-                                    место</strong> на <strong><a href="https://www.facebook.com/events/191289977949171/" rel="external">Garage 48
+                                <label for="wattaheat" class="summary">IoT девайс <strong>Wattaheat</strong> на <strong><a href="https://www.facebook.com/events/191289977949171/" rel="external">Garage 48
                                       Dnipro IoT Hackathon</a></strong></label>
                                 <div>
                                   <ul>
-                                    <li>Wattaheat это небольшой девайс, который вычислят время до закипания воды и в режиме реального времени
+                                    <li>Wattaheat это небольшой прибор, который вычислят время до закипания воды и в режиме реального времени
                                       отправляет его на мобильное приложение</li>
-                                    <li>Нашей команде TeamCook предложили презентовать устройство на Lviv Maker's Faire <sup><em>(так мы и
+                                    <li>увезли домой 1<sup>е</sup> место</li>
+                                    <li>нашей команде предложили презентовать устройство на Lviv Maker's Faire <sup><em>(так мы и
                                           сделали)</em></sup> и развивать концепцию для потенциального массового производства <sup><em>(этого мы
                                           делать не стали)</em></sup></li>
                                   </ul>
@@ -771,7 +795,7 @@
                             <ul>
                               <li class="details">
                                 <input type="checkbox" id="hacktus">
-                                <label for="hacktus" class="summary"><strong>Работала над веб-приложением Hacktus</strong> на <strong><a
+                                <label for="hacktus" class="summary">Веб-приложение <strong>Hacktus</strong> на <strong><a
                                       href="https://www.facebook.com/events/1570965446562758/" rel="external">Garage 48 Odessa Gamification
                                       Hackathon</a></strong></label>
                                 <div>
@@ -790,11 +814,11 @@
                             <ul>
                               <li class="details">
                                 <input type="checkbox" id="ditro">
-                                <label for="ditro" class="summary"><strong>Разрабатывала проект </strong>на <strong><a
+                                <label for="ditro" class="summary">Приложение <strong>DITRO</strong> на <strong><a
                                       href="https://dou.ua/calendar/9783/" rel="external">STEM Hackathon</a></strong></label>
                                 <div>
                                   <ul>
-                                    <li>мы построили DITRO &mdash; приложение для управления дронами, базирующееся на OpenCV, с помощью которого
+                                    <li>мы построили приложение для управления дронами, базирующееся на OpenCV, с помощью которого
                                       можно было заранее создать маршрут и задачи для дрона (взлет, приземление, фотосъемка и т.п.) &mdash; и
                                       протестили его на кастомной радиомашинке</li>
                                     <li>взяли 2 место</li>
@@ -803,29 +827,12 @@
                               </li>
                             </ul>
                           </li>
-                          <li data-tag="jam">
-                            <p><em>ноябрь 2017</em></p>
-                            <p><strong>Создала игру с одним уровнем, невероятно низким разрешением</strong> и четырьмя вариантами концовки <a
-                                href="https://merlin-ua.itch.io/tower-64" rel="external"><strong>Tower 62<sup>2</sup></strong></a> на
-                              <strong>LowRezJam</strong> <sup><em>(онлайн)</em></sup></p>
-                          </li>
-                          <li data-tag="jam">
-                            <p><em>28<sup>го</sup> – 30<sup>го</sup> июля 2017</em></p>
-                            <p><strong>Скомбинировала 2D и 3D </strong> (и пожалела об этом) в одноуровневой игре <strong>Jas Sni o
-                                Nieznanym</strong> на <strong><a href="http://slavicgamejam.org/" rel="external">Warsaw Slavic Game
-                                  Jam</a></strong></p>
-                          </li>
-                          <li data-tag="jam">
-                            <p><em>27<sup>го</sup> – 29<sup>го</sup> января 2017</em></p>
-                            <p><strong>Завела привычку ездить на джемы в Польшу начиная</strong> с <strong><a
-                                  href="hhttps://www.facebook.com/events/1116260575151201" rel="external">KrakJam Global Game Jam</a></strong></p>
-                          </li>
                             <li data-tag="hackathon">
                               <p><em>27<sup>го</sup> – 28<sup>го</sup> февраля 2016</em></p>
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="nses">
-                                  <label for="nses" class="summary"><strong>Презентовала No Spam Epic Shit</strong> на <strong><a href="https://dou.ua/calendar/9777/" rel="external">INT20H Hackathon</a></strong></label>
+                                  <label for="nses" class="summary">Алгоритм <strong>No Spam Epic Sh*t</strong> на <strong><a href="https://dou.ua/calendar/9777/" rel="external">INT20H Hackathon</a></strong></label>
                                   <div>
                                     <ul>
                                       <li>моя команда числилась в категории Machine Learning и создала алгоритм (проект без интерфейса, по сути) который находил письма-спам в конкретном массиве писем</li>
@@ -839,11 +846,11 @@
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="proffstore">
-                                  <label for="proffstore" class="summary">Была в роли<strong>Product Manager</strong> на <strong>Proffstore Hackathon</strong></label>
+                                  <label for="proffstore" class="summary"><strong>Lite</strong> на <strong>Proffstore Hackathon</strong></label>
                                   <div>
                                     <ul>
                                       <li>собрала самую большую команду на самом большом хакатоне в Европе  <em>(примечание: организовывая такое мероприятие лучше не гнаться за числами)</em></li>
-                                      <li>мы построили Lite &mdash; веб-платформу для фрилансеров и их заказчиков</li>
+                                      <li>мы построили Lite &mdash; прототип веб-платформы для фрилансеров и их заказчиков</li>
                                       <li>презентовала наше демо в теплой атмосфере: труба для обогрева загорелась под нашим столом прямо во время презентации</li>
                                     </ul>
                                   </div>
@@ -855,7 +862,7 @@
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="jamkpi">
-                                  <label for="jamkpi" class="summary"><strong>Впервые попробовала себя в геймдеве</strong> в качестве <strong>Художника</strong> на <strong><a href="http://gamejamkpi.github.io/" rel="external">Game Jam KPI</a></strong></label>
+                                  <label for="jamkpi" class="summary"><strong>Full λ Life</strong> на <strong><a href="http://gamejamkpi.github.io/" rel="external">Game Jam KPI</a></strong></label>
                                   <div>
                                     <ul>
                                       <li>рисовала 8-битные картинки и писала шутки для игры про программистов, которые охотятся на зомби и сыр по пятьсот</li>
@@ -866,31 +873,14 @@
                               </ul>
                             </li>
                             <li data-tag="hackathon">
-                              <p><em>23<sup>го</sup> – 24<sup>го</sup> октября 2015</em></p>
-                              <ul>
-                                <li class="details">
-                                  <input type="checkbox" id="gdg">
-                                  <label for="gdg" class="summary"><strong>Исследовала конференцию</strong> <a href="https://devfest.gdg.org.ua/" rel="external"><strong>GDG Lviv</strong></a></strong></label>
-                                  <div>
-                                    <ul>
-                                      <li>научилась использовать IDE в браузере</li>
-                                      <!--<li>впервые почуствовала ненависть ко Львову</li>-->
-                                      <li>организовывала еду, транспорт, проживание и медицинскую помощь для программистов &mdash; <em>вскоре это будет моей полноценной работой</em></li>
-                                      <li>познакомилась с орг-командой GDG, позднее помогла им организовать 4 ивента в Киеве</li>
-                                    </ul>
-                                  </div>
-                                </li>
-                              </ul>
-                            </li>
-                            <li data-tag="hackathon">
                               <p><em>3<sup>го</sup> – 4<sup>го</sup> октября 2015</em></p>
                               <ul>
                                 <li class="details">
                                   <input type="checkbox" id="linguahack">
-                                  <label for="linguahack" class="summary"><strong>Начала хакатонить</strong> на <strong><a href="http://www.linguahack.com/" rel="external">Linguahack</a></strong></label>
+                                  <label for="linguahack" class="summary">Игра на основе ИИ <strong>A.I.L.A.S.</strong> на <strong><a href="http://www.linguahack.com/" rel="external">Linguahack</a></strong></label>
                                   <div>
                                     <ul>
-                                      <li>впервые пришла на хакатон и попала в невероятную команду, что навсегда изменило мою жизнь</li>
+                                      <li>мой первый хакатон, изменивший мою жизнь</li>
                                       <li>работала над мокапами для интерфейса, тестила и презентовала украинскую версию игры Аліас, в которой до 10 игроков в браузере могут соревноваться с искуственным интеллектом <em>(временами употребляющим обсценную лексику, такой уж machine learning)</em></li>
                                       <li>выиграли 1<sup>е</sup> место</li>
                                     </ul>
@@ -911,7 +901,7 @@
                         <label for="goit" class="summary"><strong>Project Manager, Mentor Lead</strong> в <a href="https://goit.ua/" rel="external"><strong>GoIT</strong></a></label>
                         <div>
                           <ul>
-                            <li>собрала коммьюнити более 200 людей (тестировщиков, Java, JavaScript и PHP разработчиков, которые решили стать менторами-волонтерами)</li>
+                            <li>собрала коммьюнити более 200 людей (QA, Java, JavaScript и PHP инженеров, которые стали менторами-волонтерами)</li>
                             <li>с нуля создала процесс для онбординга новых менторов и передачи информации между ними</li>
                             <li>поддерживала учебный процесс (от 4 до 8 курсов одновременно)</li>
                             <li>разобралась в базах IT (SCRUM, организация командной работы и отчетность, основы программирования)</li>
@@ -920,17 +910,17 @@
                       </li>
                     </ul>
                   </li>
-                  <li data-tag="work">
+                  <li data-tag="volunteering">
                     <p><em>июль 2015 – сентябрь 2015</em></p>
                     <ul>
                       <li class="details">
                         <input type="checkbox" id="pr">
-                        <label for="pr" class="summary"><strong>Волонтер на проекте</strong> в <strong>PR-отделе <a href="http://www.ukma.edu.ua/eng/" rel="external">Национального Университета "Киево-Могилянская Академия"</a></strong></label>
+                        <label for="pr" class="summary"><strong>Волонтер</strong> в <strong>PR-отделе <a href="http://www.ukma.edu.ua/eng/" rel="external">Национального Университета "Киево-Могилянская Академия"</a></strong></label>
                         <div>
                           <ul>
-                            <li>помогала с организацией празднования 500<sup>летия</sup> НаУКМА &mdash; получила опыт в подготовке мега-масштабных ивентов</li>
-                            <li>готовила маркетинговую стратегию (объявления, посты и список медиаканалов, в которых их стоило бы размещать)</li>
-                            <li>контактировала с медиапартнерами на предмет пресс-релизов, и спонсорами насчет предоставления лотов для благотворительной лотереи</li>
+                            <li>занималась организацией празднование 500<sup>летия</sup> НаУКМА &mdash; получила опыт в подготовке мега-масштабных ивентов</li>
+                            <li>подготовила маркетинговую стратегию (объявления, посты и список медиаканалов, в которых их стоило бы размещать)</li>
+                            <li>контактировала с медиапартнерами на предмет пресс-релизов, договорилась с 12 спонсорами насчет предоставления ценных лотов для благотворительной лотереи</li>
                           </ul>
                         </div>
                       </li>
@@ -945,9 +935,9 @@
                           <div>
                             <ul>
                               <li>отправилась однажды за книжками, а получила предложение работы</li>
-                              <li>организовывала и убирала локацию, отвечала за поставки необходимого</li>
-                              <li>находила авторов мастер-классов и тематических вечером и сама их модерировала</li>
-                              <li>старалась создавать уютную атмосферу в коворкинге и решала срочные вопросы с администрацией здания</li>
+                              <li>организовывала локацию, отвечала за поставки</li>
+                              <li>модерировала мастер-классы и тематические вечера</li>
+                              <li>создавала уютную атмосферу в коворкинге и решала всплывающие вопросы с администрацией здания</li>
                             </ul>
                           </div>
                       </li>
@@ -962,7 +952,7 @@
                           <div>
                             <ul>
                               <li>собирала и анализировала данные про выбросы углекислого газа индустриальными предприятиями в Евросоюзе</li>
-                              <li>организовывала базы данных и проверяла существующие на наличие ошибок</li>
+                              <li>организовала глобальную базу данных и проверяла существующие записи на наличие ошибок</li>
                             </ul>
                           </div>
                       </li>
